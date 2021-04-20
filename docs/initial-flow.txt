@@ -1,0 +1,14 @@
+partners-api-challenge
+
+Domain -> Partners <- Responsibility
+
+Steps ->
+	Setup Project;
+		data;
+		search-engine;
+	Infrastructure;		
+	Modeling;
+	Core Business;
+	Endpoints;
+	Unit Testing;
+	Deploy;
