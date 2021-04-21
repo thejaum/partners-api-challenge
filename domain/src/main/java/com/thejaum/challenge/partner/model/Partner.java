@@ -1,8 +1,10 @@
 package com.thejaum.challenge.partner.model;
 
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import lombok.*;
 
 import javax.persistence.*;
+import java.util.List;
 import java.util.UUID;
 
 @Data
@@ -33,4 +35,11 @@ public class Partner {
     private String ownerName;
 
     private String document;
+
+    @JsonManagedReference
+    @OneToMany(
+            cascade = CascadeType.ALL,
+            orphanRemoval = true
+    )
+    private List<Geometry> geoList;
 }
