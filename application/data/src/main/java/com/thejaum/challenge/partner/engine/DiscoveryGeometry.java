@@ -14,10 +14,16 @@ import java.io.IOException;
 @Component
 public class DiscoveryGeometry {
 
+    private ObjectMapper objectMapper;
+
+    public DiscoveryGeometry(ObjectMapper objectMapper) {
+        this.objectMapper = objectMapper;
+    }
+
     @PostConstruct
     void labGeoFromJson() throws IOException {
         File file = new File("F:\\desenv\\challenges\\partners-api-challenge\\docs\\single-partners-pdv.json");
-        final PartnerDTO partnerDTO = new ObjectMapper().readValue(file, PartnerDTO.class);
+        final PartnerDTO partnerDTO = this.objectMapper.readValue(file, PartnerDTO.class);
         log.info("Owner Name -> "+partnerDTO.getOwnerName());
     }
 }
