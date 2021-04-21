@@ -12,3 +12,6 @@ Steps ->
 	Endpoints;
 	Unit Testing;
 	Deploy;
+
+GeoJSON ->
+    geojson-jackson
