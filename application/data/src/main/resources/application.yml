@@ -1,0 +1,31 @@
+server:
+  servlet:
+    context-path: /challenge/data
+  port: 9000
+spring:
+  profiles:
+    active: local
+  application:
+    name: data-service
+
+--- #local
+spring:
+  profiles: local, default
+  datasource:
+    url: jdbc:postgresql://${DB_HOST:localhost}:${DB_PORT:5432}/${DB_DATABASE:pilot}
+    username: ${DB_USER:postgres}
+    password: ${DB_PASSWORD:123}
+  jpa:
+    hibernate:
+      ddl-auto: create
+    properties:
+      hibernate:
+        format_sql: true
+      javax:
+        persistence:
+          create-database-schemas: true
+    show-sql: false
+logging:
+  level:
+    org:
+      hibernate: INFO
