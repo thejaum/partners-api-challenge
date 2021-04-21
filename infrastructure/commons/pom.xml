@@ -69,5 +69,5 @@
             <releases><enabled>false</enabled></releases>
         </repository>
     </repositories>
-
+    
 </project>

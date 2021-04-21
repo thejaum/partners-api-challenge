@@ -1,6 +1,5 @@
 package com.thejaum.challenge.partner.engine;
 
-import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.thejaum.challenge.partner.dto.PartnerDTO;
 import com.thejaum.challenge.partner.model.Coordenate;
@@ -10,19 +9,13 @@ import com.thejaum.challenge.partner.repository.PartnerRepository;
 import lombok.extern.slf4j.Slf4j;
 import org.geojson.GeoJsonObject;
 import org.geotools.geojson.geom.GeometryJSON;
-import org.geotools.geometry.jts.JTSFactoryFinder;
 import org.locationtech.jts.geom.Geometry;
-import org.locationtech.jts.geom.GeometryFactory;
-import org.postgis.GeometryBuilder;
-import org.postgis.PGgeometry;
-import org.postgis.Point;
 import org.springframework.stereotype.Component;
-import org.wololo.geojson.GeoJSON;
-import org.wololo.jts2geojson.GeoJSONWriter;
 
 import javax.annotation.PostConstruct;
-import java.io.*;
-import java.sql.SQLException;
+import java.io.File;
+import java.io.IOException;
+import java.io.StringWriter;
 import java.util.List;
 import java.util.Optional;
 import java.util.UUID;
@@ -41,6 +34,7 @@ public class DiscoveryGeometry {
         this.partnerRepository = partnerRepository;
         this.coordenateRepository = coordenateRepository;
     }
+
 
     void labGeoFromJson() throws IOException {
         File file = new File("F:\\desenv\\challenges\\partners-api-challenge\\docs\\single-partners-pdv.json");
@@ -70,9 +64,8 @@ public class DiscoveryGeometry {
         log.info("Multipolyggon ID -> "+save2.getId());
     }
 
-    @PostConstruct
     void listPartner() throws IOException {
-        final Optional<Partner> partner = partnerRepository.findById(UUID.fromString("5db30734-b7e8-46e0-8d8e-5a3fafb9b738"));
+        final Optional<Partner> partner = partnerRepository.findById(UUID.fromString("27e9a8c1-b4e8-474d-9449-84456d7fea17"));
         final List<Coordenate> coordenates = coordenateRepository.findByPartnerId(partner.get().getId());
         GeometryJSON gjson = new GeometryJSON();
 
