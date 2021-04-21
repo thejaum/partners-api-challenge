@@ -17,10 +17,11 @@ spring:
     password: ${DB_PASSWORD:123}
   jpa:
     hibernate:
-      ddl-auto: create
+      ddl-auto: update
     properties:
       hibernate:
         format_sql: true
+        dialect: org.hibernate.spatial.dialect.postgis.PostgisDialect
       javax:
         persistence:
           create-database-schemas: true

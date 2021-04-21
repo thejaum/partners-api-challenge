@@ -2,6 +2,8 @@ package com.thejaum.challenge.partner.model;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
 import lombok.*;
+import org.hibernate.annotations.Type;
+import org.locationtech.jts.geom.Geometry;
 import org.postgis.PGgeometry;
 
 import javax.persistence.*;
@@ -13,8 +15,8 @@ import java.util.UUID;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-@Table(name = "geometry",schema = "data")
-public class Geometry {
+@Table(name = "coordenates",schema = "data")
+public class Coordenate {
 
     @Id
     @GeneratedValue(
@@ -24,17 +26,15 @@ public class Geometry {
             name = "id",
             updatable = false,
             unique = true,
-            nullable = false
+            nullable = false,
+            columnDefinition = "UUID"
     )
     private UUID id;
 
-    @Column(length = 80)
-    private String type;
-
-    @Column(columnDefinition = "geometry")
-    PGgeometry geometry;
+    @Column(columnDefinition = "Geometry", nullable = true)
+    Geometry geometry;
 
     @JsonBackReference
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne(fetch = FetchType.EAGER)
     private Partner partner;
 }

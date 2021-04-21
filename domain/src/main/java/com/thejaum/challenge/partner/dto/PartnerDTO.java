@@ -3,8 +3,6 @@ package com.thejaum.challenge.partner.dto;
 import lombok.*;
 import org.geojson.GeoJsonObject;
 
-import java.util.UUID;
-
 @Data
 @Builder
 @EqualsAndHashCode

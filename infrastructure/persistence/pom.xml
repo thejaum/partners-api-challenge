@@ -28,6 +28,21 @@
             <artifactId>postgis-jdbc</artifactId>
             <version>2.5.0</version>
         </dependency>
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-spatial</artifactId>
+            <version>5.4.30.Final</version>
+        </dependency>
     </dependencies>
+
+    <repositories>
+        <repository>
+            <id>geo</id>
+            <name>solutions</name>
+            <url>http://maven.geo-solutions.it/</url>
+            <snapshots><enabled>false</enabled></snapshots>
+            <releases><enabled>true</enabled></releases>
+        </repository>
+    </repositories>
 
 </project>
