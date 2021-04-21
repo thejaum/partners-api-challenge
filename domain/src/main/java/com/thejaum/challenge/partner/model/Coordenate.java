@@ -34,7 +34,6 @@ public class Coordenate {
     @Column(columnDefinition = "Geometry", nullable = true)
     Geometry geometry;
 
-    @JsonBackReference
     @ManyToOne(fetch = FetchType.EAGER)
     private Partner partner;
 }

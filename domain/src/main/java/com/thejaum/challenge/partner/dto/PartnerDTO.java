@@ -1,7 +1,10 @@
 package com.thejaum.challenge.partner.dto;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.*;
 import org.geojson.GeoJsonObject;
+
+import java.util.UUID;
 
 @Data
 @Builder
@@ -10,7 +13,8 @@ import org.geojson.GeoJsonObject;
 @AllArgsConstructor
 public class PartnerDTO {
 
-    private long id;
+    @JsonIgnore
+    private UUID id;
 
     private String tradingName;
 
@@ -18,9 +22,8 @@ public class PartnerDTO {
 
     private String document;
 
-    //coverageArea
     private GeoJsonObject coverageArea;
-    //address
+
     private GeoJsonObject address;
 
 }
