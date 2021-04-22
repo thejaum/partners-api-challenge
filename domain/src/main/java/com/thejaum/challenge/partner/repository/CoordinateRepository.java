@@ -8,7 +8,7 @@ import java.util.List;
 import java.util.UUID;
 
 @Repository
-public interface CoordenateRepository extends JpaRepository<Coordinate, UUID> {
+public interface CoordinateRepository extends JpaRepository<Coordinate, UUID> {
 
     List<Coordinate> findByPartnerId(UUID id);
 

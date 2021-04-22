@@ -16,7 +16,7 @@ import java.util.UUID;
 @AllArgsConstructor
 @Entity
 @Table(name = "coordenates",schema = "data")
-public class Coordenate {
+public class Coordinate {
 
     @Id
     @GeneratedValue(
