@@ -51,8 +51,8 @@ public class PartnerService {
         log.info("CoverageArea {}.",coverageArea.getId());
         return new PartnerCoordinatesDTO(
                 partner,
-                coordinateBusiness.GeometryToGeoJson(address.getGeometry()),
-                coordinateBusiness.GeometryToGeoJson(coverageArea.getGeometry())
+                coordinateBusiness.GeometryToGeoJson(coverageArea.getGeometry()),
+                coordinateBusiness.GeometryToGeoJson(address.getGeometry())
         );
     }
 
