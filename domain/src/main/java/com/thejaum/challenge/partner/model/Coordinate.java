@@ -2,9 +2,9 @@ package com.thejaum.challenge.partner.model;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
 import lombok.*;
-import org.hibernate.annotations.Type;
+import org.hibernate.annotations.Fetch;
+import org.hibernate.annotations.FetchMode;
 import org.locationtech.jts.geom.Geometry;
-import org.postgis.PGgeometry;
 
 import javax.persistence.*;
 import java.util.UUID;
@@ -34,6 +34,8 @@ public class Coordenate {
     @Column(columnDefinition = "Geometry", nullable = true)
     Geometry geometry;
 
-    @ManyToOne(fetch = FetchType.EAGER)
+    @ManyToOne
+    @JoinColumn(name = "partner_id")
+    @JsonBackReference
     private Partner partner;
 }

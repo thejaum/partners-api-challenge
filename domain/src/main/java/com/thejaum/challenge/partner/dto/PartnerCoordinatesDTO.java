@@ -11,7 +11,7 @@ import java.util.UUID;
 @EqualsAndHashCode
 @NoArgsConstructor
 @AllArgsConstructor
-public class PartnerDTO {
+public class PartnerCoordenatesDTO {
 
     @JsonIgnore
     private UUID id;

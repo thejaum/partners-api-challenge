@@ -6,7 +6,9 @@ Steps ->
 	Setup Project;
 		data;
 		search-engine;
-	Infrastructure;		
+	Infrastructure;
+	    commons;
+	    persistence;
 	Modeling;
 	Core Business;
 	Endpoints;
