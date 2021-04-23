@@ -2,8 +2,6 @@ package com.thejaum.challenge.partner.model;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
 import lombok.*;
-import org.hibernate.annotations.Fetch;
-import org.hibernate.annotations.FetchMode;
 import org.locationtech.jts.geom.Geometry;
 
 import javax.persistence.*;
