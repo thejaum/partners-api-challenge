@@ -1,21 +1,20 @@
 package business;
 
 import com.thejaum.challenge.partner.business.ProximityEngineBusiness;
+import configuration.BaseTest;
 import org.apache.commons.lang3.ArrayUtils;
 import org.junit.Assert;
 import org.junit.Test;
 import org.locationtech.jts.geom.*;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 
-public class ProximityEngineTests {
+public class ProximityEngineTests extends BaseTest {
 
-    private final ProximityEngineBusiness proximityEngineBusiness;
-
-    public ProximityEngineTests(ProximityEngineBusiness proximityEngineBusiness) {
-        this.proximityEngineBusiness = proximityEngineBusiness;
-    }
+    @Autowired
+    private ProximityEngineBusiness proximityEngineBusiness;
 
     static GeometryFactory gf = new GeometryFactory();
 
@@ -38,7 +37,7 @@ public class ProximityEngineTests {
         Assert.assertEquals(pointInsidePolygon,true);
     }
 
-    private static Polygon generatePoly(LineString line, double offset) {
+    private Polygon generatePoly(LineString line, double offset) {
 
         Coordinate[] points = line.getCoordinates();
 
