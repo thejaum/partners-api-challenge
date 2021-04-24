@@ -1,59 +1,44 @@
 package business;
 
 import com.thejaum.challenge.partner.business.ProximityEngineBusiness;
-import configuration.BaseTest;
-import org.apache.commons.lang3.ArrayUtils;
+import configuration.GeometryBaseTest;
 import org.junit.Assert;
 import org.junit.Test;
 import org.locationtech.jts.geom.*;
 import org.springframework.beans.factory.annotation.Autowired;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-
-public class ProximityEngineTests extends BaseTest {
+public class ProximityEngineTests extends GeometryBaseTest {
 
     @Autowired
     private ProximityEngineBusiness proximityEngineBusiness;
 
-    static GeometryFactory gf = new GeometryFactory();
-
     @Test
-    public void checkValidPointInsidePolygon(){
-        Coordinate[] points = {
+    public void checkPointInsidePolygon(){
+        Coordinate[] coords = {
                 new Coordinate(-46.664568185806274,-23.682219605636387),
                 new Coordinate(-46.66401028633118,-23.68331021289563),
                 new Coordinate(-46.6629159450531,-23.68289755176024),
                 new Coordinate(-46.664568185806274,-23.682219605636387)};
-        LineString line = gf.createLineString(points );
-
-        double offset = 1000; //1km
-        System.out.println(line);
-        Polygon polygon = generatePoly(line,offset);
-        System.out.println(polygon);
-        final Point point = gf.createPoint(new Coordinate(-46.66374206542969, -23.68288772647923));
-        System.out.println(point);
+        LinearRing lines = this.createAnLinearRingFromCoordinates(coords);
+        Polygon polygon = this.createAnPolygonFromLinearRing(lines);
+        Point point = this.createAnPointFromCoordinate(new Coordinate(-46.66374206542969, -23.68288772647923));
         boolean pointInsidePolygon = proximityEngineBusiness.isPointInsidePolygon(point, polygon);
         Assert.assertEquals(pointInsidePolygon,true);
     }
 
-    private Polygon generatePoly(LineString line, double offset) {
-
-        Coordinate[] points = line.getCoordinates();
-
-        ArrayList<Coordinate> soln = new ArrayList<>();
-        //store initial points
-        soln.addAll(Arrays.asList(points));
-        // reverse the list
-        ArrayUtils.reverse(points);
-        // for each point move offset metres right
-        for (Coordinate c:points) {
-            soln.add(new Coordinate(c.x+offset, c.y));
-        }
-        // close the polygon
-        soln.add(soln.get(0));
-        // create polygon
-        Polygon poly = gf.createPolygon(soln.toArray(new Coordinate[] {}));
-        return poly;
+    @Test
+    public void checkPointOutsidePolygon(){
+        Coordinate[] coords = {
+                new Coordinate(-54.57844734191894,-19.38912923598742),
+                new Coordinate(-54.58179473876953,-19.392448679313784),
+                new Coordinate(-54.576215744018555,-19.393501171599986),
+                new Coordinate(-54.57844734191894,-19.38912923598742)};
+        LinearRing lines = this.createAnLinearRingFromCoordinates(coords);
+        Polygon polygon = this.createAnPolygonFromLinearRing(lines);
+        Point point = this.createAnPointFromCoordinate(new Coordinate(-54.582438468933105, -19.392327237458208));
+        boolean pointInsidePolygon = proximityEngineBusiness.isPointInsidePolygon(point, polygon);
+        Assert.assertEquals(pointInsidePolygon,false);
     }
+
+
 }
