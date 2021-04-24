@@ -13,7 +13,8 @@ import java.util.UUID;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-@Table(name = "coordenates",schema = "data")
+@Table(name = "coordinates",schema = "data")
+//TODO Change name, are mistaken with locationtech objects.
 public class Coordinate {
 
     @Id

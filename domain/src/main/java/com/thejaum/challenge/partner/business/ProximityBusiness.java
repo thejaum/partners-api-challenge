@@ -5,7 +5,7 @@ import org.locationtech.jts.geom.Polygon;
 import org.springframework.stereotype.Component;
 
 @Component
-public class ProximityEngineBusiness {
+public class ProximityBusiness {
 
     public boolean isPointInsidePolygon(Point point, Polygon polygon){
         return polygon.contains(point);

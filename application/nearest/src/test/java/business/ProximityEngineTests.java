@@ -1,6 +1,6 @@
 package business;
 
-import com.thejaum.challenge.partner.business.ProximityEngineBusiness;
+import com.thejaum.challenge.partner.business.ProximityBusiness;
 import configuration.GeometryBaseTest;
 import org.junit.Assert;
 import org.junit.Test;
@@ -10,7 +10,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 public class ProximityEngineTests extends GeometryBaseTest {
 
     @Autowired
-    private ProximityEngineBusiness proximityEngineBusiness;
+    private ProximityBusiness proximityBusiness;
 
     @Test
     public void checkPointInsidePolygon(){
@@ -22,7 +22,7 @@ public class ProximityEngineTests extends GeometryBaseTest {
         LinearRing lines = this.createAnLinearRingFromCoordinates(coords);
         Polygon polygon = this.createAnPolygonFromLinearRing(lines);
         Point point = this.createAnPointFromCoordinate(new Coordinate(-46.66374206542969, -23.68288772647923));
-        boolean pointInsidePolygon = proximityEngineBusiness.isPointInsidePolygon(point, polygon);
+        boolean pointInsidePolygon = proximityBusiness.isPointInsidePolygon(point, polygon);
         Assert.assertEquals(pointInsidePolygon,true);
     }
 
@@ -36,7 +36,7 @@ public class ProximityEngineTests extends GeometryBaseTest {
         LinearRing lines = this.createAnLinearRingFromCoordinates(coords);
         Polygon polygon = this.createAnPolygonFromLinearRing(lines);
         Point point = this.createAnPointFromCoordinate(new Coordinate(-54.582438468933105, -19.392327237458208));
-        boolean pointInsidePolygon = proximityEngineBusiness.isPointInsidePolygon(point, polygon);
+        boolean pointInsidePolygon = proximityBusiness.isPointInsidePolygon(point, polygon);
         Assert.assertEquals(pointInsidePolygon,false);
     }
 

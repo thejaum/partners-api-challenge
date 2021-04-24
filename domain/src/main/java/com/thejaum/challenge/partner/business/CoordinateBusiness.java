@@ -1,9 +1,11 @@
 package com.thejaum.challenge.partner.business;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.thejaum.challenge.partner.model.Coordinate;
 import com.thejaum.challenge.partner.model.Partner;
 import com.thejaum.challenge.partner.repository.CoordinateRepository;
+import org.apache.commons.lang3.NotImplementedException;
 import org.geojson.GeoJsonObject;
 import org.geotools.geojson.geom.GeometryJSON;
 import org.locationtech.jts.geom.Geometry;
@@ -19,6 +21,7 @@ import java.util.stream.Collectors;
 public class CoordinateBusiness {
     private ObjectMapper objectMapper;
     private CoordinateRepository coordinateRepository;
+    private final Long MAXIMUM_RANGE=3000L;
 
     public CoordinateBusiness(ObjectMapper objectMapper, CoordinateRepository coordinateRepository) {
         this.objectMapper = objectMapper;
@@ -54,5 +57,9 @@ public class CoordinateBusiness {
         List<Coordinate> filtredCoordinate = coordinates.stream()
                 .filter(coordinate -> coordinate.getGeometry().getGeometryType().equals(geometryType)).collect(Collectors.toList());
         return filtredCoordinate.get(0);
+    }
+
+    public List<Coordinate> findNearestCoordinatesFromAnPointWithRange(Double lng, Double lat) {
+        return coordinateRepository.findNearestCoordinatesFromAnPointWithRange(lng, lat, MAXIMUM_RANGE);
     }
 }
