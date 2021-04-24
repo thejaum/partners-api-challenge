@@ -33,19 +33,16 @@ public class PartnerBusiness {
         return partner;
     }
 
-    public Partner findPartnerById(UUID id){
+    public Optional<Partner> findPartnerById(UUID id){
         Optional<Partner> partner = partnerRepository.findById(id);
-        if(partner.isPresent())
-            return partner.get();
-        return null;
+        return partner;
     }
 
     public List<Partner> findNearestCoordinatesFromAnPointWithRange(Double lng, Double lat) {
         return partnerRepository.findNearestCoordinatesFromAnPointWithRange(lng, lat, MAXIMUM_RANGE);
     }
 
-    public Partner extractClosestPartnerByAddress(List<Partner> partners, Point point){
-        Optional<Partner> closestPartner = partners.stream().min(Comparator.comparing(partner -> partner.getAddress().distance(point)));
-        return closestPartner.get();
+    public Optional<Partner> extractClosestPartnerByAddress(List<Partner> partners, Point point){
+        return partners.stream().min(Comparator.comparing(partner -> partner.getAddress().distance(point)));
     }
 }

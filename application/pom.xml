@@ -18,4 +18,11 @@
         <module>nearest</module>
     </modules>
 
+    <dependencies>
+        <dependency>
+            <groupId>com.thejaum.challenge</groupId>
+            <artifactId>domain</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+    </dependencies>
 </project>

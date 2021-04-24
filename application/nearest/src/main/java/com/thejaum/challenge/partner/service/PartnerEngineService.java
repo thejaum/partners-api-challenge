@@ -2,18 +2,19 @@ package com.thejaum.challenge.partner.service;
 
 import com.thejaum.challenge.partner.business.PartnerBusiness;
 import com.thejaum.challenge.partner.dto.PartnerGeoDTO;
+import com.thejaum.challenge.partner.exception.NotFoundException;
 import com.thejaum.challenge.partner.model.Partner;
 import com.thejaum.challenge.partner.transformer.PartnerTransformer;
 import com.thejaum.challenge.partner.util.GeometryHelper;
 import lombok.extern.slf4j.Slf4j;
 import org.locationtech.jts.geom.Coordinate;
-import org.locationtech.jts.geom.LineString;
 import org.locationtech.jts.geom.MultiPolygon;
 import org.locationtech.jts.geom.Point;
 import org.springframework.stereotype.Service;
 
 import java.io.IOException;
 import java.util.List;
+import java.util.Optional;
 import java.util.stream.Collectors;
 
 @Slf4j
@@ -35,18 +36,20 @@ public class PartnerEngineService {
         Point location = geometryHelper.createAnPointFromCoordinate(new Coordinate(lng, lat));
         List<Partner> partnerLocations = partnerBusiness.findNearestCoordinatesFromAnPointWithRange(lng,lat);
         log.info("Partners found in range -> "+partnerLocations.size());
-
+        if(partnerLocations.size()==0)
+            throw new NotFoundException("No Partners found nearby.");
         List<Partner> partnerInCoverArea = partnerLocations.stream().filter(partner -> {
             MultiPolygon multiPolygon = (MultiPolygon)partner.getCoverageArea();
             return geometryHelper.isPointInsideMultiPolygon(location,multiPolygon);
         }).collect(Collectors.toList());
         log.info("Partners where CoverageArea cover -> "+partnerInCoverArea.size());
-
         if(partnerInCoverArea.size()==1)
             return partnerTransformer.toGeoDtoMapperFromEntity(partnerInCoverArea.get(0));
         log.info("Finding the closest one.");
-        Partner closestPartner = partnerBusiness.extractClosestPartnerByAddress(partnerInCoverArea, location);
-        log.info("Found -> {}",closestPartner.getTradingName());
-        return partnerTransformer.toGeoDtoMapperFromEntity(closestPartner);
+        Optional<Partner> closestPartner = partnerBusiness.extractClosestPartnerByAddress(partnerInCoverArea, location);
+        if(!closestPartner.isPresent())
+            throw new NotFoundException("Outside the coverage area of the partners nearby.");
+        log.info("Found -> {}",closestPartner.get().getTradingName());
+        return partnerTransformer.toGeoDtoMapperFromEntity(closestPartner.get());
     }
 }

@@ -1,15 +1,16 @@
 package com.thejaum.challenge.partner.service;
 
-import com.thejaum.challenge.partner.business.CoordinateBusiness;
 import com.thejaum.challenge.partner.business.PartnerBusiness;
 import com.thejaum.challenge.partner.dto.PartnerDTO;
 import com.thejaum.challenge.partner.dto.PartnerGeoDTO;
+import com.thejaum.challenge.partner.exception.NotFoundException;
 import com.thejaum.challenge.partner.model.Partner;
 import com.thejaum.challenge.partner.transformer.PartnerTransformer;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
 import java.io.IOException;
+import java.util.Optional;
 import java.util.UUID;
 
 @Slf4j
@@ -17,12 +18,10 @@ import java.util.UUID;
 public class PartnerService {
 
     private PartnerBusiness partnerBusiness;
-    private CoordinateBusiness coordinateBusiness;
     private PartnerTransformer partnerTransformer;
 
-    public PartnerService(PartnerBusiness partnerBusiness, CoordinateBusiness coordinateBusiness, PartnerTransformer partnerTransformer) {
+    public PartnerService(PartnerBusiness partnerBusiness, PartnerTransformer partnerTransformer) {
         this.partnerBusiness = partnerBusiness;
-        this.coordinateBusiness = coordinateBusiness;
         this.partnerTransformer = partnerTransformer;
     }
 
@@ -36,9 +35,11 @@ public class PartnerService {
 
     public PartnerGeoDTO findPartnerAndCoordinatesByPartnerId(UUID partnerId) throws IOException {
         log.info("Searching a Partner of id {}",partnerId);
-        final Partner partner = partnerBusiness.findPartnerById(partnerId);
+        final Optional<Partner> partner = partnerBusiness.findPartnerById(partnerId);
+        if(!partner.isPresent())
+            throw new NotFoundException("Partner ID not found.");
         log.info("Partner found.");
-        return partnerTransformer.toGeoDtoMapperFromDto(partnerTransformer.toDtoMapper(partner, PartnerDTO.class));
+        return partnerTransformer.toGeoDtoMapperFromDto(partnerTransformer.toDtoMapper(partner.get(), PartnerDTO.class));
     }
 
 }
