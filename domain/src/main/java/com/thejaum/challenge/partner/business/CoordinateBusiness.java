@@ -60,4 +60,8 @@ public class CoordinateBusiness {
     public List<PartnerLocation> findNearestCoordinatesFromAnPointWithRange(Double lng, Double lat) {
         return coordinateRepository.findNearestCoordinatesFromAnPointWithRange(lng, lat, MAXIMUM_RANGE);
     }
+
+    public PartnerLocation findCoverageAreaByPartnerId(UUID partnerId) {
+        return coordinateRepository.findCoverageAreaByPartnerId(partnerId);
+    }
 }

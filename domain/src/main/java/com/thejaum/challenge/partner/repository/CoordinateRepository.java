@@ -21,4 +21,9 @@ public interface CoordinateRepository extends JpaRepository<PartnerLocation, UUI
             @Param("lng") Double lng,
             @Param("lat")  Double lat,
             @Param("range")  Long range);
+
+    @Query(value = "select c.id, c.geometry ,c.partner_id from data.partner_locations c " +
+            "where ST_GeometryType(c.geometry) = 'ST_MultiPolygon' " +
+            "and c.partner_id = ':partnerId'",nativeQuery = true)
+    PartnerLocation findCoverageAreaByPartnerId(@Param("partnerId") UUID partnerId);
 }

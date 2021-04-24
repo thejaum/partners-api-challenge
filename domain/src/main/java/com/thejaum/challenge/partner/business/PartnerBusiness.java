@@ -32,4 +32,6 @@ public class PartnerBusiness {
         return null;
     }
 
+
+
 }

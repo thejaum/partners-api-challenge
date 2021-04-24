@@ -3,6 +3,7 @@ package com.thejaum.challenge.partner.model;
 import com.fasterxml.jackson.annotation.JsonIdentityInfo;
 import com.fasterxml.jackson.annotation.ObjectIdGenerators;
 import lombok.*;
+import org.locationtech.jts.geom.Geometry;
 
 import javax.persistence.*;
 import java.util.UUID;
@@ -38,5 +39,11 @@ public class Partner {
 
     @Column(unique=true)
     private String document;
-    
+
+//    @Column(name = "address", columnDefinition = "Geometry", nullable = true)
+//    private Geometry address;
+//
+//    @Column(name = "coverage_area", columnDefinition = "Geometry", nullable = true)
+//    private Geometry coverageArea;
+
 }

@@ -11,13 +11,13 @@ import java.util.UUID;
 @EqualsAndHashCode
 @NoArgsConstructor
 @AllArgsConstructor
-public class PartnerCoordinatesDTO extends PartnerDTO{
+public class PartnerLocationsDTO extends PartnerDTO{
 
     private GeoJsonObject coverageArea;
 
     private GeoJsonObject address;
 
-    public PartnerCoordinatesDTO(Partner partner, GeoJsonObject coverageArea, GeoJsonObject address) {
+    public PartnerLocationsDTO(Partner partner, GeoJsonObject coverageArea, GeoJsonObject address) {
         super(partner.getId(), partner.getTradingName(), partner.getOwnerName(), partner.getDocument());
         this.coverageArea = coverageArea;
         this.address = address;

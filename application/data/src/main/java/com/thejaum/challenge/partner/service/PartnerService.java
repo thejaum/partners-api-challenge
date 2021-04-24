@@ -2,7 +2,7 @@ package com.thejaum.challenge.partner.service;
 
 import com.thejaum.challenge.partner.business.CoordinateBusiness;
 import com.thejaum.challenge.partner.business.PartnerBusiness;
-import com.thejaum.challenge.partner.dto.PartnerCoordinatesDTO;
+import com.thejaum.challenge.partner.dto.PartnerLocationsDTO;
 import com.thejaum.challenge.partner.model.PartnerLocation;
 import com.thejaum.challenge.partner.model.Partner;
 import com.thejaum.challenge.partner.transformer.PartnerTransformer;
@@ -27,19 +27,19 @@ public class PartnerService {
         this.coordinateBusiness = coordinateBusiness;
     }
 
-    public PartnerCoordinatesDTO registerNewPartner(PartnerCoordinatesDTO partnerCoordinatesDTO) throws IOException {
+    public PartnerLocationsDTO registerNewPartner(PartnerLocationsDTO partnerLocationsDTO) throws IOException {
         log.info("Beginning to register a new Partner.");
-        final Partner newPartner = partnerBusiness.createNewPartner(partnerCoordinatesDTO);
+        final Partner newPartner = partnerBusiness.createNewPartner(partnerLocationsDTO);
         log.info("Step one -> Partner {} registered.",newPartner.getId());
         //TODO Create a validation cause Address must be a POINT type
-        final PartnerLocation address = coordinateBusiness.createNewCoordinate(partnerCoordinatesDTO.getAddress(), newPartner);
+        final PartnerLocation address = coordinateBusiness.createNewCoordinate(partnerLocationsDTO.getAddress(), newPartner);
         log.info("Step two -> Addres {} registered.",address.getId());
-        final PartnerLocation coverageArea = coordinateBusiness.createNewCoordinate(partnerCoordinatesDTO.getCoverageArea(), newPartner);
+        final PartnerLocation coverageArea = coordinateBusiness.createNewCoordinate(partnerLocationsDTO.getCoverageArea(), newPartner);
         log.info("Step three -> CoverageArea {} registered.",coverageArea.getId());
-        return partnerCoordinatesDTO;
+        return partnerLocationsDTO;
     }
 
-    public PartnerCoordinatesDTO findPartnerAndCoordinatesByPartnerId(UUID partnerId) throws IOException {
+    public PartnerLocationsDTO findPartnerAndCoordinatesByPartnerId(UUID partnerId) throws IOException {
         log.info("Searching a Partner of id {}",partnerId);
         final Partner partner = partnerBusiness.findPartnerById(partnerId);
         log.info("Partner found.");
@@ -49,7 +49,7 @@ public class PartnerService {
         log.info("Addres {}.",address.getId());
         final PartnerLocation coverageArea = coordinateBusiness.searchFirstCoordinateInListByType(partnerLocations, Geometry.TYPENAME_MULTIPOLYGON);
         log.info("CoverageArea {}.",coverageArea.getId());
-        return new PartnerCoordinatesDTO(
+        return new PartnerLocationsDTO(
                 partner,
                 coordinateBusiness.GeometryToGeoJson(coverageArea.getGeometry()),
                 coordinateBusiness.GeometryToGeoJson(address.getGeometry())

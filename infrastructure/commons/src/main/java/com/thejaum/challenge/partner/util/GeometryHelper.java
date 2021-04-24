@@ -1,8 +1,10 @@
-package configuration;
+package com.thejaum.challenge.partner.util;
 
 import org.locationtech.jts.geom.*;
+import org.springframework.stereotype.Component;
 
-public class GeometryBaseTest extends BaseTest{
+@Component
+public class GeometryHelper {
 
     static GeometryFactory geometryFactory = new GeometryFactory();
 
@@ -22,4 +24,5 @@ public class GeometryBaseTest extends BaseTest{
         Point point = geometryFactory.createPoint(coordinate);
         return point;
     }
+
 }

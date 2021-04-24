@@ -32,7 +32,7 @@ public class PartnerLocation {
     private UUID id;
 
     @Column(columnDefinition = "Geometry", nullable = true)
-    Geometry geometry;
+    private Geometry geometry;
 
     @ManyToOne
     @JoinColumn(name = "partner_id")
