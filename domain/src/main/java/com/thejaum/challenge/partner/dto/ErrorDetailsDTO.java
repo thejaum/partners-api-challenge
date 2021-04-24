@@ -6,6 +6,7 @@ import lombok.*;
 
 import java.io.Serializable;
 import java.time.LocalDateTime;
+import java.util.List;
 
 @Data
 @Builder
@@ -19,5 +20,6 @@ public class ErrorDetailsDTO implements Serializable {
     private int statusCode;
     private String message;
     private String description;
+    private List<FieldErrorDetailsDTO> fieldList;
 
 }

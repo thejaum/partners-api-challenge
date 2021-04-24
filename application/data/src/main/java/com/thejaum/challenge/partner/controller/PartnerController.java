@@ -5,6 +5,7 @@ import com.thejaum.challenge.partner.service.PartnerService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import javax.validation.Valid;
 import java.io.IOException;
 import java.util.UUID;
 
@@ -24,7 +25,7 @@ public class PartnerController {
     }
 
     @PostMapping
-    public ResponseEntity<PartnerGeoDTO> create(@RequestBody PartnerGeoDTO partnerGeoDTO) throws IOException {
+    public ResponseEntity<PartnerGeoDTO> create(@Valid @RequestBody PartnerGeoDTO partnerGeoDTO) throws IOException {
         return ResponseEntity.ok(partnerService.registerNewPartner(partnerGeoDTO));
     }
 }
