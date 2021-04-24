@@ -1,7 +1,7 @@
 package com.thejaum.challenge.partner.service;
 
 import com.thejaum.challenge.partner.business.CoordinateBusiness;
-import com.thejaum.challenge.partner.model.Coordinate;
+import com.thejaum.challenge.partner.model.PartnerLocation;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
@@ -17,8 +17,8 @@ public class PartnerEngineService {
         this.coordinateBusiness = coordinateBusiness;
     }
 
-    public List<Coordinate> findNearestPartner(Double lng, Double lat){
-        List<Coordinate> nearestCoordinatesFromAnPointWithRange = coordinateBusiness.findNearestCoordinatesFromAnPointWithRange(lng,lat);
+    public List<PartnerLocation> findNearestPartner(Double lng, Double lat){
+        List<PartnerLocation> nearestCoordinatesFromAnPointWithRange = coordinateBusiness.findNearestCoordinatesFromAnPointWithRange(lng,lat);
         log.info("Size -> "+nearestCoordinatesFromAnPointWithRange.size());
         return nearestCoordinatesFromAnPointWithRange;
     }

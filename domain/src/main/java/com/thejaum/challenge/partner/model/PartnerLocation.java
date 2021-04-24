@@ -1,6 +1,7 @@
 package com.thejaum.challenge.partner.model;
 
-import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonIdentityInfo;
+import com.fasterxml.jackson.annotation.ObjectIdGenerators;
 import lombok.*;
 import org.locationtech.jts.geom.Geometry;
 
@@ -13,9 +14,9 @@ import java.util.UUID;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-@Table(name = "coordinates",schema = "data")
-//TODO Change name, are mistaken with locationtech objects.
-public class Coordinate {
+@Table(name = "partner_locations",schema = "data")
+@JsonIdentityInfo(generator= ObjectIdGenerators.IntSequenceGenerator.class, property="@partnerLocationId")
+public class PartnerLocation {
 
     @Id
     @GeneratedValue(
@@ -35,6 +36,5 @@ public class Coordinate {
 
     @ManyToOne
     @JoinColumn(name = "partner_id")
-    @JsonBackReference
     private Partner partner;
 }

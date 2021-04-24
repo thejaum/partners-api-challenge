@@ -1,10 +1,10 @@
 package com.thejaum.challenge.partner.model;
 
-import com.fasterxml.jackson.annotation.JsonManagedReference;
+import com.fasterxml.jackson.annotation.JsonIdentityInfo;
+import com.fasterxml.jackson.annotation.ObjectIdGenerators;
 import lombok.*;
 
 import javax.persistence.*;
-import java.util.List;
 import java.util.UUID;
 
 @Data
@@ -14,6 +14,7 @@ import java.util.UUID;
 @AllArgsConstructor
 @Entity
 @Table(name = "partners",schema = "data")
+@JsonIdentityInfo(generator= ObjectIdGenerators.IntSequenceGenerator.class, property="@partnerId")
 public class Partner {
 
     @Id
@@ -37,8 +38,5 @@ public class Partner {
 
     @Column(unique=true)
     private String document;
-
-    @OneToMany(mappedBy="partner")
-    @JsonManagedReference
-    private List<Coordinate> geoList;
+    
 }

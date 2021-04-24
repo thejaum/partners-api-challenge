@@ -3,7 +3,7 @@ package com.thejaum.challenge.partner.service;
 import com.thejaum.challenge.partner.business.CoordinateBusiness;
 import com.thejaum.challenge.partner.business.PartnerBusiness;
 import com.thejaum.challenge.partner.dto.PartnerCoordinatesDTO;
-import com.thejaum.challenge.partner.model.Coordinate;
+import com.thejaum.challenge.partner.model.PartnerLocation;
 import com.thejaum.challenge.partner.model.Partner;
 import com.thejaum.challenge.partner.transformer.PartnerTransformer;
 import lombok.extern.slf4j.Slf4j;
@@ -32,9 +32,9 @@ public class PartnerService {
         final Partner newPartner = partnerBusiness.createNewPartner(partnerCoordinatesDTO);
         log.info("Step one -> Partner {} registered.",newPartner.getId());
         //TODO Create a validation cause Address must be a POINT type
-        final Coordinate address = coordinateBusiness.createNewCoordinate(partnerCoordinatesDTO.getAddress(), newPartner);
+        final PartnerLocation address = coordinateBusiness.createNewCoordinate(partnerCoordinatesDTO.getAddress(), newPartner);
         log.info("Step two -> Addres {} registered.",address.getId());
-        final Coordinate coverageArea = coordinateBusiness.createNewCoordinate(partnerCoordinatesDTO.getCoverageArea(), newPartner);
+        final PartnerLocation coverageArea = coordinateBusiness.createNewCoordinate(partnerCoordinatesDTO.getCoverageArea(), newPartner);
         log.info("Step three -> CoverageArea {} registered.",coverageArea.getId());
         return partnerCoordinatesDTO;
     }
@@ -43,11 +43,11 @@ public class PartnerService {
         log.info("Searching a Partner of id {}",partnerId);
         final Partner partner = partnerBusiness.findPartnerById(partnerId);
         log.info("Partner found.");
-        final List<Coordinate> coordinates = coordinateBusiness.findCoordinatesByPartnerId(partnerId);
-        log.info("Coordinates size {}.",coordinates.size());
-        final Coordinate address = coordinateBusiness.searchFirstCoordinateInListByType(coordinates, Geometry.TYPENAME_POINT);
+        final List<PartnerLocation> partnerLocations = coordinateBusiness.findCoordinatesByPartnerId(partnerId);
+        log.info("Coordinates size {}.", partnerLocations.size());
+        final PartnerLocation address = coordinateBusiness.searchFirstCoordinateInListByType(partnerLocations, Geometry.TYPENAME_POINT);
         log.info("Addres {}.",address.getId());
-        final Coordinate coverageArea = coordinateBusiness.searchFirstCoordinateInListByType(coordinates, Geometry.TYPENAME_MULTIPOLYGON);
+        final PartnerLocation coverageArea = coordinateBusiness.searchFirstCoordinateInListByType(partnerLocations, Geometry.TYPENAME_MULTIPOLYGON);
         log.info("CoverageArea {}.",coverageArea.getId());
         return new PartnerCoordinatesDTO(
                 partner,

@@ -1,11 +1,9 @@
 package com.thejaum.challenge.partner.business;
 
-import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.thejaum.challenge.partner.model.Coordinate;
 import com.thejaum.challenge.partner.model.Partner;
+import com.thejaum.challenge.partner.model.PartnerLocation;
 import com.thejaum.challenge.partner.repository.CoordinateRepository;
-import org.apache.commons.lang3.NotImplementedException;
 import org.geojson.GeoJsonObject;
 import org.geotools.geojson.geom.GeometryJSON;
 import org.locationtech.jts.geom.Geometry;
@@ -28,18 +26,18 @@ public class CoordinateBusiness {
         this.coordinateRepository = coordinateRepository;
     }
 
-    public Coordinate createNewCoordinate(GeoJsonObject geoJsonObject, Partner partner) throws IOException {
+    public PartnerLocation createNewCoordinate(GeoJsonObject geoJsonObject, Partner partner) throws IOException {
         GeometryJSON gjson = new GeometryJSON();
         String json = objectMapper.writeValueAsString(geoJsonObject);
-        Coordinate coordinate = coordinateRepository.save(Coordinate.builder()
+        PartnerLocation partnerLocation = coordinateRepository.save(PartnerLocation.builder()
                 .partner(partner)
                 .geometry(gjson.read(json))
                 .build());
-        return coordinate;
+        return partnerLocation;
     }
 
-    public List<Coordinate> findCoordinatesByPartnerId(UUID partnerId){
-        List<Coordinate> coordinaties = coordinateRepository.findByPartnerId(partnerId);
+    public List<PartnerLocation> findCoordinatesByPartnerId(UUID partnerId){
+        List<PartnerLocation> coordinaties = coordinateRepository.findByPartnerId(partnerId);
         return coordinaties;
     }
 
@@ -53,13 +51,13 @@ public class CoordinateBusiness {
         return geoJsonObject;
     }
 
-    public Coordinate searchFirstCoordinateInListByType(List<Coordinate> coordinates,String geometryType){
-        List<Coordinate> filtredCoordinate = coordinates.stream()
+    public PartnerLocation searchFirstCoordinateInListByType(List<PartnerLocation> partnerLocations, String geometryType){
+        List<PartnerLocation> filtredPartnerLocation = partnerLocations.stream()
                 .filter(coordinate -> coordinate.getGeometry().getGeometryType().equals(geometryType)).collect(Collectors.toList());
-        return filtredCoordinate.get(0);
+        return filtredPartnerLocation.get(0);
     }
 
-    public List<Coordinate> findNearestCoordinatesFromAnPointWithRange(Double lng, Double lat) {
+    public List<PartnerLocation> findNearestCoordinatesFromAnPointWithRange(Double lng, Double lat) {
         return coordinateRepository.findNearestCoordinatesFromAnPointWithRange(lng, lat, MAXIMUM_RANGE);
     }
 }
