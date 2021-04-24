@@ -1,21 +1,29 @@
 package com.thejaum.challenge.partner.business;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
 import com.thejaum.challenge.partner.dto.PartnerDTO;
 import com.thejaum.challenge.partner.model.Partner;
 import com.thejaum.challenge.partner.repository.PartnerRepository;
 import com.thejaum.challenge.partner.transformer.PartnerTransformer;
+import org.locationtech.jts.geom.Point;
 import org.springframework.stereotype.Component;
 
+import java.util.Comparator;
+import java.util.List;
 import java.util.Optional;
 import java.util.UUID;
 
 @Component
 public class PartnerBusiness {
 
+    private ObjectMapper objectMapper;
     private PartnerRepository partnerRepository;
     private PartnerTransformer partnerTransformer;
 
-    public PartnerBusiness(PartnerRepository partnerRepository, PartnerTransformer partnerTransformer) {
+    private final Long MAXIMUM_RANGE=1000L;
+
+    public PartnerBusiness(ObjectMapper objectMapper, PartnerRepository partnerRepository, PartnerTransformer partnerTransformer) {
+        this.objectMapper = objectMapper;
         this.partnerRepository = partnerRepository;
         this.partnerTransformer = partnerTransformer;
     }
@@ -32,6 +40,12 @@ public class PartnerBusiness {
         return null;
     }
 
+    public List<Partner> findNearestCoordinatesFromAnPointWithRange(Double lng, Double lat) {
+        return partnerRepository.findNearestCoordinatesFromAnPointWithRange(lng, lat, MAXIMUM_RANGE);
+    }
 
-
+    public Partner extractClosestPartnerByAddress(List<Partner> partners, Point point){
+        Optional<Partner> closestPartner = partners.stream().min(Comparator.comparing(partner -> partner.getAddress().distance(point)));
+        return closestPartner.get();
+    }
 }

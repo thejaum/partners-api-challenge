@@ -40,10 +40,10 @@ public class Partner {
     @Column(unique=true)
     private String document;
 
-//    @Column(name = "address", columnDefinition = "Geometry", nullable = true)
-//    private Geometry address;
-//
-//    @Column(name = "coverage_area", columnDefinition = "Geometry", nullable = true)
-//    private Geometry coverageArea;
+    @Column(name = "address", columnDefinition = "Geometry", nullable = true)
+    private Geometry address;
+
+    @Column(name = "coverage_area", columnDefinition = "Geometry", nullable = true)
+    private Geometry coverageArea;
 
 }

@@ -1,7 +1,7 @@
 package com.thejaum.challenge.partner.controller;
 
 
-import com.thejaum.challenge.partner.model.PartnerLocation;
+import com.thejaum.challenge.partner.dto.PartnerGeoDTO;
 import com.thejaum.challenge.partner.service.PartnerEngineService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.util.List;
+import java.io.IOException;
 
 @RestController
 @RequestMapping(value = "/v1/partners")
@@ -22,8 +22,8 @@ public class PartnerEngineController {
     }
 
     @GetMapping
-    public ResponseEntity<List<PartnerLocation>> searchNearest(@RequestParam(value = "long", required = true) Double lng,
-                                                               @RequestParam(value = "lat", required = true) Double lat) {
+    public ResponseEntity<PartnerGeoDTO> searchNearest(@RequestParam(value = "long", required = true) Double lng,
+                                                       @RequestParam(value = "lat", required = true) Double lat) throws IOException {
         return ResponseEntity.ok(partnerEngineService.findNearestPartner(lng,lat));
     }
 }

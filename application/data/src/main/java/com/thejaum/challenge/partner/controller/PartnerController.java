@@ -1,6 +1,6 @@
 package com.thejaum.challenge.partner.controller;
 
-import com.thejaum.challenge.partner.dto.PartnerLocationsDTO;
+import com.thejaum.challenge.partner.dto.PartnerGeoDTO;
 import com.thejaum.challenge.partner.service.PartnerService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -19,12 +19,12 @@ public class PartnerController {
     }
 
     @GetMapping(value = "/{id}")
-    public ResponseEntity<PartnerLocationsDTO> findById(@PathVariable UUID id) throws IOException {
+    public ResponseEntity<PartnerGeoDTO> findById(@PathVariable UUID id) throws IOException {
         return ResponseEntity.ok(partnerService.findPartnerAndCoordinatesByPartnerId(id));
     }
 
     @PostMapping
-    public ResponseEntity<PartnerLocationsDTO> create(@RequestBody PartnerLocationsDTO partnerLocationsDTO) throws IOException {
-        return ResponseEntity.ok(partnerService.registerNewPartner(partnerLocationsDTO));
+    public ResponseEntity<PartnerGeoDTO> create(@RequestBody PartnerGeoDTO partnerGeoDTO) throws IOException {
+        return ResponseEntity.ok(partnerService.registerNewPartner(partnerGeoDTO));
     }
 }

@@ -24,7 +24,7 @@ public abstract class BaseTransformer<DTO, ENTITY>{
         return entity;
     }
 
-    private ModelMapper getModelMapper() {
+    public ModelMapper getModelMapper() {
         ModelMapper model = new ModelMapper();
         model.getConfiguration().setPropertyCondition(Conditions.isNotNull());
         model.getConfiguration().setMatchingStrategy(MatchingStrategies.LOOSE);

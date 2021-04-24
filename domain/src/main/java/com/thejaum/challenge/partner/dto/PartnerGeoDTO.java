@@ -1,17 +1,20 @@
 package com.thejaum.challenge.partner.dto;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import lombok.*;
-import org.locationtech.jts.geom.Geometry;
+import com.thejaum.challenge.partner.model.Partner;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.EqualsAndHashCode;
+import lombok.NoArgsConstructor;
+import org.geojson.GeoJsonObject;
 
 import java.util.UUID;
 
 @Data
-@Builder
 @EqualsAndHashCode
 @NoArgsConstructor
 @AllArgsConstructor
-public class PartnerDTO {
+public class PartnerGeoDTO {
 
     @JsonIgnore
     private UUID id;
@@ -22,8 +25,7 @@ public class PartnerDTO {
 
     private String document;
 
-    private Geometry address;
+    private GeoJsonObject address;
 
-    private Geometry coverageArea;
-
+    private GeoJsonObject coverageArea;
 }
