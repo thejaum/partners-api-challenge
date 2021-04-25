@@ -38,6 +38,11 @@ public class PartnerBusiness {
         return partner;
     }
 
+    public Optional<Partner> findByDocument(String document){
+        Optional<Partner> partner = partnerRepository.findByDocument(document);
+        return partner;
+    }
+
     public List<Partner> findNearestCoordinatesFromAnPointWithRange(Double lng, Double lat) {
         return partnerRepository.findNearestCoordinatesFromAnPointWithRange(lng, lat, MAXIMUM_RANGE);
     }

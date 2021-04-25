@@ -3,6 +3,7 @@ package com.thejaum.challenge.partner.service;
 import com.thejaum.challenge.partner.business.PartnerBusiness;
 import com.thejaum.challenge.partner.dto.PartnerDTO;
 import com.thejaum.challenge.partner.dto.PartnerGeoDTO;
+import com.thejaum.challenge.partner.exception.AlreadyExistException;
 import com.thejaum.challenge.partner.exception.NotFoundException;
 import com.thejaum.challenge.partner.exception.WrongGeometryTypeException;
 import com.thejaum.challenge.partner.model.Partner;
@@ -30,6 +31,8 @@ public class PartnerService {
     //TODO Check unique document key and throw BadResquest.
     public PartnerGeoDTO registerNewPartner(PartnerGeoDTO partnerGeoDTO) throws IOException {
         log.info("Beginning to register a new Partner.");
+        if(partnerBusiness.findByDocument(partnerGeoDTO.getDocument()).isPresent())
+            throw new AlreadyExistException("Document already registered;");
         PartnerDTO partnerDTO = partnerTransformer.toDtoMapperFromGeo(partnerGeoDTO);
         if(!partnerDTO.getAddress().getGeometryType().equals(Geometry.TYPENAME_POINT))
             throw new WrongGeometryTypeException("Address must be a Point geometry type.");

@@ -7,6 +7,7 @@ import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
+import java.util.Optional;
 import java.util.UUID;
 
 @Repository
@@ -19,5 +20,7 @@ public interface PartnerRepository extends JpaRepository<Partner, UUID> {
             @Param("lng") Double lng,
             @Param("lat")  Double lat,
             @Param("range")  Long range);
+
+    Optional<Partner> findByDocument(String document);
 
 }
