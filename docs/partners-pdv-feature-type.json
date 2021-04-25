@@ -1,32 +1,33 @@
 {
-  "type": "FeatureCollection",
-  "features": [
+  "type":"FeatureCollection",
+  "features":[
     {
-      "type": "Feature",
-      "properties": {
-        "marker-symbol": "beer",
-        "marker-color": "#7e7e7e",
-        "marker-size": "medium"
+      "type":"Feature",
+      "properties":{
+        "marker-symbol":"beer",
+        "marker-color":"#b0d425",
+        "marker-size":"medium"
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
+      "geometry":{
+        "type":"Point",
+        "coordinates":[
           -43.297337,
           -23.013538
         ]
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "stroke-opacity": 1,
-        "stroke-width": 1,
-        "stroke": "#555555",
-        "fill-opacity": 0.5
+      "type":"Feature",
+      "properties":{
+        "stroke-opacity":1,
+        "stroke-width":1,
+        "fill":"#b0d425",
+        "stroke":"#555555",
+        "fill-opacity":0.5
       },
-      "geometry": {
-        "type": "MultiPolygon",
-        "coordinates": [
+      "geometry":{
+        "type":"MultiPolygon",
+        "coordinates":[
           [
             [
               [
@@ -147,31 +148,32 @@
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "marker-symbol": "beer",
-        "marker-color": "#7e7e7e",
-        "marker-size": "medium"
+      "type":"Feature",
+      "properties":{
+        "marker-symbol":"beer",
+        "marker-color":"#835eb4",
+        "marker-size":"medium"
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
+      "geometry":{
+        "type":"Point",
+        "coordinates":[
           -49.33425,
           -25.380995
         ]
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "stroke-opacity": 1,
-        "stroke-width": 1,
-        "stroke": "#555555",
-        "fill-opacity": 0.5
+      "type":"Feature",
+      "properties":{
+        "stroke-opacity":1,
+        "stroke-width":1,
+        "fill":"#835eb4",
+        "stroke":"#555555",
+        "fill-opacity":0.5
       },
-      "geometry": {
-        "type": "MultiPolygon",
-        "coordinates": [
+      "geometry":{
+        "type":"MultiPolygon",
+        "coordinates":[
           [
             [
               [
@@ -308,31 +310,32 @@
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "marker-symbol": "beer",
-        "marker-color": "#7e7e7e",
-        "marker-size": "medium"
+      "type":"Feature",
+      "properties":{
+        "marker-symbol":"beer",
+        "marker-color":"#5a3f60",
+        "marker-size":"medium"
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
+      "geometry":{
+        "type":"Point",
+        "coordinates":[
           -38.59826,
           -3.774186
         ]
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "stroke-opacity": 1,
-        "stroke-width": 1,
-        "stroke": "#555555",
-        "fill-opacity": 0.5
+      "type":"Feature",
+      "properties":{
+        "stroke-opacity":1,
+        "stroke-width":1,
+        "fill":"#5a3f60",
+        "stroke":"#555555",
+        "fill-opacity":0.5
       },
-      "geometry": {
-        "type": "MultiPolygon",
-        "coordinates": [
+      "geometry":{
+        "type":"MultiPolygon",
+        "coordinates":[
           [
             [
               [
@@ -465,31 +468,32 @@
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "marker-symbol": "beer",
-        "marker-color": "#7e7e7e",
-        "marker-size": "medium"
+      "type":"Feature",
+      "properties":{
+        "marker-symbol":"beer",
+        "marker-color":"#f8135b",
+        "marker-size":"medium"
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
+      "geometry":{
+        "type":"Point",
+        "coordinates":[
           -38.495586,
           -3.809936
         ]
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "stroke-opacity": 1,
-        "stroke-width": 1,
-        "stroke": "#555555",
-        "fill-opacity": 0.5
+      "type":"Feature",
+      "properties":{
+        "stroke-opacity":1,
+        "stroke-width":1,
+        "fill":"#f8135b",
+        "stroke":"#555555",
+        "fill-opacity":0.5
       },
-      "geometry": {
-        "type": "MultiPolygon",
-        "coordinates": [
+      "geometry":{
+        "type":"MultiPolygon",
+        "coordinates":[
           [
             [
               [
@@ -614,31 +618,32 @@
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "marker-symbol": "beer",
-        "marker-color": "#7e7e7e",
-        "marker-size": "medium"
+      "type":"Feature",
+      "properties":{
+        "marker-symbol":"beer",
+        "marker-color":"#261a86",
+        "marker-size":"medium"
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
+      "geometry":{
+        "type":"Point",
+        "coordinates":[
           -43.432034,
           -22.747707
         ]
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "stroke-opacity": 1,
-        "stroke-width": 1,
-        "stroke": "#555555",
-        "fill-opacity": 0.5
+      "type":"Feature",
+      "properties":{
+        "stroke-opacity":1,
+        "stroke-width":1,
+        "fill":"#261a86",
+        "stroke":"#555555",
+        "fill-opacity":0.5
       },
-      "geometry": {
-        "type": "MultiPolygon",
-        "coordinates": [
+      "geometry":{
+        "type":"MultiPolygon",
+        "coordinates":[
           [
             [
               [
@@ -691,31 +696,32 @@
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "marker-symbol": "beer",
-        "marker-color": "#7e7e7e",
-        "marker-size": "medium"
+      "type":"Feature",
+      "properties":{
+        "marker-symbol":"beer",
+        "marker-color":"#df2dae",
+        "marker-size":"medium"
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
+      "geometry":{
+        "type":"Point",
+        "coordinates":[
           -43.97662,
           -19.837042
         ]
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "stroke-opacity": 1,
-        "stroke-width": 1,
-        "stroke": "#555555",
-        "fill-opacity": 0.5
+      "type":"Feature",
+      "properties":{
+        "stroke-opacity":1,
+        "stroke-width":1,
+        "fill":"#df2dae",
+        "stroke":"#555555",
+        "fill-opacity":0.5
       },
-      "geometry": {
-        "type": "MultiPolygon",
-        "coordinates": [
+      "geometry":{
+        "type":"MultiPolygon",
+        "coordinates":[
           [
             [
               [
@@ -888,31 +894,32 @@
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "marker-symbol": "beer",
-        "marker-color": "#7e7e7e",
-        "marker-size": "medium"
+      "type":"Feature",
+      "properties":{
+        "marker-symbol":"beer",
+        "marker-color":"#a1b0c5",
+        "marker-size":"medium"
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
+      "geometry":{
+        "type":"Point",
+        "coordinates":[
           -46.57421,
           -21.785742
         ]
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "stroke-opacity": 1,
-        "stroke-width": 1,
-        "stroke": "#555555",
-        "fill-opacity": 0.5
+      "type":"Feature",
+      "properties":{
+        "stroke-opacity":1,
+        "stroke-width":1,
+        "fill":"#a1b0c5",
+        "stroke":"#555555",
+        "fill-opacity":0.5
       },
-      "geometry": {
-        "type": "MultiPolygon",
-        "coordinates": [
+      "geometry":{
+        "type":"MultiPolygon",
+        "coordinates":[
           [
             [
               [
@@ -1001,31 +1008,32 @@
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "marker-symbol": "beer",
-        "marker-color": "#7e7e7e",
-        "marker-size": "medium"
+      "type":"Feature",
+      "properties":{
+        "marker-symbol":"beer",
+        "marker-color":"#454622",
+        "marker-size":"medium"
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
+      "geometry":{
+        "type":"Point",
+        "coordinates":[
           -38.561737,
           -3.736494
         ]
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "stroke-opacity": 1,
-        "stroke-width": 1,
-        "stroke": "#555555",
-        "fill-opacity": 0.5
+      "type":"Feature",
+      "properties":{
+        "stroke-opacity":1,
+        "stroke-width":1,
+        "fill":"#454622",
+        "stroke":"#555555",
+        "fill-opacity":0.5
       },
-      "geometry": {
-        "type": "MultiPolygon",
-        "coordinates": [
+      "geometry":{
+        "type":"MultiPolygon",
+        "coordinates":[
           [
             [
               [
@@ -1174,31 +1182,32 @@
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "marker-symbol": "beer",
-        "marker-color": "#7e7e7e",
-        "marker-size": "medium"
+      "type":"Feature",
+      "properties":{
+        "marker-symbol":"beer",
+        "marker-color":"#4211fd",
+        "marker-size":"medium"
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
+      "geometry":{
+        "type":"Point",
+        "coordinates":[
           -46.66771,
           -23.659363
         ]
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "stroke-opacity": 1,
-        "stroke-width": 1,
-        "stroke": "#555555",
-        "fill-opacity": 0.5
+      "type":"Feature",
+      "properties":{
+        "stroke-opacity":1,
+        "stroke-width":1,
+        "fill":"#4211fd",
+        "stroke":"#555555",
+        "fill-opacity":0.5
       },
-      "geometry": {
-        "type": "MultiPolygon",
-        "coordinates": [
+      "geometry":{
+        "type":"MultiPolygon",
+        "coordinates":[
           [
             [
               [
@@ -1375,31 +1384,32 @@
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "marker-symbol": "beer",
-        "marker-color": "#7e7e7e",
-        "marker-size": "medium"
+      "type":"Feature",
+      "properties":{
+        "marker-symbol":"beer",
+        "marker-color":"#38e2bb",
+        "marker-size":"medium"
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
+      "geometry":{
+        "type":"Point",
+        "coordinates":[
           -49.192204,
           -25.378815
         ]
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "stroke-opacity": 1,
-        "stroke-width": 1,
-        "stroke": "#555555",
-        "fill-opacity": 0.5
+      "type":"Feature",
+      "properties":{
+        "stroke-opacity":1,
+        "stroke-width":1,
+        "fill":"#38e2bb",
+        "stroke":"#555555",
+        "fill-opacity":0.5
       },
-      "geometry": {
-        "type": "MultiPolygon",
-        "coordinates": [
+      "geometry":{
+        "type":"MultiPolygon",
+        "coordinates":[
           [
             [
               [
@@ -1512,31 +1522,32 @@
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "marker-symbol": "beer",
-        "marker-color": "#7e7e7e",
-        "marker-size": "medium"
+      "type":"Feature",
+      "properties":{
+        "marker-symbol":"beer",
+        "marker-color":"#9fca82",
+        "marker-size":"medium"
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
+      "geometry":{
+        "type":"Point",
+        "coordinates":[
           -46.720875,
           -23.584986
         ]
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "stroke-opacity": 1,
-        "stroke-width": 1,
-        "stroke": "#555555",
-        "fill-opacity": 0.5
+      "type":"Feature",
+      "properties":{
+        "stroke-opacity":1,
+        "stroke-width":1,
+        "fill":"#9fca82",
+        "stroke":"#555555",
+        "fill-opacity":0.5
       },
-      "geometry": {
-        "type": "MultiPolygon",
-        "coordinates": [
+      "geometry":{
+        "type":"MultiPolygon",
+        "coordinates":[
           [
             [
               [
@@ -1544,48 +1555,48 @@
                 -23.61731
               ],
               [
-                -46.69073,
-                -23.58475
-              ],
-              [
-                -46.70335,
-                -23.56973
-              ],
-              [
-                -46.70644,
-                -23.56163
-              ],
-              [
-                -46.73433,
-                -23.54613
-              ],
-              [
-                -46.76326,
-                -23.57079
-              ],
-              [
-                -46.7721,
-                -23.58224
-              ],
-              [
-                -46.76999,
-                -23.5987
-              ],
-              [
-                -46.7557,
-                -23.60855
-              ],
-              [
-                -46.74618,
-                -23.60575
+                -46.72086,
+                -23.63517
               ],
               [
                 -46.7357,
                 -23.62738
               ],
               [
-                -46.72086,
-                -23.63517
+                -46.74618,
+                -23.60575
+              ],
+              [
+                -46.7557,
+                -23.60855
+              ],
+              [
+                -46.76999,
+                -23.5987
+              ],
+              [
+                -46.7721,
+                -23.58224
+              ],
+              [
+                -46.76326,
+                -23.57079
+              ],
+              [
+                -46.73433,
+                -23.54613
+              ],
+              [
+                -46.70644,
+                -23.56163
+              ],
+              [
+                -46.70335,
+                -23.56973
+              ],
+              [
+                -46.69073,
+                -23.58475
               ],
               [
                 -46.70103,
@@ -1597,31 +1608,32 @@
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "marker-symbol": "beer",
-        "marker-color": "#7e7e7e",
-        "marker-size": "medium"
+      "type":"Feature",
+      "properties":{
+        "marker-symbol":"beer",
+        "marker-color":"#d08ee6",
+        "marker-size":"medium"
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
+      "geometry":{
+        "type":"Point",
+        "coordinates":[
           -46.588654,
           -23.709635
         ]
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "stroke-opacity": 1,
-        "stroke-width": 1,
-        "stroke": "#555555",
-        "fill-opacity": 0.5
+      "type":"Feature",
+      "properties":{
+        "stroke-opacity":1,
+        "stroke-width":1,
+        "fill":"#d08ee6",
+        "stroke":"#555555",
+        "fill-opacity":0.5
       },
-      "geometry": {
-        "type": "MultiPolygon",
-        "coordinates": [
+      "geometry":{
+        "type":"MultiPolygon",
+        "coordinates":[
           [
             [
               [
@@ -1710,31 +1722,32 @@
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "marker-symbol": "beer",
-        "marker-color": "#7e7e7e",
-        "marker-size": "medium"
+      "type":"Feature",
+      "properties":{
+        "marker-symbol":"beer",
+        "marker-color":"#9bc575",
+        "marker-size":"medium"
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
+      "geometry":{
+        "type":"Point",
+        "coordinates":[
           -46.693768,
           -23.569365
         ]
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "stroke-opacity": 1,
-        "stroke-width": 1,
-        "stroke": "#555555",
-        "fill-opacity": 0.5
+      "type":"Feature",
+      "properties":{
+        "stroke-opacity":1,
+        "stroke-width":1,
+        "fill":"#9bc575",
+        "stroke":"#555555",
+        "fill-opacity":0.5
       },
-      "geometry": {
-        "type": "MultiPolygon",
-        "coordinates": [
+      "geometry":{
+        "type":"MultiPolygon",
+        "coordinates":[
           [
             [
               [
@@ -1867,31 +1880,32 @@
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "marker-symbol": "beer",
-        "marker-color": "#7e7e7e",
-        "marker-size": "medium"
+      "type":"Feature",
+      "properties":{
+        "marker-symbol":"beer",
+        "marker-color":"#17e240",
+        "marker-size":"medium"
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
+      "geometry":{
+        "type":"Point",
+        "coordinates":[
           -43.931644,
           -19.934
         ]
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "stroke-opacity": 1,
-        "stroke-width": 1,
-        "stroke": "#555555",
-        "fill-opacity": 0.5
+      "type":"Feature",
+      "properties":{
+        "stroke-opacity":1,
+        "stroke-width":1,
+        "fill":"#17e240",
+        "stroke":"#555555",
+        "fill-opacity":0.5
       },
-      "geometry": {
-        "type": "MultiPolygon",
-        "coordinates": [
+      "geometry":{
+        "type":"MultiPolygon",
+        "coordinates":[
           [
             [
               [
@@ -1992,31 +2006,32 @@
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "marker-symbol": "beer",
-        "marker-color": "#7e7e7e",
-        "marker-size": "medium"
+      "type":"Feature",
+      "properties":{
+        "marker-symbol":"beer",
+        "marker-color":"#b28cbd",
+        "marker-size":"medium"
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
+      "geometry":{
+        "type":"Point",
+        "coordinates":[
           -46.474983,
           -23.610245
         ]
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "stroke-opacity": 1,
-        "stroke-width": 1,
-        "stroke": "#555555",
-        "fill-opacity": 0.5
+      "type":"Feature",
+      "properties":{
+        "stroke-opacity":1,
+        "stroke-width":1,
+        "fill":"#b28cbd",
+        "stroke":"#555555",
+        "fill-opacity":0.5
       },
-      "geometry": {
-        "type": "MultiPolygon",
-        "coordinates": [
+      "geometry":{
+        "type":"MultiPolygon",
+        "coordinates":[
           [
             [
               [
@@ -2121,31 +2136,32 @@
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "marker-symbol": "beer",
-        "marker-color": "#7e7e7e",
-        "marker-size": "medium"
+      "type":"Feature",
+      "properties":{
+        "marker-symbol":"beer",
+        "marker-color":"#2daba0",
+        "marker-size":"medium"
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
+      "geometry":{
+        "type":"Point",
+        "coordinates":[
           -43.32561,
           -22.851507
         ]
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "stroke-opacity": 1,
-        "stroke-width": 1,
-        "stroke": "#555555",
-        "fill-opacity": 0.5
+      "type":"Feature",
+      "properties":{
+        "stroke-opacity":1,
+        "stroke-width":1,
+        "fill":"#2daba0",
+        "stroke":"#555555",
+        "fill-opacity":0.5
       },
-      "geometry": {
-        "type": "MultiPolygon",
-        "coordinates": [
+      "geometry":{
+        "type":"MultiPolygon",
+        "coordinates":[
           [
             [
               [
@@ -2153,64 +2169,64 @@
                 -22.82956
               ],
               [
-                -43.34994,
-                -22.85519
-              ],
-              [
-                -43.33792,
-                -22.8786
-              ],
-              [
-                -43.32402,
-                -22.88366
-              ],
-              [
-                -43.30582,
-                -22.88888
-              ],
-              [
-                -43.29346,
-                -22.88429
-              ],
-              [
-                -43.29638,
-                -22.8729
-              ],
-              [
-                -43.30599,
-                -22.85582
-              ],
-              [
-                -43.29741,
-                -22.85282
-              ],
-              [
-                -43.28763,
-                -22.83747
-              ],
-              [
-                -43.27149,
-                -22.84158
-              ],
-              [
-                -43.26325,
-                -22.83605
-              ],
-              [
-                -43.28007,
-                -22.82481
-              ],
-              [
-                -43.29449,
-                -22.81991
+                -43.31561,
+                -22.82639
               ],
               [
                 -43.30445,
                 -22.81912
               ],
               [
-                -43.31561,
-                -22.82639
+                -43.29449,
+                -22.81991
+              ],
+              [
+                -43.28007,
+                -22.82481
+              ],
+              [
+                -43.26325,
+                -22.83605
+              ],
+              [
+                -43.27149,
+                -22.84158
+              ],
+              [
+                -43.28763,
+                -22.83747
+              ],
+              [
+                -43.29741,
+                -22.85282
+              ],
+              [
+                -43.30599,
+                -22.85582
+              ],
+              [
+                -43.29638,
+                -22.8729
+              ],
+              [
+                -43.29346,
+                -22.88429
+              ],
+              [
+                -43.30582,
+                -22.88888
+              ],
+              [
+                -43.32402,
+                -22.88366
+              ],
+              [
+                -43.33792,
+                -22.8786
+              ],
+              [
+                -43.34994,
+                -22.85519
               ],
               [
                 -43.34496,
@@ -2222,31 +2238,32 @@
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "marker-symbol": "beer",
-        "marker-color": "#7e7e7e",
-        "marker-size": "medium"
+      "type":"Feature",
+      "properties":{
+        "marker-symbol":"beer",
+        "marker-color":"#d270ac",
+        "marker-size":"medium"
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
+      "geometry":{
+        "type":"Point",
+        "coordinates":[
           -43.957893,
           -19.957102
         ]
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "stroke-opacity": 1,
-        "stroke-width": 1,
-        "stroke": "#555555",
-        "fill-opacity": 0.5
+      "type":"Feature",
+      "properties":{
+        "stroke-opacity":1,
+        "stroke-width":1,
+        "fill":"#d270ac",
+        "stroke":"#555555",
+        "fill-opacity":0.5
       },
-      "geometry": {
-        "type": "MultiPolygon",
-        "coordinates": [
+      "geometry":{
+        "type":"MultiPolygon",
+        "coordinates":[
           [
             [
               [
@@ -2363,31 +2380,32 @@
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "marker-symbol": "beer",
-        "marker-color": "#7e7e7e",
-        "marker-size": "medium"
+      "type":"Feature",
+      "properties":{
+        "marker-symbol":"beer",
+        "marker-color":"#6174c9",
+        "marker-size":"medium"
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
+      "geometry":{
+        "type":"Point",
+        "coordinates":[
           -46.689537,
           -23.560505
         ]
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "stroke-opacity": 1,
-        "stroke-width": 1,
-        "stroke": "#555555",
-        "fill-opacity": 0.5
+      "type":"Feature",
+      "properties":{
+        "stroke-opacity":1,
+        "stroke-width":1,
+        "fill":"#6174c9",
+        "stroke":"#555555",
+        "fill-opacity":0.5
       },
-      "geometry": {
-        "type": "MultiPolygon",
-        "coordinates": [
+      "geometry":{
+        "type":"MultiPolygon",
+        "coordinates":[
           [
             [
               [
@@ -2836,31 +2854,32 @@
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "marker-symbol": "beer",
-        "marker-color": "#7e7e7e",
-        "marker-size": "medium"
+      "type":"Feature",
+      "properties":{
+        "marker-symbol":"beer",
+        "marker-color":"#60d11b",
+        "marker-size":"medium"
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
+      "geometry":{
+        "type":"Point",
+        "coordinates":[
           -47.896477,
           -21.99916
         ]
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "stroke-opacity": 1,
-        "stroke-width": 1,
-        "stroke": "#555555",
-        "fill-opacity": 0.5
+      "type":"Feature",
+      "properties":{
+        "stroke-opacity":1,
+        "stroke-width":1,
+        "fill":"#60d11b",
+        "stroke":"#555555",
+        "fill-opacity":0.5
       },
-      "geometry": {
-        "type": "MultiPolygon",
-        "coordinates": [
+      "geometry":{
+        "type":"MultiPolygon",
+        "coordinates":[
           [
             [
               [
@@ -2917,31 +2936,32 @@
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "marker-symbol": "beer",
-        "marker-color": "#7e7e7e",
-        "marker-size": "medium"
+      "type":"Feature",
+      "properties":{
+        "marker-symbol":"beer",
+        "marker-color":"#bdb4a5",
+        "marker-size":"medium"
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
+      "geometry":{
+        "type":"Point",
+        "coordinates":[
           -49.28538,
           -25.485348
         ]
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "stroke-opacity": 1,
-        "stroke-width": 1,
-        "stroke": "#555555",
-        "fill-opacity": 0.5
+      "type":"Feature",
+      "properties":{
+        "stroke-opacity":1,
+        "stroke-width":1,
+        "fill":"#bdb4a5",
+        "stroke":"#555555",
+        "fill-opacity":0.5
       },
-      "geometry": {
-        "type": "MultiPolygon",
-        "coordinates": [
+      "geometry":{
+        "type":"MultiPolygon",
+        "coordinates":[
           [
             [
               [
@@ -2949,160 +2969,160 @@
                 -25.54249
               ],
               [
-                -49.29967,
-                -25.54481
-              ],
-              [
-                -49.28197,
-                -25.53951
-              ],
-              [
-                -49.22871,
-                -25.52538
-              ],
-              [
-                -49.22614,
-                -25.5241
-              ],
-              [
-                -49.2088,
-                -25.5016
-              ],
-              [
-                -49.21829,
-                -25.48629
-              ],
-              [
-                -49.22284,
-                -25.48029
-              ],
-              [
-                -49.25064,
-                -25.44236
-              ],
-              [
-                -49.25199,
-                -25.4403
-              ],
-              [
-                -49.25221,
-                -25.43875
-              ],
-              [
-                -49.25356,
-                -25.43612
-              ],
-              [
-                -49.26125,
-                -25.43365
-              ],
-              [
-                -49.26114,
-                -25.43246
-              ],
-              [
-                -49.2625,
-                -25.42985
-              ],
-              [
-                -49.26439,
-                -25.42647
-              ],
-              [
-                -49.27109,
-                -25.42667
-              ],
-              [
-                -49.27268,
-                -25.42699
-              ],
-              [
-                -49.27351,
-                -25.42712
-              ],
-              [
-                -49.27428,
-                -25.42656
-              ],
-              [
-                -49.27473,
-                -25.42669
-              ],
-              [
-                -49.27471,
-                -25.42689
-              ],
-              [
-                -49.27555,
-                -25.42663
-              ],
-              [
-                -49.27829,
-                -25.42566
-              ],
-              [
-                -49.28652,
-                -25.42889
-              ],
-              [
-                -49.29466,
-                -25.43213
-              ],
-              [
-                -49.31072,
-                -25.4384
-              ],
-              [
-                -49.31769,
-                -25.44009
-              ],
-              [
-                -49.32688,
-                -25.43805
-              ],
-              [
-                -49.33261,
-                -25.44002
-              ],
-              [
-                -49.34405,
-                -25.44304
-              ],
-              [
-                -49.35227,
-                -25.44581
-              ],
-              [
-                -49.35249,
-                -25.44925
-              ],
-              [
-                -49.36261,
-                -25.45173
-              ],
-              [
-                -49.35302,
-                -25.4751
-              ],
-              [
-                -49.34427,
-                -25.49493
-              ],
-              [
-                -49.34255,
-                -25.50361
-              ],
-              [
-                -49.335,
-                -25.52158
+                -49.31852,
+                -25.53444
               ],
               [
                 -49.3283,
                 -25.52917
               ],
               [
-                -49.31852,
-                -25.53444
+                -49.335,
+                -25.52158
+              ],
+              [
+                -49.34255,
+                -25.50361
+              ],
+              [
+                -49.34427,
+                -25.49493
+              ],
+              [
+                -49.35302,
+                -25.4751
+              ],
+              [
+                -49.36261,
+                -25.45173
+              ],
+              [
+                -49.35249,
+                -25.44925
+              ],
+              [
+                -49.35227,
+                -25.44581
+              ],
+              [
+                -49.34405,
+                -25.44304
+              ],
+              [
+                -49.33261,
+                -25.44002
+              ],
+              [
+                -49.32688,
+                -25.43805
+              ],
+              [
+                -49.31769,
+                -25.44009
+              ],
+              [
+                -49.31072,
+                -25.4384
+              ],
+              [
+                -49.29466,
+                -25.43213
+              ],
+              [
+                -49.28652,
+                -25.42889
+              ],
+              [
+                -49.27829,
+                -25.42566
+              ],
+              [
+                -49.27555,
+                -25.42663
+              ],
+              [
+                -49.27471,
+                -25.42689
+              ],
+              [
+                -49.27473,
+                -25.42669
+              ],
+              [
+                -49.27428,
+                -25.42656
+              ],
+              [
+                -49.27351,
+                -25.42712
+              ],
+              [
+                -49.27268,
+                -25.42699
+              ],
+              [
+                -49.27109,
+                -25.42667
+              ],
+              [
+                -49.26439,
+                -25.42647
+              ],
+              [
+                -49.2625,
+                -25.42985
+              ],
+              [
+                -49.26114,
+                -25.43246
+              ],
+              [
+                -49.26125,
+                -25.43365
+              ],
+              [
+                -49.25356,
+                -25.43612
+              ],
+              [
+                -49.25221,
+                -25.43875
+              ],
+              [
+                -49.25199,
+                -25.4403
+              ],
+              [
+                -49.25064,
+                -25.44236
+              ],
+              [
+                -49.22284,
+                -25.48029
+              ],
+              [
+                -49.21829,
+                -25.48629
+              ],
+              [
+                -49.2088,
+                -25.5016
+              ],
+              [
+                -49.22614,
+                -25.5241
+              ],
+              [
+                -49.22871,
+                -25.52538
+              ],
+              [
+                -49.28197,
+                -25.53951
+              ],
+              [
+                -49.29967,
+                -25.54481
               ],
               [
                 -49.30925,
@@ -3114,31 +3134,32 @@
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "marker-symbol": "beer",
-        "marker-color": "#7e7e7e",
-        "marker-size": "medium"
+      "type":"Feature",
+      "properties":{
+        "marker-symbol":"beer",
+        "marker-color":"#466221",
+        "marker-size":"medium"
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
+      "geometry":{
+        "type":"Point",
+        "coordinates":[
           -43.908115,
           -19.925934
         ]
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "stroke-opacity": 1,
-        "stroke-width": 1,
-        "stroke": "#555555",
-        "fill-opacity": 0.5
+      "type":"Feature",
+      "properties":{
+        "stroke-opacity":1,
+        "stroke-width":1,
+        "fill":"#466221",
+        "stroke":"#555555",
+        "fill-opacity":0.5
       },
-      "geometry": {
-        "type": "MultiPolygon",
-        "coordinates": [
+      "geometry":{
+        "type":"MultiPolygon",
+        "coordinates":[
           [
             [
               [
@@ -3419,31 +3440,32 @@
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "marker-symbol": "beer",
-        "marker-color": "#7e7e7e",
-        "marker-size": "medium"
+      "type":"Feature",
+      "properties":{
+        "marker-symbol":"beer",
+        "marker-color":"#0b65a5",
+        "marker-size":"medium"
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
+      "geometry":{
+        "type":"Point",
+        "coordinates":[
           -43.193417,
           -22.958384
         ]
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "stroke-opacity": 1,
-        "stroke-width": 1,
-        "stroke": "#555555",
-        "fill-opacity": 0.5
+      "type":"Feature",
+      "properties":{
+        "stroke-opacity":1,
+        "stroke-width":1,
+        "fill":"#0b65a5",
+        "stroke":"#555555",
+        "fill-opacity":0.5
       },
-      "geometry": {
-        "type": "MultiPolygon",
-        "coordinates": [
+      "geometry":{
+        "type":"MultiPolygon",
+        "coordinates":[
           [
             [
               [
@@ -3532,31 +3554,32 @@
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "marker-symbol": "beer",
-        "marker-color": "#7e7e7e",
-        "marker-size": "medium"
+      "type":"Feature",
+      "properties":{
+        "marker-symbol":"beer",
+        "marker-color":"#a00983",
+        "marker-size":"medium"
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
+      "geometry":{
+        "type":"Point",
+        "coordinates":[
           -46.61038,
           -23.49156
         ]
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "stroke-opacity": 1,
-        "stroke-width": 1,
-        "stroke": "#555555",
-        "fill-opacity": 0.5
+      "type":"Feature",
+      "properties":{
+        "stroke-opacity":1,
+        "stroke-width":1,
+        "fill":"#a00983",
+        "stroke":"#555555",
+        "fill-opacity":0.5
       },
-      "geometry": {
-        "type": "MultiPolygon",
-        "coordinates": [
+      "geometry":{
+        "type":"MultiPolygon",
+        "coordinates":[
           [
             [
               [
@@ -3564,120 +3587,120 @@
                 -23.5078
               ],
               [
-                -46.67862,
-                -23.51268
-              ],
-              [
-                -46.68004,
-                -23.52354
-              ],
-              [
-                -46.66293,
-                -23.5321
-              ],
-              [
-                -46.6611,
-                -23.53215
-              ],
-              [
-                -46.66013,
-                -23.52607
-              ],
-              [
-                -46.65021,
-                -23.52877
-              ],
-              [
-                -46.64539,
-                -23.52823
-              ],
-              [
-                -46.64178,
-                -23.53021
-              ],
-              [
-                -46.63906,
-                -23.53368
-              ],
-              [
-                -46.63326,
-                -23.53558
-              ],
-              [
-                -46.63353,
-                -23.53909
-              ],
-              [
-                -46.62675,
-                -23.54266
-              ],
-              [
-                -46.6253,
-                -23.55157
-              ],
-              [
-                -46.6115,
-                -23.55316
-              ],
-              [
-                -46.59841,
-                -23.54581
-              ],
-              [
-                -46.54846,
-                -23.53519
-              ],
-              [
-                -46.5591,
-                -23.5237
-              ],
-              [
-                -46.55876,
-                -23.49756
-              ],
-              [
-                -46.5606,
-                -23.47478
-              ],
-              [
-                -46.57088,
-                -23.46818
-              ],
-              [
-                -46.5712,
-                -23.45923
-              ],
-              [
-                -46.60212,
-                -23.45708
-              ],
-              [
-                -46.61107,
-                -23.44486
-              ],
-              [
-                -46.64785,
-                -23.45883
-              ],
-              [
-                -46.67251,
-                -23.47665
-              ],
-              [
-                -46.67486,
-                -23.48139
-              ],
-              [
-                -46.67934,
-                -23.48293
+                -46.68454,
+                -23.49686
               ],
               [
                 -46.68554,
                 -23.49125
               ],
               [
-                -46.68454,
-                -23.49686
+                -46.67934,
+                -23.48293
+              ],
+              [
+                -46.67486,
+                -23.48139
+              ],
+              [
+                -46.67251,
+                -23.47665
+              ],
+              [
+                -46.64785,
+                -23.45883
+              ],
+              [
+                -46.61107,
+                -23.44486
+              ],
+              [
+                -46.60212,
+                -23.45708
+              ],
+              [
+                -46.5712,
+                -23.45923
+              ],
+              [
+                -46.57088,
+                -23.46818
+              ],
+              [
+                -46.5606,
+                -23.47478
+              ],
+              [
+                -46.55876,
+                -23.49756
+              ],
+              [
+                -46.5591,
+                -23.5237
+              ],
+              [
+                -46.54846,
+                -23.53519
+              ],
+              [
+                -46.59841,
+                -23.54581
+              ],
+              [
+                -46.6115,
+                -23.55316
+              ],
+              [
+                -46.6253,
+                -23.55157
+              ],
+              [
+                -46.62675,
+                -23.54266
+              ],
+              [
+                -46.63353,
+                -23.53909
+              ],
+              [
+                -46.63326,
+                -23.53558
+              ],
+              [
+                -46.63906,
+                -23.53368
+              ],
+              [
+                -46.64178,
+                -23.53021
+              ],
+              [
+                -46.64539,
+                -23.52823
+              ],
+              [
+                -46.65021,
+                -23.52877
+              ],
+              [
+                -46.66013,
+                -23.52607
+              ],
+              [
+                -46.6611,
+                -23.53215
+              ],
+              [
+                -46.66293,
+                -23.5321
+              ],
+              [
+                -46.68004,
+                -23.52354
+              ],
+              [
+                -46.67862,
+                -23.51268
               ],
               [
                 -46.69102,
@@ -3689,31 +3712,32 @@
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "marker-symbol": "beer",
-        "marker-color": "#7e7e7e",
-        "marker-size": "medium"
+      "type":"Feature",
+      "properties":{
+        "marker-symbol":"beer",
+        "marker-color":"#564a5b",
+        "marker-size":"medium"
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
+      "geometry":{
+        "type":"Point",
+        "coordinates":[
           -43.406246,
           -22.883915
         ]
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "stroke-opacity": 1,
-        "stroke-width": 1,
-        "stroke": "#555555",
-        "fill-opacity": 0.5
+      "type":"Feature",
+      "properties":{
+        "stroke-opacity":1,
+        "stroke-width":1,
+        "fill":"#564a5b",
+        "stroke":"#555555",
+        "fill-opacity":0.5
       },
-      "geometry": {
-        "type": "MultiPolygon",
-        "coordinates": [
+      "geometry":{
+        "type":"MultiPolygon",
+        "coordinates":[
           [
             [
               [
@@ -3830,31 +3854,32 @@
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "marker-symbol": "beer",
-        "marker-color": "#7e7e7e",
-        "marker-size": "medium"
+      "type":"Feature",
+      "properties":{
+        "marker-symbol":"beer",
+        "marker-color":"#0af05d",
+        "marker-size":"medium"
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
+      "geometry":{
+        "type":"Point",
+        "coordinates":[
           -43.35029,
           -22.957369
         ]
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "stroke-opacity": 1,
-        "stroke-width": 1,
-        "stroke": "#555555",
-        "fill-opacity": 0.5
+      "type":"Feature",
+      "properties":{
+        "stroke-opacity":1,
+        "stroke-width":1,
+        "fill":"#0af05d",
+        "stroke":"#555555",
+        "fill-opacity":0.5
       },
-      "geometry": {
-        "type": "MultiPolygon",
-        "coordinates": [
+      "geometry":{
+        "type":"MultiPolygon",
+        "coordinates":[
           [
             [
               [
@@ -4027,31 +4052,32 @@
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "marker-symbol": "beer",
-        "marker-color": "#7e7e7e",
-        "marker-size": "medium"
+      "type":"Feature",
+      "properties":{
+        "marker-symbol":"beer",
+        "marker-color":"#dc7863",
+        "marker-size":"medium"
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
+      "geometry":{
+        "type":"Point",
+        "coordinates":[
           -43.945408,
           -19.860992
         ]
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "stroke-opacity": 1,
-        "stroke-width": 1,
-        "stroke": "#555555",
-        "fill-opacity": 0.5
+      "type":"Feature",
+      "properties":{
+        "stroke-opacity":1,
+        "stroke-width":1,
+        "fill":"#dc7863",
+        "stroke":"#555555",
+        "fill-opacity":0.5
       },
-      "geometry": {
-        "type": "MultiPolygon",
-        "coordinates": [
+      "geometry":{
+        "type":"MultiPolygon",
+        "coordinates":[
           [
             [
               [
@@ -4059,188 +4085,188 @@
                 -19.86201
               ],
               [
-                -43.95623,
-                -19.86576
-              ],
-              [
-                -43.95543,
-                -19.86774
-              ],
-              [
-                -43.961,
-                -19.87436
-              ],
-              [
-                -43.9671,
-                -19.88219
-              ],
-              [
-                -43.96427,
-                -19.88292
-              ],
-              [
-                -43.9616,
-                -19.88259
-              ],
-              [
-                -43.95114,
-                -19.87912
-              ],
-              [
-                -43.95041,
-                -19.88619
-              ],
-              [
-                -43.94979,
-                -19.88859
-              ],
-              [
-                -43.94659,
-                -19.88784
-              ],
-              [
-                -43.94109,
-                -19.88695
-              ],
-              [
-                -43.93449,
-                -19.88518
-              ],
-              [
-                -43.9278,
-                -19.88494
-              ],
-              [
-                -43.92477,
-                -19.88306
-              ],
-              [
-                -43.92243,
-                -19.87981
-              ],
-              [
-                -43.92118,
-                -19.87767
-              ],
-              [
-                -43.91565,
-                -19.87141
-              ],
-              [
-                -43.91472,
-                -19.87063
-              ],
-              [
-                -43.91057,
-                -19.87073
-              ],
-              [
-                -43.9099,
-                -19.8704
-              ],
-              [
-                -43.90938,
-                -19.87014
-              ],
-              [
-                -43.9089,
-                -19.86976
-              ],
-              [
-                -43.90848,
-                -19.86949
-              ],
-              [
-                -43.90822,
-                -19.86952
-              ],
-              [
-                -43.90705,
-                -19.86874
-              ],
-              [
-                -43.90439,
-                -19.86939
-              ],
-              [
-                -43.90398,
-                -19.8687
-              ],
-              [
-                -43.90437,
-                -19.86715
-              ],
-              [
-                -43.90498,
-                -19.86276
-              ],
-              [
-                -43.90595,
-                -19.85834
-              ],
-              [
-                -43.91054,
-                -19.8566
-              ],
-              [
-                -43.90917,
-                -19.84998
-              ],
-              [
-                -43.90659,
-                -19.84724
-              ],
-              [
-                -43.91724,
-                -19.83578
-              ],
-              [
-                -43.93063,
-                -19.83061
-              ],
-              [
-                -43.93992,
-                -19.83527
-              ],
-              [
-                -43.93948,
-                -19.83817
-              ],
-              [
-                -43.93883,
-                -19.83897
-              ],
-              [
-                -43.93763,
-                -19.84046
-              ],
-              [
-                -43.9384,
-                -19.84191
-              ],
-              [
-                -43.94059,
-                -19.84583
-              ],
-              [
-                -43.94625,
-                -19.85289
-              ],
-              [
-                -43.95245,
-                -19.8522
-              ],
-              [
-                -43.95774,
-                -19.84984
+                -43.9596,
+                -19.85644
               ],
               [
                 -43.96303,
                 -19.84942
               ],
               [
-                -43.9596,
-                -19.85644
+                -43.95774,
+                -19.84984
+              ],
+              [
+                -43.95245,
+                -19.8522
+              ],
+              [
+                -43.94625,
+                -19.85289
+              ],
+              [
+                -43.94059,
+                -19.84583
+              ],
+              [
+                -43.9384,
+                -19.84191
+              ],
+              [
+                -43.93763,
+                -19.84046
+              ],
+              [
+                -43.93883,
+                -19.83897
+              ],
+              [
+                -43.93948,
+                -19.83817
+              ],
+              [
+                -43.93992,
+                -19.83527
+              ],
+              [
+                -43.93063,
+                -19.83061
+              ],
+              [
+                -43.91724,
+                -19.83578
+              ],
+              [
+                -43.90659,
+                -19.84724
+              ],
+              [
+                -43.90917,
+                -19.84998
+              ],
+              [
+                -43.91054,
+                -19.8566
+              ],
+              [
+                -43.90595,
+                -19.85834
+              ],
+              [
+                -43.90498,
+                -19.86276
+              ],
+              [
+                -43.90437,
+                -19.86715
+              ],
+              [
+                -43.90398,
+                -19.8687
+              ],
+              [
+                -43.90439,
+                -19.86939
+              ],
+              [
+                -43.90705,
+                -19.86874
+              ],
+              [
+                -43.90822,
+                -19.86952
+              ],
+              [
+                -43.90848,
+                -19.86949
+              ],
+              [
+                -43.9089,
+                -19.86976
+              ],
+              [
+                -43.90938,
+                -19.87014
+              ],
+              [
+                -43.9099,
+                -19.8704
+              ],
+              [
+                -43.91057,
+                -19.87073
+              ],
+              [
+                -43.91472,
+                -19.87063
+              ],
+              [
+                -43.91565,
+                -19.87141
+              ],
+              [
+                -43.92118,
+                -19.87767
+              ],
+              [
+                -43.92243,
+                -19.87981
+              ],
+              [
+                -43.92477,
+                -19.88306
+              ],
+              [
+                -43.9278,
+                -19.88494
+              ],
+              [
+                -43.93449,
+                -19.88518
+              ],
+              [
+                -43.94109,
+                -19.88695
+              ],
+              [
+                -43.94659,
+                -19.88784
+              ],
+              [
+                -43.94979,
+                -19.88859
+              ],
+              [
+                -43.95041,
+                -19.88619
+              ],
+              [
+                -43.95114,
+                -19.87912
+              ],
+              [
+                -43.9616,
+                -19.88259
+              ],
+              [
+                -43.96427,
+                -19.88292
+              ],
+              [
+                -43.9671,
+                -19.88219
+              ],
+              [
+                -43.961,
+                -19.87436
+              ],
+              [
+                -43.95543,
+                -19.86774
+              ],
+              [
+                -43.95623,
+                -19.86576
               ],
               [
                 -43.95831,
@@ -4252,31 +4278,32 @@
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "marker-symbol": "beer",
-        "marker-color": "#7e7e7e",
-        "marker-size": "medium"
+      "type":"Feature",
+      "properties":{
+        "marker-symbol":"beer",
+        "marker-color":"#d46491",
+        "marker-size":"medium"
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
+      "geometry":{
+        "type":"Point",
+        "coordinates":[
           -46.746166,
           -23.451038
         ]
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "stroke-opacity": 1,
-        "stroke-width": 1,
-        "stroke": "#555555",
-        "fill-opacity": 0.5
+      "type":"Feature",
+      "properties":{
+        "stroke-opacity":1,
+        "stroke-width":1,
+        "fill":"#d46491",
+        "stroke":"#555555",
+        "fill-opacity":0.5
       },
-      "geometry": {
-        "type": "MultiPolygon",
-        "coordinates": [
+      "geometry":{
+        "type":"MultiPolygon",
+        "coordinates":[
           [
             [
               [
@@ -4369,31 +4396,32 @@
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "marker-symbol": "beer",
-        "marker-color": "#7e7e7e",
-        "marker-size": "medium"
+      "type":"Feature",
+      "properties":{
+        "marker-symbol":"beer",
+        "marker-color":"#ae4078",
+        "marker-size":"medium"
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
+      "geometry":{
+        "type":"Point",
+        "coordinates":[
           -46.545303,
           -23.629513
         ]
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "stroke-opacity": 1,
-        "stroke-width": 1,
-        "stroke": "#555555",
-        "fill-opacity": 0.5
+      "type":"Feature",
+      "properties":{
+        "stroke-opacity":1,
+        "stroke-width":1,
+        "fill":"#ae4078",
+        "stroke":"#555555",
+        "fill-opacity":0.5
       },
-      "geometry": {
-        "type": "MultiPolygon",
-        "coordinates": [
+      "geometry":{
+        "type":"MultiPolygon",
+        "coordinates":[
           [
             [
               [
@@ -4401,80 +4429,80 @@
                 -23.5912
               ],
               [
-                -46.62253,
-                -23.59887
-              ],
-              [
-                -46.62753,
-                -23.61056
-              ],
-              [
-                -46.62625,
-                -23.62123
-              ],
-              [
-                -46.61923,
-                -23.62762
-              ],
-              [
-                -46.597,
-                -23.66402
-              ],
-              [
-                -46.58004,
-                -23.66971
-              ],
-              [
-                -46.57029,
-                -23.66646
-              ],
-              [
-                -46.55936,
-                -23.66762
-              ],
-              [
-                -46.54267,
-                -23.66591
-              ],
-              [
-                -46.52135,
-                -23.65954
-              ],
-              [
-                -46.51099,
-                -23.65512
-              ],
-              [
-                -46.50939,
-                -23.64645
-              ],
-              [
-                -46.50499,
-                -23.63304
-              ],
-              [
-                -46.51272,
-                -23.60804
-              ],
-              [
-                -46.5213,
-                -23.59828
-              ],
-              [
-                -46.5352,
-                -23.58868
-              ],
-              [
-                -46.54688,
-                -23.58775
+                -46.58534,
+                -23.5879
               ],
               [
                 -46.5661,
                 -23.58523
               ],
               [
-                -46.58534,
-                -23.5879
+                -46.54688,
+                -23.58775
+              ],
+              [
+                -46.5352,
+                -23.58868
+              ],
+              [
+                -46.5213,
+                -23.59828
+              ],
+              [
+                -46.51272,
+                -23.60804
+              ],
+              [
+                -46.50499,
+                -23.63304
+              ],
+              [
+                -46.50939,
+                -23.64645
+              ],
+              [
+                -46.51099,
+                -23.65512
+              ],
+              [
+                -46.52135,
+                -23.65954
+              ],
+              [
+                -46.54267,
+                -23.66591
+              ],
+              [
+                -46.55936,
+                -23.66762
+              ],
+              [
+                -46.57029,
+                -23.66646
+              ],
+              [
+                -46.58004,
+                -23.66971
+              ],
+              [
+                -46.597,
+                -23.66402
+              ],
+              [
+                -46.61923,
+                -23.62762
+              ],
+              [
+                -46.62625,
+                -23.62123
+              ],
+              [
+                -46.62753,
+                -23.61056
+              ],
+              [
+                -46.62253,
+                -23.59887
               ],
               [
                 -46.61158,
@@ -4486,31 +4514,32 @@
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "marker-symbol": "beer",
-        "marker-color": "#7e7e7e",
-        "marker-size": "medium"
+      "type":"Feature",
+      "properties":{
+        "marker-symbol":"beer",
+        "marker-color":"#4a23d0",
+        "marker-size":"medium"
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
+      "geometry":{
+        "type":"Point",
+        "coordinates":[
           -46.703636,
           -23.630531
         ]
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "stroke-opacity": 1,
-        "stroke-width": 1,
-        "stroke": "#555555",
-        "fill-opacity": 0.5
+      "type":"Feature",
+      "properties":{
+        "stroke-opacity":1,
+        "stroke-width":1,
+        "fill":"#4a23d0",
+        "stroke":"#555555",
+        "fill-opacity":0.5
       },
-      "geometry": {
-        "type": "MultiPolygon",
-        "coordinates": [
+      "geometry":{
+        "type":"MultiPolygon",
+        "coordinates":[
           [
             [
               [
@@ -4603,31 +4632,32 @@
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "marker-symbol": "beer",
-        "marker-color": "#7e7e7e",
-        "marker-size": "medium"
+      "type":"Feature",
+      "properties":{
+        "marker-symbol":"beer",
+        "marker-color":"#cc7886",
+        "marker-size":"medium"
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
+      "geometry":{
+        "type":"Point",
+        "coordinates":[
           -43.471878,
           -23.03035
         ]
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "stroke-opacity": 1,
-        "stroke-width": 1,
-        "stroke": "#555555",
-        "fill-opacity": 0.5
+      "type":"Feature",
+      "properties":{
+        "stroke-opacity":1,
+        "stroke-width":1,
+        "fill":"#cc7886",
+        "stroke":"#555555",
+        "fill-opacity":0.5
       },
-      "geometry": {
-        "type": "MultiPolygon",
-        "coordinates": [
+      "geometry":{
+        "type":"MultiPolygon",
+        "coordinates":[
           [
             [
               [
@@ -4672,31 +4702,32 @@
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "marker-symbol": "beer",
-        "marker-color": "#7e7e7e",
-        "marker-size": "medium"
+      "type":"Feature",
+      "properties":{
+        "marker-symbol":"beer",
+        "marker-color":"#742a52",
+        "marker-size":"medium"
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
+      "geometry":{
+        "type":"Point",
+        "coordinates":[
           -47.01634,
           -22.922613
         ]
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "stroke-opacity": 1,
-        "stroke-width": 1,
-        "stroke": "#555555",
-        "fill-opacity": 0.5
+      "type":"Feature",
+      "properties":{
+        "stroke-opacity":1,
+        "stroke-width":1,
+        "fill":"#742a52",
+        "stroke":"#555555",
+        "fill-opacity":0.5
       },
-      "geometry": {
-        "type": "MultiPolygon",
-        "coordinates": [
+      "geometry":{
+        "type":"MultiPolygon",
+        "coordinates":[
           [
             [
               [
@@ -4761,31 +4792,32 @@
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "marker-symbol": "beer",
-        "marker-color": "#7e7e7e",
-        "marker-size": "medium"
+      "type":"Feature",
+      "properties":{
+        "marker-symbol":"beer",
+        "marker-color":"#73fe62",
+        "marker-size":"medium"
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
+      "geometry":{
+        "type":"Point",
+        "coordinates":[
           -46.788303,
           -23.644058
         ]
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "stroke-opacity": 1,
-        "stroke-width": 1,
-        "stroke": "#555555",
-        "fill-opacity": 0.5
+      "type":"Feature",
+      "properties":{
+        "stroke-opacity":1,
+        "stroke-width":1,
+        "fill":"#73fe62",
+        "stroke":"#555555",
+        "fill-opacity":0.5
       },
-      "geometry": {
-        "type": "MultiPolygon",
-        "coordinates": [
+      "geometry":{
+        "type":"MultiPolygon",
+        "coordinates":[
           [
             [
               [
@@ -4870,31 +4902,32 @@
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "marker-symbol": "beer",
-        "marker-color": "#7e7e7e",
-        "marker-size": "medium"
+      "type":"Feature",
+      "properties":{
+        "marker-symbol":"beer",
+        "marker-color":"#ba1267",
+        "marker-size":"medium"
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
+      "geometry":{
+        "type":"Point",
+        "coordinates":[
           -46.471943,
           -23.618591
         ]
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "stroke-opacity": 1,
-        "stroke-width": 1,
-        "stroke": "#555555",
-        "fill-opacity": 0.5
+      "type":"Feature",
+      "properties":{
+        "stroke-opacity":1,
+        "stroke-width":1,
+        "fill":"#ba1267",
+        "stroke":"#555555",
+        "fill-opacity":0.5
       },
-      "geometry": {
-        "type": "MultiPolygon",
-        "coordinates": [
+      "geometry":{
+        "type":"MultiPolygon",
+        "coordinates":[
           [
             [
               [
@@ -4902,183 +4935,27 @@
                 -23.66131
               ],
               [
-                -46.47128,
-                -23.65665
+                -46.4826,
+                -23.65707
               ],
               [
-                -46.46684,
-                -23.65219
+                -46.48557,
+                -23.6569
               ],
               [
-                -46.46162,
-                -23.65081
+                -46.4907,
+                -23.65845
               ],
               [
-                -46.45761,
-                -23.64582
+                -46.49819,
+                -23.65724
               ],
               [
-                -46.45359,
-                -23.64355
+                -46.51155,
+                -23.65218
               ],
               [
-                -46.45498,
-                -23.64182
-              ],
-              [
-                -46.4524,
-                -23.64141
-              ],
-              [
-                -46.45122,
-                -23.64056
-              ],
-              [
-                -46.45087,
-                -23.64002
-              ],
-              [
-                -46.4502,
-                -23.63982
-              ],
-              [
-                -46.45005,
-                -23.63836
-              ],
-              [
-                -46.44977,
-                -23.63735
-              ],
-              [
-                -46.44909,
-                -23.63718
-              ],
-              [
-                -46.44809,
-                -23.63763
-              ],
-              [
-                -46.44643,
-                -23.63685
-              ],
-              [
-                -46.44504,
-                -23.63682
-              ],
-              [
-                -46.44465,
-                -23.63601
-              ],
-              [
-                -46.44425,
-                -23.63565
-              ],
-              [
-                -46.44298,
-                -23.63537
-              ],
-              [
-                -46.4414,
-                -23.63455
-              ],
-              [
-                -46.44087,
-                -23.63195
-              ],
-              [
-                -46.43922,
-                -23.62917
-              ],
-              [
-                -46.43946,
-                -23.61956
-              ],
-              [
-                -46.44186,
-                -23.61656
-              ],
-              [
-                -46.44016,
-                -23.61494
-              ],
-              [
-                -46.43991,
-                -23.61276
-              ],
-              [
-                -46.44083,
-                -23.60995
-              ],
-              [
-                -46.43508,
-                -23.60829
-              ],
-              [
-                -46.43105,
-                -23.59514
-              ],
-              [
-                -46.43311,
-                -23.59028
-              ],
-              [
-                -46.43582,
-                -23.58912
-              ],
-              [
-                -46.4432,
-                -23.59034
-              ],
-              [
-                -46.44948,
-                -23.59286
-              ],
-              [
-                -46.46469,
-                -23.59419
-              ],
-              [
-                -46.49057,
-                -23.58145
-              ],
-              [
-                -46.5098,
-                -23.60442
-              ],
-              [
-                -46.52113,
-                -23.61543
-              ],
-              [
-                -46.52514,
-                -23.62463
-              ],
-              [
-                -46.53447,
-                -23.6387
-              ],
-              [
-                -46.53312,
-                -23.6423
-              ],
-              [
-                -46.53132,
-                -23.64484
-              ],
-              [
-                -46.52884,
-                -23.64549
-              ],
-              [
-                -46.52669,
-                -23.64806
-              ],
-              [
-                -46.52282,
-                -23.65045
-              ],
-              [
-                -46.5208,
+                -46.51366,
                 -23.65199
               ],
               [
@@ -5086,28 +4963,184 @@
                 -23.65252
               ],
               [
-                -46.51366,
+                -46.5208,
                 -23.65199
               ],
               [
-                -46.51155,
-                -23.65218
+                -46.52282,
+                -23.65045
               ],
               [
-                -46.49819,
-                -23.65724
+                -46.52669,
+                -23.64806
               ],
               [
-                -46.4907,
-                -23.65845
+                -46.52884,
+                -23.64549
               ],
               [
-                -46.48557,
-                -23.6569
+                -46.53132,
+                -23.64484
               ],
               [
-                -46.4826,
-                -23.65707
+                -46.53312,
+                -23.6423
+              ],
+              [
+                -46.53447,
+                -23.6387
+              ],
+              [
+                -46.52514,
+                -23.62463
+              ],
+              [
+                -46.52113,
+                -23.61543
+              ],
+              [
+                -46.5098,
+                -23.60442
+              ],
+              [
+                -46.49057,
+                -23.58145
+              ],
+              [
+                -46.46469,
+                -23.59419
+              ],
+              [
+                -46.44948,
+                -23.59286
+              ],
+              [
+                -46.4432,
+                -23.59034
+              ],
+              [
+                -46.43582,
+                -23.58912
+              ],
+              [
+                -46.43311,
+                -23.59028
+              ],
+              [
+                -46.43105,
+                -23.59514
+              ],
+              [
+                -46.43508,
+                -23.60829
+              ],
+              [
+                -46.44083,
+                -23.60995
+              ],
+              [
+                -46.43991,
+                -23.61276
+              ],
+              [
+                -46.44016,
+                -23.61494
+              ],
+              [
+                -46.44186,
+                -23.61656
+              ],
+              [
+                -46.43946,
+                -23.61956
+              ],
+              [
+                -46.43922,
+                -23.62917
+              ],
+              [
+                -46.44087,
+                -23.63195
+              ],
+              [
+                -46.4414,
+                -23.63455
+              ],
+              [
+                -46.44298,
+                -23.63537
+              ],
+              [
+                -46.44425,
+                -23.63565
+              ],
+              [
+                -46.44465,
+                -23.63601
+              ],
+              [
+                -46.44504,
+                -23.63682
+              ],
+              [
+                -46.44643,
+                -23.63685
+              ],
+              [
+                -46.44809,
+                -23.63763
+              ],
+              [
+                -46.44909,
+                -23.63718
+              ],
+              [
+                -46.44977,
+                -23.63735
+              ],
+              [
+                -46.45005,
+                -23.63836
+              ],
+              [
+                -46.4502,
+                -23.63982
+              ],
+              [
+                -46.45087,
+                -23.64002
+              ],
+              [
+                -46.45122,
+                -23.64056
+              ],
+              [
+                -46.4524,
+                -23.64141
+              ],
+              [
+                -46.45498,
+                -23.64182
+              ],
+              [
+                -46.45359,
+                -23.64355
+              ],
+              [
+                -46.45761,
+                -23.64582
+              ],
+              [
+                -46.46162,
+                -23.65081
+              ],
+              [
+                -46.46684,
+                -23.65219
+              ],
+              [
+                -46.47128,
+                -23.65665
               ],
               [
                 -46.47199,
@@ -5119,31 +5152,32 @@
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "marker-symbol": "beer",
-        "marker-color": "#7e7e7e",
-        "marker-size": "medium"
+      "type":"Feature",
+      "properties":{
+        "marker-symbol":"beer",
+        "marker-color":"#c7f031",
+        "marker-size":"medium"
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
+      "geometry":{
+        "type":"Point",
+        "coordinates":[
           -46.67933,
           -23.465752
         ]
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "stroke-opacity": 1,
-        "stroke-width": 1,
-        "stroke": "#555555",
-        "fill-opacity": 0.5
+      "type":"Feature",
+      "properties":{
+        "stroke-opacity":1,
+        "stroke-width":1,
+        "fill":"#c7f031",
+        "stroke":"#555555",
+        "fill-opacity":0.5
       },
-      "geometry": {
-        "type": "MultiPolygon",
-        "coordinates": [
+      "geometry":{
+        "type":"MultiPolygon",
+        "coordinates":[
           [
             [
               [
@@ -5151,72 +5185,72 @@
                 -23.46246
               ],
               [
-                -46.74772,
-                -23.47332
-              ],
-              [
-                -46.73845,
-                -23.47867
-              ],
-              [
-                -46.73691,
-                -23.48844
-              ],
-              [
-                -46.72163,
-                -23.50811
-              ],
-              [
-                -46.70609,
-                -23.50882
-              ],
-              [
-                -46.69515,
-                -23.5076
-              ],
-              [
-                -46.68333,
-                -23.51006
-              ],
-              [
-                -46.67871,
-                -23.51221
-              ],
-              [
-                -46.66936,
-                -23.50575
-              ],
-              [
-                -46.66125,
-                -23.4956
-              ],
-              [
-                -46.65401,
-                -23.48911
-              ],
-              [
-                -46.63967,
-                -23.48649
-              ],
-              [
-                -46.6367,
-                -23.48321
-              ],
-              [
-                -46.63168,
-                -23.48214
-              ],
-              [
-                -46.63949,
-                -23.46663
+                -46.64884,
+                -23.46419
               ],
               [
                 -46.64605,
                 -23.46942
               ],
               [
-                -46.64884,
-                -23.46419
+                -46.63949,
+                -23.46663
+              ],
+              [
+                -46.63168,
+                -23.48214
+              ],
+              [
+                -46.6367,
+                -23.48321
+              ],
+              [
+                -46.63967,
+                -23.48649
+              ],
+              [
+                -46.65401,
+                -23.48911
+              ],
+              [
+                -46.66125,
+                -23.4956
+              ],
+              [
+                -46.66936,
+                -23.50575
+              ],
+              [
+                -46.67871,
+                -23.51221
+              ],
+              [
+                -46.68333,
+                -23.51006
+              ],
+              [
+                -46.69515,
+                -23.5076
+              ],
+              [
+                -46.70609,
+                -23.50882
+              ],
+              [
+                -46.72163,
+                -23.50811
+              ],
+              [
+                -46.73691,
+                -23.48844
+              ],
+              [
+                -46.73845,
+                -23.47867
+              ],
+              [
+                -46.74772,
+                -23.47332
               ],
               [
                 -46.7515,
@@ -5228,31 +5262,32 @@
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "marker-symbol": "beer",
-        "marker-color": "#7e7e7e",
-        "marker-size": "medium"
+      "type":"Feature",
+      "properties":{
+        "marker-symbol":"beer",
+        "marker-color":"#93d602",
+        "marker-size":"medium"
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
+      "geometry":{
+        "type":"Point",
+        "coordinates":[
           -46.40659,
           -23.492245
         ]
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "stroke-opacity": 1,
-        "stroke-width": 1,
-        "stroke": "#555555",
-        "fill-opacity": 0.5
+      "type":"Feature",
+      "properties":{
+        "stroke-opacity":1,
+        "stroke-width":1,
+        "fill":"#93d602",
+        "stroke":"#555555",
+        "fill-opacity":0.5
       },
-      "geometry": {
-        "type": "MultiPolygon",
-        "coordinates": [
+      "geometry":{
+        "type":"MultiPolygon",
+        "coordinates":[
           [
             [
               [
@@ -5345,31 +5380,32 @@
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "marker-symbol": "beer",
-        "marker-color": "#7e7e7e",
-        "marker-size": "medium"
+      "type":"Feature",
+      "properties":{
+        "marker-symbol":"beer",
+        "marker-color":"#5199a2",
+        "marker-size":"medium"
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
+      "geometry":{
+        "type":"Point",
+        "coordinates":[
           -43.200283,
           -22.81634
         ]
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "stroke-opacity": 1,
-        "stroke-width": 1,
-        "stroke": "#555555",
-        "fill-opacity": 0.5
+      "type":"Feature",
+      "properties":{
+        "stroke-opacity":1,
+        "stroke-width":1,
+        "fill":"#5199a2",
+        "stroke":"#555555",
+        "fill-opacity":0.5
       },
-      "geometry": {
-        "type": "MultiPolygon",
-        "coordinates": [
+      "geometry":{
+        "type":"MultiPolygon",
+        "coordinates":[
           [
             [
               [
@@ -5462,31 +5498,32 @@
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "marker-symbol": "beer",
-        "marker-color": "#7e7e7e",
-        "marker-size": "medium"
+      "type":"Feature",
+      "properties":{
+        "marker-symbol":"beer",
+        "marker-color":"#a3de7f",
+        "marker-size":"medium"
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
+      "geometry":{
+        "type":"Point",
+        "coordinates":[
           -46.51637,
           -23.549246
         ]
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "stroke-opacity": 1,
-        "stroke-width": 1,
-        "stroke": "#555555",
-        "fill-opacity": 0.5
+      "type":"Feature",
+      "properties":{
+        "stroke-opacity":1,
+        "stroke-width":1,
+        "fill":"#a3de7f",
+        "stroke":"#555555",
+        "fill-opacity":0.5
       },
-      "geometry": {
-        "type": "MultiPolygon",
-        "coordinates": [
+      "geometry":{
+        "type":"MultiPolygon",
+        "coordinates":[
           [
             [
               [
@@ -5523,31 +5560,32 @@
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "marker-symbol": "beer",
-        "marker-color": "#7e7e7e",
-        "marker-size": "medium"
+      "type":"Feature",
+      "properties":{
+        "marker-symbol":"beer",
+        "marker-color":"#83354a",
+        "marker-size":"medium"
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
+      "geometry":{
+        "type":"Point",
+        "coordinates":[
           -43.124176,
           -22.902254
         ]
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "stroke-opacity": 1,
-        "stroke-width": 1,
-        "stroke": "#555555",
-        "fill-opacity": 0.5
+      "type":"Feature",
+      "properties":{
+        "stroke-opacity":1,
+        "stroke-width":1,
+        "fill":"#83354a",
+        "stroke":"#555555",
+        "fill-opacity":0.5
       },
-      "geometry": {
-        "type": "MultiPolygon",
-        "coordinates": [
+      "geometry":{
+        "type":"MultiPolygon",
+        "coordinates":[
           [
             [
               [
@@ -5616,31 +5654,32 @@
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "marker-symbol": "beer",
-        "marker-color": "#7e7e7e",
-        "marker-size": "medium"
+      "type":"Feature",
+      "properties":{
+        "marker-symbol":"beer",
+        "marker-color":"#3d5f65",
+        "marker-size":"medium"
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
+      "geometry":{
+        "type":"Point",
+        "coordinates":[
           -44.05965,
           -19.948065
         ]
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "stroke-opacity": 1,
-        "stroke-width": 1,
-        "stroke": "#555555",
-        "fill-opacity": 0.5
+      "type":"Feature",
+      "properties":{
+        "stroke-opacity":1,
+        "stroke-width":1,
+        "fill":"#3d5f65",
+        "stroke":"#555555",
+        "fill-opacity":0.5
       },
-      "geometry": {
-        "type": "MultiPolygon",
-        "coordinates": [
+      "geometry":{
+        "type":"MultiPolygon",
+        "coordinates":[
           [
             [
               [
@@ -5801,31 +5840,32 @@
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "marker-symbol": "beer",
-        "marker-color": "#7e7e7e",
-        "marker-size": "medium"
+      "type":"Feature",
+      "properties":{
+        "marker-symbol":"beer",
+        "marker-color":"#116462",
+        "marker-size":"medium"
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
+      "geometry":{
+        "type":"Point",
+        "coordinates":[
           -46.582508,
           -23.563301
         ]
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "stroke-opacity": 1,
-        "stroke-width": 1,
-        "stroke": "#555555",
-        "fill-opacity": 0.5
+      "type":"Feature",
+      "properties":{
+        "stroke-opacity":1,
+        "stroke-width":1,
+        "fill":"#116462",
+        "stroke":"#555555",
+        "fill-opacity":0.5
       },
-      "geometry": {
-        "type": "MultiPolygon",
-        "coordinates": [
+      "geometry":{
+        "type":"MultiPolygon",
+        "coordinates":[
           [
             [
               [
@@ -5962,31 +6002,32 @@
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "marker-symbol": "beer",
-        "marker-color": "#7e7e7e",
-        "marker-size": "medium"
+      "type":"Feature",
+      "properties":{
+        "marker-symbol":"beer",
+        "marker-color":"#c4428c",
+        "marker-size":"medium"
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
+      "geometry":{
+        "type":"Point",
+        "coordinates":[
           -46.624012,
           -23.611038
         ]
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "stroke-opacity": 1,
-        "stroke-width": 1,
-        "stroke": "#555555",
-        "fill-opacity": 0.5
+      "type":"Feature",
+      "properties":{
+        "stroke-opacity":1,
+        "stroke-width":1,
+        "fill":"#c4428c",
+        "stroke":"#555555",
+        "fill-opacity":0.5
       },
-      "geometry": {
-        "type": "MultiPolygon",
-        "coordinates": [
+      "geometry":{
+        "type":"MultiPolygon",
+        "coordinates":[
           [
             [
               [
@@ -6067,31 +6108,32 @@
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "marker-symbol": "beer",
-        "marker-color": "#7e7e7e",
-        "marker-size": "medium"
+      "type":"Feature",
+      "properties":{
+        "marker-symbol":"beer",
+        "marker-color":"#22484a",
+        "marker-size":"medium"
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
+      "geometry":{
+        "type":"Point",
+        "coordinates":[
           -44.189133,
           -19.972668
         ]
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "stroke-opacity": 1,
-        "stroke-width": 1,
-        "stroke": "#555555",
-        "fill-opacity": 0.5
+      "type":"Feature",
+      "properties":{
+        "stroke-opacity":1,
+        "stroke-width":1,
+        "fill":"#22484a",
+        "stroke":"#555555",
+        "fill-opacity":0.5
       },
-      "geometry": {
-        "type": "MultiPolygon",
-        "coordinates": [
+      "geometry":{
+        "type":"MultiPolygon",
+        "coordinates":[
           [
             [
               [
@@ -6164,31 +6206,32 @@
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "marker-symbol": "beer",
-        "marker-color": "#7e7e7e",
-        "marker-size": "medium"
+      "type":"Feature",
+      "properties":{
+        "marker-symbol":"beer",
+        "marker-color":"#67a1f3",
+        "marker-size":"medium"
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
+      "geometry":{
+        "type":"Point",
+        "coordinates":[
           -43.961945,
           -19.927483
         ]
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "stroke-opacity": 1,
-        "stroke-width": 1,
-        "stroke": "#555555",
-        "fill-opacity": 0.5
+      "type":"Feature",
+      "properties":{
+        "stroke-opacity":1,
+        "stroke-width":1,
+        "fill":"#67a1f3",
+        "stroke":"#555555",
+        "fill-opacity":0.5
       },
-      "geometry": {
-        "type": "MultiPolygon",
-        "coordinates": [
+      "geometry":{
+        "type":"MultiPolygon",
+        "coordinates":[
           [
             [
               [
@@ -6196,172 +6239,172 @@
                 -19.8833
               ],
               [
-                -43.95196,
-                -19.87989
-              ],
-              [
-                -43.95331,
-                -19.87749
-              ],
-              [
-                -43.9576,
-                -19.8768
-              ],
-              [
-                -43.97785,
-                -19.87712
-              ],
-              [
-                -43.98639,
-                -19.87712
-              ],
-              [
-                -43.99231,
-                -19.88002
-              ],
-              [
-                -43.99348,
-                -19.88521
-              ],
-              [
-                -43.99811,
-                -19.89778
-              ],
-              [
-                -43.99605,
-                -19.91053
-              ],
-              [
-                -43.99931,
-                -19.91747
-              ],
-              [
-                -44.00446,
-                -19.92248
-              ],
-              [
-                -44.00772,
-                -19.92449
-              ],
-              [
-                -44.0127,
-                -19.92361
-              ],
-              [
-                -44.02807,
-                -19.91957
-              ],
-              [
-                -44.05272,
-                -19.91836
-              ],
-              [
-                -44.07749,
-                -19.93724
-              ],
-              [
-                -44.07167,
-                -19.95656
-              ],
-              [
-                -44.05486,
-                -19.95717
-              ],
-              [
-                -44.04727,
-                -19.96292
-              ],
-              [
-                -44.04483,
-                -19.9635
-              ],
-              [
-                -44.04253,
-                -19.96597
-              ],
-              [
-                -44.04042,
-                -19.96734
-              ],
-              [
-                -44.03675,
-                -19.97175
-              ],
-              [
-                -44.03257,
-                -19.97197
-              ],
-              [
-                -44.02671,
-                -19.97207
-              ],
-              [
-                -44.01244,
-                -19.97201
-              ],
-              [
-                -44.00661,
-                -19.9892
-              ],
-              [
-                -44.00227,
-                -19.99339
-              ],
-              [
-                -43.99347,
-                -19.98984
-              ],
-              [
-                -43.96549,
-                -19.98847
-              ],
-              [
-                -43.97476,
-                -19.97557
-              ],
-              [
-                -43.97751,
-                -19.96266
-              ],
-              [
-                -43.96858,
-                -19.9491
-              ],
-              [
-                -43.96082,
-                -19.93575
-              ],
-              [
-                -43.9576,
-                -19.93281
-              ],
-              [
-                -43.95554,
-                -19.9249
-              ],
-              [
-                -43.94799,
-                -19.89843
-              ],
-              [
-                -43.9496,
-                -19.89415
-              ],
-              [
-                -43.95031,
-                -19.89194
-              ],
-              [
-                -43.95017,
-                -19.8896
+                -43.95179,
+                -19.88625
               ],
               [
                 -43.95104,
                 -19.88818
               ],
               [
-                -43.95179,
-                -19.88625
+                -43.95017,
+                -19.8896
+              ],
+              [
+                -43.95031,
+                -19.89194
+              ],
+              [
+                -43.9496,
+                -19.89415
+              ],
+              [
+                -43.94799,
+                -19.89843
+              ],
+              [
+                -43.95554,
+                -19.9249
+              ],
+              [
+                -43.9576,
+                -19.93281
+              ],
+              [
+                -43.96082,
+                -19.93575
+              ],
+              [
+                -43.96858,
+                -19.9491
+              ],
+              [
+                -43.97751,
+                -19.96266
+              ],
+              [
+                -43.97476,
+                -19.97557
+              ],
+              [
+                -43.96549,
+                -19.98847
+              ],
+              [
+                -43.99347,
+                -19.98984
+              ],
+              [
+                -44.00227,
+                -19.99339
+              ],
+              [
+                -44.00661,
+                -19.9892
+              ],
+              [
+                -44.01244,
+                -19.97201
+              ],
+              [
+                -44.02671,
+                -19.97207
+              ],
+              [
+                -44.03257,
+                -19.97197
+              ],
+              [
+                -44.03675,
+                -19.97175
+              ],
+              [
+                -44.04042,
+                -19.96734
+              ],
+              [
+                -44.04253,
+                -19.96597
+              ],
+              [
+                -44.04483,
+                -19.9635
+              ],
+              [
+                -44.04727,
+                -19.96292
+              ],
+              [
+                -44.05486,
+                -19.95717
+              ],
+              [
+                -44.07167,
+                -19.95656
+              ],
+              [
+                -44.07749,
+                -19.93724
+              ],
+              [
+                -44.05272,
+                -19.91836
+              ],
+              [
+                -44.02807,
+                -19.91957
+              ],
+              [
+                -44.0127,
+                -19.92361
+              ],
+              [
+                -44.00772,
+                -19.92449
+              ],
+              [
+                -44.00446,
+                -19.92248
+              ],
+              [
+                -43.99931,
+                -19.91747
+              ],
+              [
+                -43.99605,
+                -19.91053
+              ],
+              [
+                -43.99811,
+                -19.89778
+              ],
+              [
+                -43.99348,
+                -19.88521
+              ],
+              [
+                -43.99231,
+                -19.88002
+              ],
+              [
+                -43.98639,
+                -19.87712
+              ],
+              [
+                -43.97785,
+                -19.87712
+              ],
+              [
+                -43.9576,
+                -19.8768
+              ],
+              [
+                -43.95331,
+                -19.87749
+              ],
+              [
+                -43.95196,
+                -19.87989
               ],
               [
                 -43.95094,
@@ -6373,31 +6416,32 @@
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "marker-symbol": "beer",
-        "marker-color": "#7e7e7e",
-        "marker-size": "medium"
+      "type":"Feature",
+      "properties":{
+        "marker-symbol":"beer",
+        "marker-color":"#805eeb",
+        "marker-size":"medium"
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
+      "geometry":{
+        "type":"Point",
+        "coordinates":[
           -49.383804,
           -20.82054
         ]
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "stroke-opacity": 1,
-        "stroke-width": 1,
-        "stroke": "#555555",
-        "fill-opacity": 0.5
+      "type":"Feature",
+      "properties":{
+        "stroke-opacity":1,
+        "stroke-width":1,
+        "fill":"#805eeb",
+        "stroke":"#555555",
+        "fill-opacity":0.5
       },
-      "geometry": {
-        "type": "MultiPolygon",
-        "coordinates": [
+      "geometry":{
+        "type":"MultiPolygon",
+        "coordinates":[
           [
             [
               [
@@ -6446,31 +6490,32 @@
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "marker-symbol": "beer",
-        "marker-color": "#7e7e7e",
-        "marker-size": "medium"
+      "type":"Feature",
+      "properties":{
+        "marker-symbol":"beer",
+        "marker-color":"#7c3433",
+        "marker-size":"medium"
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
+      "geometry":{
+        "type":"Point",
+        "coordinates":[
           -43.24797,
           -22.916143
         ]
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "stroke-opacity": 1,
-        "stroke-width": 1,
-        "stroke": "#555555",
-        "fill-opacity": 0.5
+      "type":"Feature",
+      "properties":{
+        "stroke-opacity":1,
+        "stroke-width":1,
+        "fill":"#7c3433",
+        "stroke":"#555555",
+        "fill-opacity":0.5
       },
-      "geometry": {
-        "type": "MultiPolygon",
-        "coordinates": [
+      "geometry":{
+        "type":"MultiPolygon",
+        "coordinates":[
           [
             [
               [
@@ -6555,246 +6600,247 @@
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "marker-symbol": "beer",
-        "marker-color": "#7e7e7e",
-        "marker-size": "medium"
+      "type":"Feature",
+      "properties":{
+        "marker-symbol":"beer",
+        "marker-color":"#088f5c",
+        "marker-size":"medium"
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
+      "geometry":{
+        "type":"Point",
+        "coordinates":[
           -45.853745,
           -23.182152
         ]
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "stroke-opacity": 1,
-        "stroke-width": 1,
-        "stroke": "#555555",
-        "fill-opacity": 0.5
+      "type":"Feature",
+      "properties":{
+        "stroke-opacity":1,
+        "stroke-width":1,
+        "fill":"#088f5c",
+        "stroke":"#555555",
+        "fill-opacity":0.5
       },
-      "geometry": {
-        "type": "MultiPolygon",
-        "coordinates": [
+      "geometry":{
+        "type":"MultiPolygon",
+        "coordinates":[
           [
             [
               [
                 -45.88866,
                 -23.23504
-              ],
-              [
-                -45.8839,
-                -23.23542
-              ],
-              [
-                -45.87895,
-                -23.2357
-              ],
-              [
-                -45.87674,
-                -23.2337
-              ],
-              [
-                -45.87822,
-                -23.2272
-              ],
-              [
-                -45.85928,
-                -23.22682
-              ],
-              [
-                -45.85543,
-                -23.22244
-              ],
-              [
-                -45.85076,
-                -23.21854
-              ],
-              [
-                -45.81013,
-                -23.21857
-              ],
-              [
-                -45.77658,
-                -23.20414
-              ],
-              [
-                -45.78165,
-                -23.19111
-              ],
-              [
-                -45.79225,
-                -23.18504
-              ],
-              [
-                -45.78413,
-                -23.17647
-              ],
-              [
-                -45.791,
-                -23.15525
-              ],
-              [
-                -45.78781,
-                -23.15334
-              ],
-              [
-                -45.76125,
-                -23.13983
-              ],
-              [
-                -45.76589,
-                -23.13046
-              ],
-              [
-                -45.78165,
-                -23.13558
-              ],
-              [
-                -45.79706,
-                -23.14299
-              ],
-              [
-                -45.80164,
-                -23.14534
-              ],
-              [
-                -45.80269,
-                -23.15014
-              ],
-              [
-                -45.86177,
-                -23.15971
-              ],
-              [
-                -45.87635,
-                -23.16212
-              ],
-              [
-                -45.88034,
-                -23.16332
-              ],
-              [
-                -45.88498,
-                -23.15833
-              ],
-              [
-                -45.89083,
-                -23.15477
-              ],
-              [
-                -45.89785,
-                -23.1499
-              ],
-              [
-                -45.9011,
-                -23.14968
-              ],
-              [
-                -45.91476,
-                -23.15419
-              ],
-              [
-                -45.91927,
-                -23.162
-              ],
-              [
-                -45.91882,
-                -23.168
-              ],
-              [
-                -45.91319,
-                -23.1693
-              ],
-              [
-                -45.90991,
-                -23.17015
-              ],
-              [
-                -45.90781,
-                -23.17043
-              ],
-              [
-                -45.90726,
-                -23.17068
-              ],
-              [
-                -45.90653,
-                -23.17092
-              ],
-              [
-                -45.90593,
-                -23.17084
-              ],
-              [
-                -45.90975,
-                -23.18555
-              ],
-              [
-                -45.92922,
-                -23.19639
-              ],
-              [
-                -45.92384,
-                -23.22341
-              ],
-              [
-                -45.92918,
-                -23.22807
-              ],
-              [
-                -45.92855,
-                -23.23084
-              ],
-              [
-                -45.93045,
-                -23.23584
-              ],
-              [
-                -45.93023,
-                -23.23623
-              ],
-              [
-                -45.92846,
-                -23.23869
-              ],
-              [
-                -45.9243,
-                -23.24271
-              ],
-              [
-                -45.91629,
-                -23.24656
-              ],
-              [
-                -45.90821,
-                -23.24991
-              ],
-              [
-                -45.90557,
-                -23.2505
-              ],
-              [
-                -45.89783,
-                -23.25203
-              ],
-              [
-                -45.89778,
-                -23.24531
-              ],
-              [
-                -45.89106,
-                -23.24446
               ],
               [
                 -45.89349,
                 -23.23551
               ],
               [
+                -45.89106,
+                -23.24446
+              ],
+              [
+                -45.89778,
+                -23.24531
+              ],
+              [
+                -45.89783,
+                -23.25203
+              ],
+              [
+                -45.90557,
+                -23.2505
+              ],
+              [
+                -45.90821,
+                -23.24991
+              ],
+              [
+                -45.91629,
+                -23.24656
+              ],
+              [
+                -45.9243,
+                -23.24271
+              ],
+              [
+                -45.92846,
+                -23.23869
+              ],
+              [
+                -45.93023,
+                -23.23623
+              ],
+              [
+                -45.93045,
+                -23.23584
+              ],
+              [
+                -45.92855,
+                -23.23084
+              ],
+              [
+                -45.92918,
+                -23.22807
+              ],
+              [
+                -45.92384,
+                -23.22341
+              ],
+              [
+                -45.92922,
+                -23.19639
+              ],
+              [
+                -45.90975,
+                -23.18555
+              ],
+              [
+                -45.90593,
+                -23.17084
+              ],
+              [
+                -45.90653,
+                -23.17092
+              ],
+              [
+                -45.90726,
+                -23.17068
+              ],
+              [
+                -45.90781,
+                -23.17043
+              ],
+              [
+                -45.90991,
+                -23.17015
+              ],
+              [
+                -45.91319,
+                -23.1693
+              ],
+              [
+                -45.91882,
+                -23.168
+              ],
+              [
+                -45.91927,
+                -23.162
+              ],
+              [
+                -45.91476,
+                -23.15419
+              ],
+              [
+                -45.9011,
+                -23.14968
+              ],
+              [
+                -45.89785,
+                -23.1499
+              ],
+              [
+                -45.89083,
+                -23.15477
+              ],
+              [
+                -45.88498,
+                -23.15833
+              ],
+              [
+                -45.88034,
+                -23.16332
+              ],
+              [
+                -45.87635,
+                -23.16212
+              ],
+              [
+                -45.86177,
+                -23.15971
+              ],
+              [
+                -45.80269,
+                -23.15014
+              ],
+              [
+                -45.80164,
+                -23.14534
+              ],
+              [
+                -45.79706,
+                -23.14299
+              ],
+              [
+                -45.78165,
+                -23.13558
+              ],
+              [
+                -45.76589,
+                -23.13046
+              ],
+              [
+                -45.76125,
+                -23.13983
+              ],
+              [
+                -45.78781,
+                -23.15334
+              ],
+              [
+                -45.791,
+                -23.15525
+              ],
+              [
+                -45.78413,
+                -23.17647
+              ],
+              [
+                -45.79225,
+                -23.18504
+              ],
+              [
+                -45.78165,
+                -23.19111
+              ],
+              [
+                -45.77658,
+                -23.20414
+              ],
+              [
+                -45.81013,
+                -23.21857
+              ],
+              [
+                -45.85076,
+                -23.21854
+              ],
+              [
+                -45.85543,
+                -23.22244
+              ],
+              [
+                -45.85928,
+                -23.22682
+              ],
+              [
+                -45.87822,
+                -23.2272
+              ],
+              [
+                -45.87674,
+                -23.2337
+              ],
+              [
+                -45.87895,
+                -23.2357
+              ],
+              [
+                -45.8839,
+                -23.23542
+              ],
+              [
                 -45.88866,
                 -23.23504
               ]
@@ -6804,270 +6850,271 @@
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "marker-symbol": "beer",
-        "marker-color": "#7e7e7e",
-        "marker-size": "medium"
+      "type":"Feature",
+      "properties":{
+        "marker-symbol":"beer",
+        "marker-color":"#8bd5fb",
+        "marker-size":"medium"
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
+      "geometry":{
+        "type":"Point",
+        "coordinates":[
           -46.563892,
           -23.509415
         ]
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "stroke-opacity": 1,
-        "stroke-width": 1,
-        "stroke": "#555555",
-        "fill-opacity": 0.5
+      "type":"Feature",
+      "properties":{
+        "stroke-opacity":1,
+        "stroke-width":1,
+        "fill":"#8bd5fb",
+        "stroke":"#555555",
+        "fill-opacity":0.5
       },
-      "geometry": {
-        "type": "MultiPolygon",
-        "coordinates": [
+      "geometry":{
+        "type":"MultiPolygon",
+        "coordinates":[
           [
             [
               [
                 -46.70544,
                 -23.50796
-              ],
-              [
-                -46.69466,
-                -23.50742
-              ],
-              [
-                -46.68286,
-                -23.51004
-              ],
-              [
-                -46.67787,
-                -23.51339
-              ],
-              [
-                -46.64145,
-                -23.5185
-              ],
-              [
-                -46.62931,
-                -23.52566
-              ],
-              [
-                -46.6253,
-                -23.53361
-              ],
-              [
-                -46.62978,
-                -23.54447
-              ],
-              [
-                -46.62294,
-                -23.55627
-              ],
-              [
-                -46.61436,
-                -23.55918
-              ],
-              [
-                -46.60184,
-                -23.57622
-              ],
-              [
-                -46.59961,
-                -23.58507
-              ],
-              [
-                -46.59521,
-                -23.58821
-              ],
-              [
-                -46.57199,
-                -23.5831
-              ],
-              [
-                -46.55356,
-                -23.58192
-              ],
-              [
-                -46.55097,
-                -23.57626
-              ],
-              [
-                -46.53327,
-                -23.57342
-              ],
-              [
-                -46.50188,
-                -23.54732
-              ],
-              [
-                -46.49842,
-                -23.54276
-              ],
-              [
-                -46.48785,
-                -23.54434
-              ],
-              [
-                -46.48501,
-                -23.53962
-              ],
-              [
-                -46.48824,
-                -23.53585
-              ],
-              [
-                -46.49285,
-                -23.53602
-              ],
-              [
-                -46.49846,
-                -23.53257
-              ],
-              [
-                -46.49001,
-                -23.52696
-              ],
-              [
-                -46.50142,
-                -23.51197
-              ],
-              [
-                -46.49292,
-                -23.50792
-              ],
-              [
-                -46.48224,
-                -23.50699
-              ],
-              [
-                -46.47844,
-                -23.50724
-              ],
-              [
-                -46.4755,
-                -23.50559
-              ],
-              [
-                -46.4799,
-                -23.4857
-              ],
-              [
-                -46.47945,
-                -23.47356
-              ],
-              [
-                -46.49171,
-                -23.47339
-              ],
-              [
-                -46.49024,
-                -23.46125
-              ],
-              [
-                -46.49288,
-                -23.44785
-              ],
-              [
-                -46.50876,
-                -23.45293
-              ],
-              [
-                -46.51447,
-                -23.4508
-              ],
-              [
-                -46.53003,
-                -23.44837
-              ],
-              [
-                -46.53634,
-                -23.44078
-              ],
-              [
-                -46.53975,
-                -23.44208
-              ],
-              [
-                -46.55009,
-                -23.43612
-              ],
-              [
-                -46.56734,
-                -23.4386
-              ],
-              [
-                -46.57077,
-                -23.45316
-              ],
-              [
-                -46.60204,
-                -23.45257
-              ],
-              [
-                -46.61939,
-                -23.43826
-              ],
-              [
-                -46.62918,
-                -23.44757
-              ],
-              [
-                -46.65652,
-                -23.46497
-              ],
-              [
-                -46.6607,
-                -23.46196
-              ],
-              [
-                -46.66416,
-                -23.46321
-              ],
-              [
-                -46.66677,
-                -23.46572
-              ],
-              [
-                -46.66818,
-                -23.46852
-              ],
-              [
-                -46.67032,
-                -23.46789
-              ],
-              [
-                -46.67014,
-                -23.47423
-              ],
-              [
-                -46.67236,
-                -23.47663
-              ],
-              [
-                -46.6742,
-                -23.4812
-              ],
-              [
-                -46.67945,
-                -23.48373
-              ],
-              [
-                -46.68589,
-                -23.49123
-              ],
-              [
-                -46.70178,
-                -23.49507
               ],
               [
                 -46.70694,
                 -23.49875
               ],
               [
+                -46.70178,
+                -23.49507
+              ],
+              [
+                -46.68589,
+                -23.49123
+              ],
+              [
+                -46.67945,
+                -23.48373
+              ],
+              [
+                -46.6742,
+                -23.4812
+              ],
+              [
+                -46.67236,
+                -23.47663
+              ],
+              [
+                -46.67014,
+                -23.47423
+              ],
+              [
+                -46.67032,
+                -23.46789
+              ],
+              [
+                -46.66818,
+                -23.46852
+              ],
+              [
+                -46.66677,
+                -23.46572
+              ],
+              [
+                -46.66416,
+                -23.46321
+              ],
+              [
+                -46.6607,
+                -23.46196
+              ],
+              [
+                -46.65652,
+                -23.46497
+              ],
+              [
+                -46.62918,
+                -23.44757
+              ],
+              [
+                -46.61939,
+                -23.43826
+              ],
+              [
+                -46.60204,
+                -23.45257
+              ],
+              [
+                -46.57077,
+                -23.45316
+              ],
+              [
+                -46.56734,
+                -23.4386
+              ],
+              [
+                -46.55009,
+                -23.43612
+              ],
+              [
+                -46.53975,
+                -23.44208
+              ],
+              [
+                -46.53634,
+                -23.44078
+              ],
+              [
+                -46.53003,
+                -23.44837
+              ],
+              [
+                -46.51447,
+                -23.4508
+              ],
+              [
+                -46.50876,
+                -23.45293
+              ],
+              [
+                -46.49288,
+                -23.44785
+              ],
+              [
+                -46.49024,
+                -23.46125
+              ],
+              [
+                -46.49171,
+                -23.47339
+              ],
+              [
+                -46.47945,
+                -23.47356
+              ],
+              [
+                -46.4799,
+                -23.4857
+              ],
+              [
+                -46.4755,
+                -23.50559
+              ],
+              [
+                -46.47844,
+                -23.50724
+              ],
+              [
+                -46.48224,
+                -23.50699
+              ],
+              [
+                -46.49292,
+                -23.50792
+              ],
+              [
+                -46.50142,
+                -23.51197
+              ],
+              [
+                -46.49001,
+                -23.52696
+              ],
+              [
+                -46.49846,
+                -23.53257
+              ],
+              [
+                -46.49285,
+                -23.53602
+              ],
+              [
+                -46.48824,
+                -23.53585
+              ],
+              [
+                -46.48501,
+                -23.53962
+              ],
+              [
+                -46.48785,
+                -23.54434
+              ],
+              [
+                -46.49842,
+                -23.54276
+              ],
+              [
+                -46.50188,
+                -23.54732
+              ],
+              [
+                -46.53327,
+                -23.57342
+              ],
+              [
+                -46.55097,
+                -23.57626
+              ],
+              [
+                -46.55356,
+                -23.58192
+              ],
+              [
+                -46.57199,
+                -23.5831
+              ],
+              [
+                -46.59521,
+                -23.58821
+              ],
+              [
+                -46.59961,
+                -23.58507
+              ],
+              [
+                -46.60184,
+                -23.57622
+              ],
+              [
+                -46.61436,
+                -23.55918
+              ],
+              [
+                -46.62294,
+                -23.55627
+              ],
+              [
+                -46.62978,
+                -23.54447
+              ],
+              [
+                -46.6253,
+                -23.53361
+              ],
+              [
+                -46.62931,
+                -23.52566
+              ],
+              [
+                -46.64145,
+                -23.5185
+              ],
+              [
+                -46.67787,
+                -23.51339
+              ],
+              [
+                -46.68286,
+                -23.51004
+              ],
+              [
+                -46.69466,
+                -23.50742
+              ],
+              [
                 -46.70544,
                 -23.50796
               ]
@@ -7077,234 +7124,235 @@
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "marker-symbol": "beer",
-        "marker-color": "#7e7e7e",
-        "marker-size": "medium"
+      "type":"Feature",
+      "properties":{
+        "marker-symbol":"beer",
+        "marker-color":"#f87ab6",
+        "marker-size":"medium"
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
+      "geometry":{
+        "type":"Point",
+        "coordinates":[
           -46.563892,
           -23.509415
         ]
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "stroke-opacity": 1,
-        "stroke-width": 1,
-        "stroke": "#555555",
-        "fill-opacity": 0.5
+      "type":"Feature",
+      "properties":{
+        "stroke-opacity":1,
+        "stroke-width":1,
+        "fill":"#f87ab6",
+        "stroke":"#555555",
+        "fill-opacity":0.5
       },
-      "geometry": {
-        "type": "MultiPolygon",
-        "coordinates": [
+      "geometry":{
+        "type":"MultiPolygon",
+        "coordinates":[
           [
             [
               [
                 -46.66076,
                 -23.6638
-              ],
-              [
-                -46.6504,
-                -23.65265
-              ],
-              [
-                -46.64828,
-                -23.65479
-              ],
-              [
-                -46.64845,
-                -23.65252
-              ],
-              [
-                -46.64433,
-                -23.64616
-              ],
-              [
-                -46.6372,
-                -23.64712
-              ],
-              [
-                -46.63634,
-                -23.64528
-              ],
-              [
-                -46.63171,
-                -23.64686
-              ],
-              [
-                -46.63025,
-                -23.64348
-              ],
-              [
-                -46.62999,
-                -23.62937
-              ],
-              [
-                -46.61695,
-                -23.62795
-              ],
-              [
-                -46.60528,
-                -23.60641
-              ],
-              [
-                -46.60253,
-                -23.60377
-              ],
-              [
-                -46.60047,
-                -23.60357
-              ],
-              [
-                -46.59695,
-                -23.59807
-              ],
-              [
-                -46.59828,
-                -23.58616
-              ],
-              [
-                -46.5995,
-                -23.58398
-              ],
-              [
-                -46.59935,
-                -23.57999
-              ],
-              [
-                -46.60131,
-                -23.57615
-              ],
-              [
-                -46.60386,
-                -23.57349
-              ],
-              [
-                -46.60427,
-                -23.57088
-              ],
-              [
-                -46.60898,
-                -23.56819
-              ],
-              [
-                -46.61412,
-                -23.55921
-              ],
-              [
-                -46.623,
-                -23.55606
-              ],
-              [
-                -46.62605,
-                -23.55331
-              ],
-              [
-                -46.62836,
-                -23.55622
-              ],
-              [
-                -46.63667,
-                -23.55652
-              ],
-              [
-                -46.64309,
-                -23.55517
-              ],
-              [
-                -46.6454,
-                -23.55414
-              ],
-              [
-                -46.64613,
-                -23.5515
-              ],
-              [
-                -46.65569,
-                -23.56073
-              ],
-              [
-                -46.65684,
-                -23.56422
-              ],
-              [
-                -46.66279,
-                -23.57106
-              ],
-              [
-                -46.67115,
-                -23.57663
-              ],
-              [
-                -46.66999,
-                -23.58375
-              ],
-              [
-                -46.67269,
-                -23.59095
-              ],
-              [
-                -46.67411,
-                -23.59775
-              ],
-              [
-                -46.67407,
-                -23.60162
-              ],
-              [
-                -46.67802,
-                -23.61247
-              ],
-              [
-                -46.68085,
-                -23.61749
-              ],
-              [
-                -46.68731,
-                -23.62626
-              ],
-              [
-                -46.68523,
-                -23.62819
-              ],
-              [
-                -46.68447,
-                -23.63026
-              ],
-              [
-                -46.67994,
-                -23.6336
-              ],
-              [
-                -46.67739,
-                -23.6372
-              ],
-              [
-                -46.67685,
-                -23.64024
-              ],
-              [
-                -46.67242,
-                -23.64411
-              ],
-              [
-                -46.66897,
-                -23.65282
-              ],
-              [
-                -46.66308,
-                -23.65937
               ],
               [
                 -46.66272,
                 -23.66135
               ],
               [
+                -46.66308,
+                -23.65937
+              ],
+              [
+                -46.66897,
+                -23.65282
+              ],
+              [
+                -46.67242,
+                -23.64411
+              ],
+              [
+                -46.67685,
+                -23.64024
+              ],
+              [
+                -46.67739,
+                -23.6372
+              ],
+              [
+                -46.67994,
+                -23.6336
+              ],
+              [
+                -46.68447,
+                -23.63026
+              ],
+              [
+                -46.68523,
+                -23.62819
+              ],
+              [
+                -46.68731,
+                -23.62626
+              ],
+              [
+                -46.68085,
+                -23.61749
+              ],
+              [
+                -46.67802,
+                -23.61247
+              ],
+              [
+                -46.67407,
+                -23.60162
+              ],
+              [
+                -46.67411,
+                -23.59775
+              ],
+              [
+                -46.67269,
+                -23.59095
+              ],
+              [
+                -46.66999,
+                -23.58375
+              ],
+              [
+                -46.67115,
+                -23.57663
+              ],
+              [
+                -46.66279,
+                -23.57106
+              ],
+              [
+                -46.65684,
+                -23.56422
+              ],
+              [
+                -46.65569,
+                -23.56073
+              ],
+              [
+                -46.64613,
+                -23.5515
+              ],
+              [
+                -46.6454,
+                -23.55414
+              ],
+              [
+                -46.64309,
+                -23.55517
+              ],
+              [
+                -46.63667,
+                -23.55652
+              ],
+              [
+                -46.62836,
+                -23.55622
+              ],
+              [
+                -46.62605,
+                -23.55331
+              ],
+              [
+                -46.623,
+                -23.55606
+              ],
+              [
+                -46.61412,
+                -23.55921
+              ],
+              [
+                -46.60898,
+                -23.56819
+              ],
+              [
+                -46.60427,
+                -23.57088
+              ],
+              [
+                -46.60386,
+                -23.57349
+              ],
+              [
+                -46.60131,
+                -23.57615
+              ],
+              [
+                -46.59935,
+                -23.57999
+              ],
+              [
+                -46.5995,
+                -23.58398
+              ],
+              [
+                -46.59828,
+                -23.58616
+              ],
+              [
+                -46.59695,
+                -23.59807
+              ],
+              [
+                -46.60047,
+                -23.60357
+              ],
+              [
+                -46.60253,
+                -23.60377
+              ],
+              [
+                -46.60528,
+                -23.60641
+              ],
+              [
+                -46.61695,
+                -23.62795
+              ],
+              [
+                -46.62999,
+                -23.62937
+              ],
+              [
+                -46.63025,
+                -23.64348
+              ],
+              [
+                -46.63171,
+                -23.64686
+              ],
+              [
+                -46.63634,
+                -23.64528
+              ],
+              [
+                -46.6372,
+                -23.64712
+              ],
+              [
+                -46.64433,
+                -23.64616
+              ],
+              [
+                -46.64845,
+                -23.65252
+              ],
+              [
+                -46.64828,
+                -23.65479
+              ],
+              [
+                -46.6504,
+                -23.65265
+              ],
+              [
                 -46.66076,
                 -23.6638
               ]
@@ -7314,31 +7362,32 @@
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "marker-symbol": "beer",
-        "marker-color": "#7e7e7e",
-        "marker-size": "medium"
+      "type":"Feature",
+      "properties":{
+        "marker-symbol":"beer",
+        "marker-color":"#90b9cf",
+        "marker-size":"medium"
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
+      "geometry":{
+        "type":"Point",
+        "coordinates":[
           -46.772907,
           -23.528173
         ]
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "stroke-opacity": 1,
-        "stroke-width": 1,
-        "stroke": "#555555",
-        "fill-opacity": 0.5
+      "type":"Feature",
+      "properties":{
+        "stroke-opacity":1,
+        "stroke-width":1,
+        "fill":"#90b9cf",
+        "stroke":"#555555",
+        "fill-opacity":0.5
       },
-      "geometry": {
-        "type": "MultiPolygon",
-        "coordinates": [
+      "geometry":{
+        "type":"MultiPolygon",
+        "coordinates":[
           [
             [
               [
@@ -7346,108 +7395,108 @@
                 -23.57961
               ],
               [
-                -46.73856,
-                -23.57811
-              ],
-              [
-                -46.73319,
-                -23.57331
-              ],
-              [
-                -46.72783,
-                -23.56883
-              ],
-              [
-                -46.7247,
-                -23.56545
-              ],
-              [
-                -46.71577,
-                -23.55002
-              ],
-              [
-                -46.70959,
-                -23.53114
-              ],
-              [
-                -46.71303,
-                -23.51289
-              ],
-              [
-                -46.72367,
-                -23.49494
-              ],
-              [
-                -46.74324,
-                -23.47951
-              ],
-              [
-                -46.76967,
-                -23.47479
-              ],
-              [
-                -46.7913,
-                -23.47541
-              ],
-              [
-                -46.81224,
-                -23.47983
-              ],
-              [
-                -46.83078,
-                -23.49589
-              ],
-              [
-                -46.8337,
-                -23.50628
-              ],
-              [
-                -46.8361,
-                -23.52091
-              ],
-              [
-                -46.83516,
-                -23.52957
-              ],
-              [
-                -46.83318,
-                -23.54059
-              ],
-              [
-                -46.82975,
-                -23.55302
-              ],
-              [
-                -46.82392,
-                -23.56498
-              ],
-              [
-                -46.81585,
-                -23.57395
-              ],
-              [
-                -46.80589,
-                -23.5793
-              ],
-              [
-                -46.79714,
-                -23.58323
-              ],
-              [
-                -46.78753,
-                -23.5848
-              ],
-              [
-                -46.77242,
-                -23.58465
+                -46.75079,
+                -23.58279
               ],
               [
                 -46.75766,
                 -23.58425
               ],
               [
-                -46.75079,
-                -23.58279
+                -46.77242,
+                -23.58465
+              ],
+              [
+                -46.78753,
+                -23.5848
+              ],
+              [
+                -46.79714,
+                -23.58323
+              ],
+              [
+                -46.80589,
+                -23.5793
+              ],
+              [
+                -46.81585,
+                -23.57395
+              ],
+              [
+                -46.82392,
+                -23.56498
+              ],
+              [
+                -46.82975,
+                -23.55302
+              ],
+              [
+                -46.83318,
+                -23.54059
+              ],
+              [
+                -46.83516,
+                -23.52957
+              ],
+              [
+                -46.8361,
+                -23.52091
+              ],
+              [
+                -46.8337,
+                -23.50628
+              ],
+              [
+                -46.83078,
+                -23.49589
+              ],
+              [
+                -46.81224,
+                -23.47983
+              ],
+              [
+                -46.7913,
+                -23.47541
+              ],
+              [
+                -46.76967,
+                -23.47479
+              ],
+              [
+                -46.74324,
+                -23.47951
+              ],
+              [
+                -46.72367,
+                -23.49494
+              ],
+              [
+                -46.71303,
+                -23.51289
+              ],
+              [
+                -46.70959,
+                -23.53114
+              ],
+              [
+                -46.71577,
+                -23.55002
+              ],
+              [
+                -46.7247,
+                -23.56545
+              ],
+              [
+                -46.72783,
+                -23.56883
+              ],
+              [
+                -46.73319,
+                -23.57331
+              ],
+              [
+                -46.73856,
+                -23.57811
               ],
               [
                 -46.74375,
@@ -7459,31 +7508,32 @@
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "marker-symbol": "beer",
-        "marker-color": "#7e7e7e",
-        "marker-size": "medium"
+      "type":"Feature",
+      "properties":{
+        "marker-symbol":"beer",
+        "marker-color":"#a53eb2",
+        "marker-size":"medium"
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
+      "geometry":{
+        "type":"Point",
+        "coordinates":[
           -67.81702,
           -9.970223
         ]
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "stroke-opacity": 1,
-        "stroke-width": 1,
-        "stroke": "#555555",
-        "fill-opacity": 0.5
+      "type":"Feature",
+      "properties":{
+        "stroke-opacity":1,
+        "stroke-width":1,
+        "fill":"#a53eb2",
+        "stroke":"#555555",
+        "fill-opacity":0.5
       },
-      "geometry": {
-        "type": "MultiPolygon",
-        "coordinates": [
+      "geometry":{
+        "type":"MultiPolygon",
+        "coordinates":[
           [
             [
               [
@@ -7512,31 +7562,32 @@
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "marker-symbol": "beer",
-        "marker-color": "#7e7e7e",
-        "marker-size": "medium"
+      "type":"Feature",
+      "properties":{
+        "marker-symbol":"beer",
+        "marker-color":"#409abc",
+        "marker-size":"medium"
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
+      "geometry":{
+        "type":"Point",
+        "coordinates":[
           -44.012478,
           -19.887215
         ]
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "stroke-opacity": 1,
-        "stroke-width": 1,
-        "stroke": "#555555",
-        "fill-opacity": 0.5
+      "type":"Feature",
+      "properties":{
+        "stroke-opacity":1,
+        "stroke-width":1,
+        "fill":"#409abc",
+        "stroke":"#555555",
+        "fill-opacity":0.5
       },
-      "geometry": {
-        "type": "MultiPolygon",
-        "coordinates": [
+      "geometry":{
+        "type":"MultiPolygon",
+        "coordinates":[
           [
             [
               [
@@ -7633,17 +7684,6 @@
               ]
             ]
           ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {},
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -46.619110107421875,
-          -23.53755013111107
         ]
       }
     }

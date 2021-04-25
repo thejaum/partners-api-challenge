@@ -10,11 +10,13 @@ import org.locationtech.jts.geom.Geometry;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.PostConstruct;
+import java.awt.*;
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Random;
 
 @Slf4j
 @Service
@@ -41,18 +43,19 @@ public class LabService {
             try {
                 log.info("Cadastrando -> "+partnerDTO1.getDocument());
                 partnerService.registerNewPartner(partnerDTO1);
+                String color = randColor();
                 featureCollectionDTO.getFeatures().add(
                     FeatureDTO.builder()
                             .type("Feature")
                             .geometry(partnerDTO1.getAddress())
-                            .properties(createProperties(0))
+                            .properties(createProperties(0,partnerDTO1.getTradingName(),color))
                             .build()
                 );
                 featureCollectionDTO.getFeatures().add(
                         FeatureDTO.builder()
                                 .type("Feature")
                                 .geometry(partnerDTO1.getCoverageArea())
-                                .properties(createProperties(1))
+                                .properties(createProperties(1,partnerDTO1.getTradingName(),color))
                                 .build()
                 );
             } catch (Exception e) {
@@ -63,20 +66,34 @@ public class LabService {
         System.out.println(this.objectMapper.writeValueAsString(featureCollectionDTO));
     }
 
-    private Map<String,Object> createProperties(int type){
+    private Map<String,Object> createProperties(int type,String label,String color){
         if(type==0){
             Map<String,Object> properties = new HashMap<>();
-            properties.put("marker-color","#7e7e7e");
+            properties.put("marker-color",color);
             properties.put("marker-size","medium");
             properties.put("marker-symbol","beer");
+            properties.put("label",label);
             return properties;
         }else{
             Map<String,Object> properties = new HashMap<>();
             properties.put("stroke","#555555");
+            properties.put("fill",color);
             properties.put("stroke-width",1);
             properties.put("stroke-opacity",1);
             properties.put("fill-opacity",0.5);
+            properties.put("label",label);
             return properties;
         }
+    }
+
+    private String randColor(){
+        Random rand = new Random();
+        float r = rand.nextFloat();
+        float g = rand.nextFloat();
+        float b = rand.nextFloat();
+        Color randomColor = new Color(r, g, b);
+        String hex = "#"+Integer.toHexString(randomColor.getRGB()).substring(2);
+        System.out.println(hex);
+        return hex;
     }
 }
