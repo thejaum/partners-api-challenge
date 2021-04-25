@@ -25,7 +25,11 @@ public class PartnerTransformer extends BaseTransformer<PartnerDTO,Partner>{
     }
 
     public PartnerGeoDTO toGeoDtoMapperFromDto(PartnerDTO partnerDTO) throws IOException {
-        PartnerGeoDTO partnerGeoDTO = getModelMapper().map(partnerDTO, PartnerGeoDTO.class);
+        PartnerGeoDTO partnerGeoDTO = new PartnerGeoDTO();
+        partnerGeoDTO.setId(partnerDTO.getId());
+        partnerGeoDTO.setTradingName(partnerDTO.getTradingName());
+        partnerGeoDTO.setOwnerName(partnerDTO.getOwnerName());
+        partnerGeoDTO.setDocument(partnerDTO.getDocument());
         partnerGeoDTO.setAddress(geometryHelper.geoToolsGeometryToGeoJson(partnerDTO.getAddress()));
         partnerGeoDTO.setCoverageArea(geometryHelper.geoToolsGeometryToGeoJson(partnerDTO.getCoverageArea()));
         return partnerGeoDTO;
