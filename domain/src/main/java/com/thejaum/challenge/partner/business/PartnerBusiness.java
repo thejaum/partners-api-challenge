@@ -20,7 +20,7 @@ public class PartnerBusiness {
     private PartnerRepository partnerRepository;
     private PartnerTransformer partnerTransformer;
 
-    private final Long MAXIMUM_RANGE=1000L;
+    private final Long MAXIMUM_RANGE=10L;
 
     public PartnerBusiness(ObjectMapper objectMapper, PartnerRepository partnerRepository, PartnerTransformer partnerTransformer) {
         this.objectMapper = objectMapper;
