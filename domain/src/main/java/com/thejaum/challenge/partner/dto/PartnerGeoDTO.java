@@ -1,6 +1,7 @@
 package com.thejaum.challenge.partner.dto;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
@@ -34,4 +35,14 @@ public class PartnerGeoDTO {
 
     @NotNull(message = "Coverage Area cannot be null.")
     private GeoJsonObject coverageArea;
+
+    @JsonProperty
+    public UUID getId() {
+        return id;
+    }
+
+    @JsonIgnore
+    public void setId(UUID id) {
+        this.id = id;
+    }
 }
