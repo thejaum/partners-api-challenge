@@ -37,3 +37,7 @@ build/
 
 ### Maven ###
 .mvn/*
+
+### logs ###
+public/*
+*.log
