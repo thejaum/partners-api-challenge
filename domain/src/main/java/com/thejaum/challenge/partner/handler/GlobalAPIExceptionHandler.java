@@ -3,6 +3,7 @@ package com.thejaum.challenge.partner.handler;
 import com.thejaum.challenge.partner.dto.ErrorDetailsDTO;
 import com.thejaum.challenge.partner.dto.FieldErrorDetailsDTO;
 import com.thejaum.challenge.partner.exception.NotFoundException;
+import com.thejaum.challenge.partner.exception.WrongGeometryTypeException;
 import org.apache.commons.lang3.ClassUtils;
 import org.springframework.context.annotation.Bean;
 import org.springframework.http.HttpHeaders;
@@ -27,6 +28,17 @@ import static org.springframework.http.HttpStatus.BAD_REQUEST;
 
 @ControllerAdvice
 public class GlobalAPIExceptionHandler extends ResponseEntityExceptionHandler {
+
+    @ExceptionHandler(WrongGeometryTypeException.class)
+    public ResponseEntity<ErrorDetailsDTO> wrongGeometryTypeException(final WrongGeometryTypeException ex, WebRequest request) {
+        ErrorDetailsDTO message = ErrorDetailsDTO.builder()
+                .statusCode(BAD_REQUEST.value())
+                .timestamp(LocalDateTime.now())
+                .message(ex.getMessage())
+                .description(request.getDescription(false))
+                .build();
+        return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(message);
+    }
 
     @ExceptionHandler(NotFoundException.class)
     public ResponseEntity<ErrorDetailsDTO> resourceNotFoundException(final NotFoundException ex, WebRequest request) {

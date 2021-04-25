@@ -8,6 +8,7 @@ import lombok.NoArgsConstructor;
 import org.geojson.GeoJsonObject;
 
 import javax.validation.constraints.NotEmpty;
+import javax.validation.constraints.NotNull;
 import java.util.UUID;
 
 @Data
@@ -19,16 +20,18 @@ public class PartnerGeoDTO {
     @JsonIgnore
     private UUID id;
 
-    @NotEmpty(message = "Trading name can not be empty or null.")
+    @NotEmpty(message = "Trading name cannot be empty or null.")
     private String tradingName;
 
-    @NotEmpty(message = "Owner name can not be empty or null.")
+    @NotEmpty(message = "Owner name cannot be empty or null.")
     private String ownerName;
 
-    @NotEmpty(message = "Document can not be empty or null.")
+    @NotEmpty(message = "Document cannot be empty or null.")
     private String document;
 
+    @NotNull(message = "Address cannot be null.")
     private GeoJsonObject address;
 
+    @NotNull(message = "Coverage Area cannot be null.")
     private GeoJsonObject coverageArea;
 }
