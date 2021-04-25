@@ -28,7 +28,7 @@ public class PartnerService {
         this.partnerBusiness = partnerBusiness;
         this.partnerTransformer = partnerTransformer;
     }
-    //TODO Check unique document key and throw BadResquest.
+
     public PartnerGeoDTO registerNewPartner(PartnerGeoDTO partnerGeoDTO) throws IOException {
         log.info("Beginning to register a new Partner.");
         if(partnerBusiness.findByDocument(partnerGeoDTO.getDocument()).isPresent())
