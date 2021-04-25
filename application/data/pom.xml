@@ -18,26 +18,10 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <version>${spring.boot.version}</version>
-                <configuration>
-                    <classifier>exec</classifier>
-                </configuration>
-            </plugin>
-            <!-- Plugin para copiar o jar gerado para a pasta do docker -->
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-antrun-plugin</artifactId>
-                <version>${maven-antrun-plugin.version}</version>
                 <executions>
                     <execution>
-                        <phase>install</phase>
-                        <configuration>
-                            <target>
-                                <copy file="target/${project.artifactId}-${project.version}.jar"
-                                      tofile="Docker/jar/${project.artifactId}.jar"/>
-                            </target>
-                        </configuration>
                         <goals>
-                            <goal>run</goal>
+                            <goal>repackage</goal>
                         </goals>
                     </execution>
                 </executions>
