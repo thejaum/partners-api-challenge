@@ -5,6 +5,7 @@ import com.thejaum.challenge.partner.dto.FieldErrorDetailsDTO;
 import com.thejaum.challenge.partner.exception.AlreadyExistException;
 import com.thejaum.challenge.partner.exception.NotFoundException;
 import com.thejaum.challenge.partner.exception.WrongGeometryTypeException;
+import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.ClassUtils;
 import org.springframework.context.annotation.Bean;
 import org.springframework.http.HttpHeaders;
@@ -27,11 +28,13 @@ import java.util.Locale;
 
 import static org.springframework.http.HttpStatus.BAD_REQUEST;
 
+@Slf4j
 @ControllerAdvice
 public class GlobalAPIExceptionHandler extends ResponseEntityExceptionHandler {
 
     @ExceptionHandler(AlreadyExistException.class)
     public ResponseEntity<ErrorDetailsDTO> alreadyExistException(final AlreadyExistException ex, WebRequest request) {
+        log.error("alreadyExistException");
         ErrorDetailsDTO message = ErrorDetailsDTO.builder()
                 .statusCode(BAD_REQUEST.value())
                 .timestamp(LocalDateTime.now())
@@ -43,6 +46,7 @@ public class GlobalAPIExceptionHandler extends ResponseEntityExceptionHandler {
 
     @ExceptionHandler(WrongGeometryTypeException.class)
     public ResponseEntity<ErrorDetailsDTO> wrongGeometryTypeException(final WrongGeometryTypeException ex, WebRequest request) {
+        log.error("wrongGeometryTypeException");
         ErrorDetailsDTO message = ErrorDetailsDTO.builder()
                 .statusCode(BAD_REQUEST.value())
                 .timestamp(LocalDateTime.now())
@@ -54,6 +58,7 @@ public class GlobalAPIExceptionHandler extends ResponseEntityExceptionHandler {
 
     @ExceptionHandler(NotFoundException.class)
     public ResponseEntity<ErrorDetailsDTO> resourceNotFoundException(final NotFoundException ex, WebRequest request) {
+        log.error("resourceNotFoundException");
         ErrorDetailsDTO message = ErrorDetailsDTO.builder()
                 .statusCode(HttpStatus.NOT_FOUND.value())
                 .timestamp(LocalDateTime.now())
@@ -65,6 +70,8 @@ public class GlobalAPIExceptionHandler extends ResponseEntityExceptionHandler {
 
     @ExceptionHandler(Exception.class)
     public ResponseEntity<ErrorDetailsDTO> globalExceptionHandler(final Exception ex, WebRequest request) {
+        log.error("globalExceptionHandler",ex);
+        ex.printStackTrace();
         ErrorDetailsDTO message = ErrorDetailsDTO.builder()
                 .statusCode(HttpStatus.INTERNAL_SERVER_ERROR.value())
                 .timestamp(LocalDateTime.now())
@@ -81,6 +88,8 @@ public class GlobalAPIExceptionHandler extends ResponseEntityExceptionHandler {
             final HttpStatus status,
             final WebRequest request
     ) {
+        log.error("handleBindException",ex);
+        ex.printStackTrace();
         ErrorDetailsDTO message = ErrorDetailsDTO.builder()
                 .statusCode(BAD_REQUEST.value())
                 .timestamp(LocalDateTime.now())
@@ -98,6 +107,8 @@ public class GlobalAPIExceptionHandler extends ResponseEntityExceptionHandler {
             final HttpStatus status,
             final WebRequest request
     ) {
+        log.error("handleMethodArgumentNotValid",ex);
+        ex.printStackTrace();
         ErrorDetailsDTO message = ErrorDetailsDTO.builder()
                 .statusCode(BAD_REQUEST.value())
                 .timestamp(LocalDateTime.now())
