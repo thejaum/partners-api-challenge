@@ -8,6 +8,7 @@ import com.thejaum.challenge.partner.util.GeometryHelper;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
+import javax.annotation.PostConstruct;
 import java.awt.*;
 import java.io.File;
 import java.io.IOException;
@@ -30,6 +31,7 @@ public class LabService {
         this.geometryHelper = geometryHelper;
     }
 
+    @PostConstruct
     public void persistBaseTeste() throws IOException {
         File file = new File("F:\\desenv\\challenges\\partners-api-challenge\\docs\\partners-pdv.json");
         final PdvPartnersDTO partnerDTO = this.objectMapper.readValue(file, PdvPartnersDTO.class);

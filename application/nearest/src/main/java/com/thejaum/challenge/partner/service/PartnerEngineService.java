@@ -10,6 +10,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.locationtech.jts.geom.Coordinate;
 import org.locationtech.jts.geom.MultiPolygon;
 import org.locationtech.jts.geom.Point;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
 import java.io.IOException;
@@ -30,11 +31,13 @@ public class PartnerEngineService {
         this.partnerBusiness = partnerBusiness;
         this.partnerTransformer = partnerTransformer;
     }
+    @Value("${nearest.maximum-range}")
+    private long MAXIMUM_RANGE;
 
     public PartnerGeoDTO findNearestPartner(Double lng, Double lat) throws IOException {
         log.info("Searching Partners for long {}, lat {} covered by pre-defined range.",lng,lat);
         Point location = geometryHelper.createAnPointFromCoordinate(new Coordinate(lng, lat));
-        List<Partner> partnerLocations = partnerBusiness.findNearestCoordinatesFromAnPointWithRange(lng,lat);
+        List<Partner> partnerLocations = partnerBusiness.findNearestCoordinatesFromAnPointWithRange(lng,lat,MAXIMUM_RANGE);
         log.info("Partners found in range -> "+partnerLocations.size());
         if(partnerLocations.size()==0)
             throw new NotFoundException("No Partners found nearby.");

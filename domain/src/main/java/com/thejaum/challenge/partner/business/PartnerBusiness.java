@@ -6,6 +6,7 @@ import com.thejaum.challenge.partner.model.Partner;
 import com.thejaum.challenge.partner.repository.PartnerRepository;
 import com.thejaum.challenge.partner.transformer.PartnerTransformer;
 import org.locationtech.jts.geom.Point;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
 import java.util.Comparator;
@@ -16,14 +17,10 @@ import java.util.UUID;
 @Component
 public class PartnerBusiness {
 
-    private ObjectMapper objectMapper;
     private PartnerRepository partnerRepository;
     private PartnerTransformer partnerTransformer;
 
-    private final Long MAXIMUM_RANGE=10L;
-
-    public PartnerBusiness(ObjectMapper objectMapper, PartnerRepository partnerRepository, PartnerTransformer partnerTransformer) {
-        this.objectMapper = objectMapper;
+    public PartnerBusiness(PartnerRepository partnerRepository, PartnerTransformer partnerTransformer) {
         this.partnerRepository = partnerRepository;
         this.partnerTransformer = partnerTransformer;
     }
@@ -43,8 +40,8 @@ public class PartnerBusiness {
         return partner;
     }
 
-    public List<Partner> findNearestCoordinatesFromAnPointWithRange(Double lng, Double lat) {
-        return partnerRepository.findNearestCoordinatesFromAnPointWithRange(lng, lat, MAXIMUM_RANGE);
+    public List<Partner> findNearestCoordinatesFromAnPointWithRange(Double lng, Double lat,long range) {
+        return partnerRepository.findNearestCoordinatesFromAnPointWithRange(lng, lat, range);
     }
 
     public Optional<Partner> extractClosestPartnerByAddress(List<Partner> partners, Point point){

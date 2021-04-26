@@ -17,3 +17,5 @@ logging:
     org:
       springframework:
         web: DEBUG
+nearest:
+  maximum-range: 10

@@ -19,7 +19,7 @@ public interface PartnerRepository extends JpaRepository<Partner, UUID> {
     List<Partner> findNearestCoordinatesFromAnPointWithRange(
             @Param("lng") Double lng,
             @Param("lat")  Double lat,
-            @Param("range")  Long range);
+            @Param("range")  long range);
 
     Optional<Partner> findByDocument(String document);
 
