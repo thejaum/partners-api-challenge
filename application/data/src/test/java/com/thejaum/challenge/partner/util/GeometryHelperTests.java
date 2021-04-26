@@ -1,13 +1,15 @@
-package business;
+package com.thejaum.challenge.partner.util;
 
-import com.thejaum.challenge.partner.util.GeometryHelper;
-import configuration.BaseTest;
+import com.thejaum.challenge.partner.configuration.BaseTest;
 import org.junit.Assert;
 import org.junit.Test;
-import org.locationtech.jts.geom.*;
+import org.locationtech.jts.geom.Coordinate;
+import org.locationtech.jts.geom.LinearRing;
+import org.locationtech.jts.geom.Point;
+import org.locationtech.jts.geom.Polygon;
 import org.springframework.beans.factory.annotation.Autowired;
 
-public class ProximityEngineTests extends BaseTest {
+public class GeometryHelperTests extends BaseTest {
 
     @Autowired
     private GeometryHelper geometryHelper;

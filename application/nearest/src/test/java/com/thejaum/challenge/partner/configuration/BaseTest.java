@@ -1,4 +1,4 @@
-package configuration;
+package com.thejaum.challenge.partner.configuration;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
