@@ -15,7 +15,7 @@ public class TomTomRoute implements RouteEngine {
 
     private final String BASE_URL="https://api.tomtom.com/routing/1/calculateRoute/";
 
-    @Value("${tomtom.key:})")
+    @Value("${tomtom.key:}")
     private String key;
 
     @Override
@@ -28,7 +28,7 @@ public class TomTomRoute implements RouteEngine {
         log.info("findTravelTimeInSecondsBetweenTwoLocations -> {}",routeDTO.toString());
         RestTemplate restTemplate = new RestTemplate();
         String composedUri = BASE_URL+routeDTO.getOriginLat()+","+routeDTO.getOriginLng()+":"+routeDTO.getDestinationLat()+","+routeDTO.getDestinationLng()
-                +"/json?key="+key+"&travelMode=car&traffic=true";
+                +"/json?key="+key+"&travelMode=car&traffic=false";
         try {
             //TODO Get SDK from TomTom with ResonseObject for this serialization.
             Object response = restTemplate.getForObject(composedUri, Object.class);

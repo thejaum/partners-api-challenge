@@ -99,11 +99,10 @@ public class LabService {
         return hex;
     }
 
-    @PostConstruct
     public void checkTomTom(){
         RouteDTO routeDTO = RouteDTO.builder()
-                .origemLat(-23.5756)
-                .origemLng(-46.6370)
+                .originLat(-23.5756)
+                .originLng(-46.6370)
                 .destinationLat(-23.6110)
                 .destinationLng(-46.6240)
                 .build();
