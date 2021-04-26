@@ -49,10 +49,10 @@ public class PartnerEngineService {
         if(partnerInCoverArea.size()==1)
             return partnerTransformer.toGeoDtoMapperFromEntity(partnerInCoverArea.get(0));
         log.info("Finding the closest one.");
-        Optional<Partner> closestPartner = partnerBusiness.extractClosestPartnerByAddress(partnerInCoverArea, location);
-        if(!closestPartner.isPresent())
-            throw new NotFoundException("Outside the coverage area of the partners nearby.");
-        log.info("Found -> {}",closestPartner.get().getTradingName());
-        return partnerTransformer.toGeoDtoMapperFromEntity(closestPartner.get());
+        //TODO Improve distance with Matrix API to consider roads.
+        //Partner closestPartner = partnerBusiness.extractClosestPartnerByAddress(partnerInCoverArea, location);
+        Partner closestPartner = partnerBusiness.extractClosestPartnerByAddressAndRoads(partnerInCoverArea, location);
+        log.info("Closest -> {}",closestPartner.getTradingName());
+        return partnerTransformer.toGeoDtoMapperFromEntity(closestPartner);
     }
 }

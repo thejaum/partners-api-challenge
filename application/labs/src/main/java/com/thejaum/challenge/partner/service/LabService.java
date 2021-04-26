@@ -1,6 +1,8 @@
 package com.thejaum.challenge.partner.service;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.thejaum.challenge.partner.distance.RouteDTO;
+import com.thejaum.challenge.partner.distance.RouteEngine;
 import com.thejaum.challenge.partner.dto.FeatureCollectionDTO;
 import com.thejaum.challenge.partner.dto.FeatureDTO;
 import com.thejaum.challenge.partner.dto.PdvPartnersDTO;
@@ -24,14 +26,15 @@ public class LabService {
     private PartnerService partnerService;
     private ObjectMapper objectMapper;
     private GeometryHelper geometryHelper;
+    private RouteEngine routeEngine;
 
-    public LabService(PartnerService partnerService, ObjectMapper objectMapper, GeometryHelper geometryHelper) {
+    public LabService(PartnerService partnerService, ObjectMapper objectMapper, GeometryHelper geometryHelper, RouteEngine routeEngine) {
         this.partnerService = partnerService;
         this.objectMapper = objectMapper;
         this.geometryHelper = geometryHelper;
+        this.routeEngine = routeEngine;
     }
 
-    @PostConstruct
     public void persistBaseTeste() throws IOException {
         File file = new File("F:\\desenv\\challenges\\partners-api-challenge\\docs\\partners-pdv.json");
         final PdvPartnersDTO partnerDTO = this.objectMapper.readValue(file, PdvPartnersDTO.class);
@@ -94,5 +97,16 @@ public class LabService {
         String hex = "#"+Integer.toHexString(randomColor.getRGB()).substring(2);
         System.out.println(hex);
         return hex;
+    }
+
+    @PostConstruct
+    public void checkTomTom(){
+        RouteDTO routeDTO = RouteDTO.builder()
+                .origemLat(-23.5756)
+                .origemLng(-46.6370)
+                .destinationLat(-23.6110)
+                .destinationLng(-46.6240)
+                .build();
+        double routeBetweenTwoLocations = routeEngine.findTravelTimeInSecondsBetweenTwoLocations(routeDTO);
     }
 }
