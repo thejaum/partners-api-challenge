@@ -1,6 +1,8 @@
 package com.thejaum.challenge.partner.service;
 
 import com.thejaum.challenge.partner.business.PartnerBusiness;
+import com.thejaum.challenge.partner.distance.RouteEngine;
+import com.thejaum.challenge.partner.distance.RouteGateway;
 import com.thejaum.challenge.partner.dto.PartnerGeoDTO;
 import com.thejaum.challenge.partner.exception.NotFoundException;
 import com.thejaum.challenge.partner.model.Partner;
@@ -34,7 +36,7 @@ public class PartnerEngineService {
     @Value("${nearest.maximum-range}")
     private long MAXIMUM_RANGE;
 
-    public PartnerGeoDTO findNearestPartner(Double lng, Double lat) throws IOException {
+    public PartnerGeoDTO findNearestPartner(Double lng, Double lat,String mode) throws IOException {
         log.info("Searching Partners for long {}, lat {} covered by pre-defined range.",lng,lat);
         Point location = geometryHelper.createAnPointFromCoordinate(new Coordinate(lng, lat));
         List<Partner> partnerLocations = partnerBusiness.findNearestCoordinatesFromAnPointWithRange(lng,lat,MAXIMUM_RANGE);
@@ -50,9 +52,18 @@ public class PartnerEngineService {
             return partnerTransformer.toGeoDtoMapperFromEntity(partnerInCoverArea.get(0));
         log.info("Finding the closest one.");
         //TODO Improve distance with Matrix API to consider roads.
-        //Partner closestPartner = partnerBusiness.extractClosestPartnerByAddress(partnerInCoverArea, location);
-        Partner closestPartner = partnerBusiness.extractClosestPartnerByAddressAndRoads(partnerInCoverArea, location);
+        Partner closestPartner = extractClosestPartner(partnerInCoverArea,location,RouteGateway.getByValue(mode));
         log.info("Closest -> {}",closestPartner.getTradingName());
         return partnerTransformer.toGeoDtoMapperFromEntity(closestPartner);
+    }
+
+    public Partner extractClosestPartner(List<Partner> partnerInCoverArea,Point location,RouteGateway mode){
+        Partner closestPartner;
+        if(RouteGateway.ROUTE==mode){
+            closestPartner = partnerBusiness.extractClosestPartnerByAddressAndRoads(partnerInCoverArea, location,mode);
+        }else{
+            closestPartner = partnerBusiness.extractClosestPartnerByAddress(partnerInCoverArea, location);
+        }
+        return closestPartner;
     }
 }

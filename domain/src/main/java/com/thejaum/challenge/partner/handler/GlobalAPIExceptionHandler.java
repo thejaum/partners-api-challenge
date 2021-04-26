@@ -1,5 +1,6 @@
 package com.thejaum.challenge.partner.handler;
 
+import com.thejaum.challenge.partner.distance.InvalidRouteEngineException;
 import com.thejaum.challenge.partner.dto.ErrorDetailsDTO;
 import com.thejaum.challenge.partner.dto.FieldErrorDetailsDTO;
 import com.thejaum.challenge.partner.exception.AlreadyExistException;
@@ -7,7 +8,6 @@ import com.thejaum.challenge.partner.exception.NotFoundException;
 import com.thejaum.challenge.partner.exception.WrongGeometryTypeException;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.ClassUtils;
-import org.springframework.context.annotation.Bean;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -17,20 +17,29 @@ import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.context.request.WebRequest;
-import org.springframework.web.servlet.LocaleResolver;
-import org.springframework.web.servlet.i18n.SessionLocaleResolver;
 import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExceptionHandler;
 
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Locale;
 
 import static org.springframework.http.HttpStatus.BAD_REQUEST;
 
 @Slf4j
 @ControllerAdvice
 public class GlobalAPIExceptionHandler extends ResponseEntityExceptionHandler {
+
+    @ExceptionHandler(InvalidRouteEngineException.class)
+    public ResponseEntity<ErrorDetailsDTO> invalidRouteEngineException(final InvalidRouteEngineException ex, WebRequest request) {
+        log.error("invalidRouteEngineException");
+        ErrorDetailsDTO message = ErrorDetailsDTO.builder()
+                .statusCode(BAD_REQUEST.value())
+                .timestamp(LocalDateTime.now())
+                .message(ex.getMessage())
+                .description(request.getDescription(false))
+                .build();
+        return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(message);
+    }
 
     @ExceptionHandler(AlreadyExistException.class)
     public ResponseEntity<ErrorDetailsDTO> alreadyExistException(final AlreadyExistException ex, WebRequest request) {

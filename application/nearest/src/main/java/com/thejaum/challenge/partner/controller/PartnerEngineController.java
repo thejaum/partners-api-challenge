@@ -23,7 +23,8 @@ public class PartnerEngineController {
 
     @GetMapping
     public ResponseEntity<PartnerGeoDTO> searchNearest(@RequestParam(value = "long", required = true) Double lng,
-                                                       @RequestParam(value = "lat", required = true) Double lat) throws IOException {
-        return ResponseEntity.ok(partnerEngineService.findNearestPartner(lng,lat));
+                                                       @RequestParam(value = "lat", required = true) Double lat,
+                                                       @RequestParam(value = "mode",defaultValue="Standard") String mode) throws IOException {
+        return ResponseEntity.ok(partnerEngineService.findNearestPartner(lng,lat,mode));
     }
 }

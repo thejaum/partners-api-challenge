@@ -1,7 +1,6 @@
 package com.thejaum.challenge.partner.business;
 
-import com.thejaum.challenge.partner.distance.RouteDTO;
-import com.thejaum.challenge.partner.distance.TomTomRoute;
+import com.thejaum.challenge.partner.distance.*;
 import com.thejaum.challenge.partner.dto.PartnerDTO;
 import com.thejaum.challenge.partner.model.Partner;
 import com.thejaum.challenge.partner.repository.PartnerRepository;
@@ -16,12 +15,12 @@ public class PartnerBusiness {
 
     private PartnerRepository partnerRepository;
     private PartnerTransformer partnerTransformer;
-    private TomTomRoute tomTomRoute;
+    private List<RouteEngine> routeEngines;
 
-    public PartnerBusiness(PartnerRepository partnerRepository, PartnerTransformer partnerTransformer, TomTomRoute tomTomRoute) {
+    public PartnerBusiness(PartnerRepository partnerRepository, PartnerTransformer partnerTransformer, List<RouteEngine> routeEngines) {
         this.partnerRepository = partnerRepository;
         this.partnerTransformer = partnerTransformer;
-        this.tomTomRoute = tomTomRoute;
+        this.routeEngines = routeEngines;
     }
 
     public Partner createNewPartner(PartnerDTO partnerDTO){
@@ -47,11 +46,14 @@ public class PartnerBusiness {
         return partners.stream().min(Comparator.comparing(partner -> partner.getAddress().distance(point))).get();
     }
 
-    public Partner extractClosestPartnerByAddressAndRoads(List<Partner> partners, Point origim){
+    public Partner extractClosestPartnerByAddressAndRoads(List<Partner> partners, Point origim, RouteGateway routeGateway){
         Map<Partner,Long> documentsChecked = new LinkedHashMap<>();
+        RouteEngine routeEngineImp = routeEngines.stream()
+                .filter(routeEngine -> routeEngine.accept())
+                .findFirst().orElseThrow(() -> new InvalidRouteEngineException("Invalid Route Engine Key."));
         for(Partner partner : partners){
             Point address = (Point) partner.getAddress();
-            Long seconds = tomTomRoute.findTravelTimeInSecondsBetweenTwoLocations(RouteDTO.builder()
+            Long seconds = routeEngineImp.findTravelTimeInSecondsBetweenTwoLocations(RouteDTO.builder()
                     .originLng(origim.getX())
                     .originLat(origim.getY())
                     .destinationLng(address.getX())
