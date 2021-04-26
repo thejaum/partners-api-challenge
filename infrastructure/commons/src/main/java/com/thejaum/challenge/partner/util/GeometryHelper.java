@@ -18,12 +18,8 @@ public class GeometryHelper {
         this.objectMapper = objectMapper;
     }
 
-    static GeometryFactory geometryFactory = new GeometryFactory();
+    public GeometryFactory geometryFactory = new GeometryFactory();
 
-    public LineString createAnLineFromCoordinates(Coordinate[] coords){
-        LineString line = geometryFactory.createLineString(coords );
-        return line;
-    }
     public LinearRing createAnLinearRingFromCoordinates(Coordinate[] coords){
         LinearRing linearRing = geometryFactory.createLinearRing(coords);
         return linearRing;
