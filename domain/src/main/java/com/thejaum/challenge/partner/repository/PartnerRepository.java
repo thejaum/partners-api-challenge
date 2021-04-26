@@ -14,7 +14,7 @@ import java.util.UUID;
 public interface PartnerRepository extends JpaRepository<Partner, UUID> {
 
     @Query(value="select p.id, p.trading_name, p.owner_name, p.\"document\", p.address, p.coverage_area " +
-            "from data.partners p where ST_Distance(p.address,ST_Point( :lng, :lat)) < :range"
+            "from data.partners p where ST_Distance(p.address,ST_Point( :lng, :lat),false) < :range"
             ,nativeQuery = true)
     List<Partner> findNearestCoordinatesFromAnPointWithRange(
             @Param("lng") Double lng,

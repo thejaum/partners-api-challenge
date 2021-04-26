@@ -37,4 +37,4 @@ logging:
   pattern:
     console: "%clr(%d{yy-MM-dd E HH:mm:ss.SSS}){blue} [%thread] %clr(%-5p) %clr([%40class{30}]){cyan} %clr(%m){faint}%n"
 nearest:
-  maximum-range: 10
+  maximum-range: 10000
