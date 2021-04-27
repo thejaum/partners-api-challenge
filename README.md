@@ -143,7 +143,7 @@ GET -> http://localhost:9001/challenge/nearest/v1/partners/?long=-46.63696289062
 Acredito que poderia evoluir a primeira busca do Range e utilizar algo como o Redis para cachear algumas 'zonas', considerando grandes metropolis, onde muitas pessoas vão consumir de pontos iniciais muito parecidos, poderia aliviar bastante. Precisaria considerar um mecanismo para limpar esse cache sempre que novos parceiros, nessas 'zonas', ficassem ativos ou vice-versa.
 ### Loadbalance e Service Discovery
 Utilizar alguma tecnologia(por exemplo Kubernetes) para subir novas instancias do Nearest com base em quantidade de requisições, uso de hardware ou alguma outra estrategia.
-### Melhorar o OpenAPI
+### Validação dos dados
 Validação mais apurada dos dados de entrada, como por exemplo validar se o campo Document no cadastro de um parceiro é um CPF ou CNPJ válido.
 ### Melhorar o OpenAPI
 Melhorar a documentação dos Endpoints, a interpretação 'crua' dos GeoJson ficam confusos no Swagger.
