@@ -1,4 +1,5 @@
 
+
 ### Este é um serviço que tem como objetivo cadastrar parceiros, que são pontos de vendas com uma geolocalização específica, e permitir que, a partir de um ponto em latitude/longitude, seja encontrado o parceiro mais próximo. O arquivo MD do desafio pode ser encontrado em `/docs/backend.md`
 
 ## Por trás das escolhas
@@ -41,108 +42,60 @@ Primeiro passo é buildar o projeto para gerar os arquivos binarios, vamos preci
 
 #### Se tiver ambos instalados e configurados
 Acesse o diretorio raiz do do projeto na sua maquina e rode o comando
-```
-mvn clean install
-```
+```  
+mvn clean install  
+```  
 #### Se não tiver ambos instalados
 Você pode utilizar uma imagem do próprio Maven(https://github.com/carlossg/docker-maven), informando na tag a versão da JDK. Para buildar, acesse o diretorio raiz do projeto na sua maquina e rode o comando
-```
-docker container run -it --name mvnchallenge -v DiretorioDoProjeto:/usr/src/mymaven -w /usr/src/mymaven maven:3.6.0-jdk-11-slim mvn clean install
-```
+```  
+docker container run -it --name mvnchallenge -v DiretorioDoProjeto:/usr/src/mymaven -w /usr/src/mymaven maven:3.6.0-jdk-11-slim mvn clean install  
+```  
 Exemplo no Windows para o DiretorioDoProjeto -> F:\desenv\challenges\partners-api-challenge
 ### Run
 Após gerar os arquivos binarios, basta acessar a pasta Docker que se encontra na Raiz do projeto, e rodar o seguinte comando
-```
-docker-compose up -d
-```
+```  
+docker-compose up -d  
+```  
 Pronto, o banco de dados Postgres/PostGIS e os micro serviços Data e Nearest estão no ar!
 ### .env
 Na pasta Docker se encontra o arquivo .env, nele você pode alterar as seguintes variaveis
-```
-#Services Ports  
-DATA_EXTERNAL_PORT=9040  
-NEAREST_EXTERNAL_PORT=9041  
-POSTGRES_EXTERNAL_PORT=5435
-```
+```  
+#Services Ports DATA_EXTERNAL_PORT=9040 NEAREST_EXTERNAL_PORT=9041 POSTGRES_EXTERNAL_PORT=5435  
+```  
 Caso alguma destas portas esteja em uso na sua maquina.
 
 
 ## Consumindo os endpoints
 ### Swagger
-Com os serviços no ar você pode acessar o Swagger de ambos
-Data -> http://localhost:9040/challenge/data/swagger-ui.html
+Com os serviços no ar você pode acessar o Swagger de ambos  
+Data -> http://localhost:9040/challenge/data/swagger-ui.html  
 Nearest -> http://localhost:9041/challenge/nearest/swagger-ui.html
 
 ### Cadastrando um novo Parceiro.
-```
-POST -> http://localhost:9040/challenge/data/v1/partners/
-Body
-{
-	"tradingName": "Bar do João",
-	"ownerName": "Joao Castro",
-	"document": "12345678952",
-	"coverageArea": {
-		"type": "MultiPolygon",
-		"coordinates": [[
-			[[
-				-49.07109975814819,
-				-22.323579248218913
-				],
-				[
-				-49.07592773437499,
-				-22.328581231115066
-				],
-				[
-				-49.06710863113403,
-				-22.332094421405362
-				],
-				[
-				-49.07109975814819,
-				-22.323579248218913
-			]],
-			[[
-				-49.068589210510254,
-				-22.32346015120244
-				],
-				[
-				-49.06464099884033,
-				-22.326179507739987
-				],
-				[
-				-49.06556367874145,
-				-22.32127668788629
-				],
-				[
-				-49.068589210510254,
-				-22.32346015120244
-			]]
-		]]
-	},
-	"address": {
-		"type": "Point",
-		"coordinates": [
-			-49.07230138778686,
-			-22.329355331490987
-		]
-	}
-}
-
-Lembrando que os campos coverageArea e address respeitam o padrão GeoJson.
-```
+```  
+POST -> http://localhost:9040/challenge/data/v1/partners/  
+Body  
+{  
+ "tradingName": "Bar do João", "ownerName": "Joao Castro", "document": "12345678952", "coverageArea": { "type": "MultiPolygon", "coordinates": [[ [[ -49.07109975814819, -22.323579248218913 ], [ -49.07592773437499, -22.328581231115066 ], [ -49.06710863113403, -22.332094421405362 ], [ -49.07109975814819, -22.323579248218913 ]], [[ -49.068589210510254, -22.32346015120244 ], [ -49.06464099884033, -22.326179507739987 ], [ -49.06556367874145, -22.32127668788629 ], [ -49.068589210510254, -22.32346015120244 ]] ]] }, "address": { "type": "Point", "coordinates": [ -49.07230138778686, -22.329355331490987 ] }}  
+  
+Lembrando que os campos coverageArea e address respeitam o padrão GeoJson.  
+```  
 ### Buscando um Parceiro existente pelo ID.
-```
-GET -> http://localhost:9040/challenge/data/v1/partners/{id}
-```
+```  
+GET -> http://localhost:9040/challenge/data/v1/partners/{id}  
+```  
 ### Buscando o Parceiro mais próximo.
-```
-GET -> http://localhost:9001/challenge/nearest/v1/partners/?long=-46.636962890625&lat=-23.575630309112977&mode=Route
-```
+```  
+GET -> http://localhost:9001/challenge/nearest/v1/partners/?long=-46.636962890625&lat=-23.575630309112977&mode=Route  
+```  
 
 ## Roadmap importante para o projeto na minha visão
 ### Cache para aliviar o banco
 Acredito que poderia evoluir a primeira busca do Range e utilizar algo como o Redis para cachear algumas 'zonas', considerando grandes metropolis, onde muitas pessoas vão consumir de pontos iniciais muito parecidos, poderia aliviar bastante. Precisaria considerar um mecanismo para limpar esse cache sempre que novos parceiros, nessas 'zonas', ficassem ativos ou vice-versa.
 ### Loadbalance e Service Discovery
 Utilizar alguma tecnologia(por exemplo Kubernetes) para subir novas instancias do Nearest com base em quantidade de requisições, uso de hardware ou alguma outra estrategia.
+### Reatividade
+Utilizar o WebFlux para tornar os endpoints reativos.
 ### Validação dos dados
 Validação mais apurada dos dados de entrada, como por exemplo validar se o campo Document no cadastro de um parceiro é um CPF ou CNPJ válido.
 ### Melhorar o OpenAPI
