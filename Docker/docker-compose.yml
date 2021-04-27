@@ -1,0 +1,101 @@
+version: '3'
+services:
+  postgres_gis_db:
+    image: "postgis/postgis"
+    container_name: ${ENVIRONMENT}-postgres_gis
+    restart: unless-stopped
+    networks:
+      backapi:
+        ipv4_address: 192.168.7.2
+    ports:
+      - ${POSTGRES_EXTERNAL_PORT}:5432
+    env_file:
+      - database.env
+    volumes:
+      - 'postgresql_data:/bitnami/postgresql'
+
+  data-service:
+    image: openjdk:11.0.4-jre-slim
+    container_name: ${ENVIRONMENT}-data-service
+    hostname: ${ENVIRONMENT}-data-service
+    links:
+      - "postgres_gis_db:database"
+    restart: unless-stopped
+    volumes:
+      - ../application/data/target/${DATA_JAR_FILE}:/jar/${DATA_JAR_FILE}
+    environment:
+      - TZ=America/Sao_Paulo
+      - SPRING_PROFILES_ACTIVE=${ENVIRONMENT}
+      - DB_HOST=${DB_HOST}
+      - DB_DATABASE=${DB_DATABASE}
+      - DB_USER=${DB_USER}
+      - DB_PASSWORD=${DB_PASSWORD}
+      - DB_PORT=${DB_PORT}
+    networks:
+      backapi:
+        ipv4_address: 192.168.7.3
+    ports:
+      - ${DATA_EXTERNAL_PORT}:9000
+    entrypoint:
+      - "java"
+      - "-server"
+      - "-XX:MetaspaceSize=64M"
+      - "-XX:MaxMetaspaceSize=300M"
+      - "-Xmx300m"
+      - "-Xms300m"
+      - "-jar"
+      - "/jar/${DATA_JAR_FILE}"
+    logging:
+      options:
+        max-size: "100m"
+        max-file: "3"
+
+  nearest-service:
+    image: openjdk:11.0.4-jre-slim
+    container_name: ${ENVIRONMENT}-nearest-service
+    hostname: ${ENVIRONMENT}-nearest-service
+    links:
+      - "postgres_gis_db:database"
+    restart: unless-stopped
+    volumes:
+      - ../application/nearest/target/${NEAREST_JAR_FILE}:/jar/${NEAREST_JAR_FILE}
+    environment:
+      - TZ=America/Sao_Paulo
+      - SPRING_PROFILES_ACTIVE=${ENVIRONMENT}
+      - DB_HOST=${DB_HOST}
+      - DB_DATABASE=${DB_DATABASE}
+      - DB_USER=${DB_USER}
+      - DB_PASSWORD=${DB_PASSWORD}
+      - DB_PORT=${DB_PORT}
+    networks:
+      backapi:
+        ipv4_address: 192.168.7.4
+    ports:
+      - ${NEAREST_EXTERNAL_PORT}:9001
+    entrypoint:
+      - "java"
+      - "-server"
+      - "-XX:MetaspaceSize=64M"
+      - "-XX:MaxMetaspaceSize=300M"
+      - "-Xmx300m"
+      - "-Xms300m"
+      - "-jar"
+      - "/jar/${NEAREST_JAR_FILE}"
+    logging:
+      options:
+        max-size: "100m"
+        max-file: "3"
+
+
+networks:
+  backapi:
+    driver: bridge
+    ipam:
+      driver: default
+      config:
+        -
+          subnet: 192.168.7.0/16
+          gateway: 192.168.7.1
+
+volumes:
+  postgresql_data:

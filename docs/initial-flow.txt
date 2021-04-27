@@ -1,0 +1,27 @@
+partners-api-challenge
+
+Domain -> Partners <- Responsibility
+
+Steps ->
+	Setup Project;
+		data;
+		nearest;
+	Infrastructure;
+	    commons;
+	    persistence;
+	Modeling;
+	Core Business create/find;
+	Endpoints;
+	Core Business search-nearest;
+	Endpoint;
+	Unit Testing;
+	Deploy;
+
+GeoJSON ->
+    geojson-jackson
+	
+Nearest Logic
+	-> Identificar Polygonos que a posição esta dentro;
+	-> Dos poligonos encontrados, qual Ponto é o mais proximo;
+		- Pensar que lat and long mais proxima não necessariamente é o ponto
+		mais perto, considerando ruas.

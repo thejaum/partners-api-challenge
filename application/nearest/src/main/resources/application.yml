@@ -1,0 +1,42 @@
+server:
+  servlet:
+    context-path: /challenge/nearest
+  port: 9001
+spring:
+  profiles:
+    active: local
+  application:
+    name: nearest-service
+
+--- #local
+spring:
+  profiles: local, default
+  datasource:
+    url: jdbc:postgresql://${DB_HOST:localhost}:${DB_PORT:5433}/${DB_DATABASE:pilot}
+    username: ${DB_USER:postgres}
+    password: ${DB_PASSWORD:123}
+  jpa:
+    hibernate:
+      ddl-auto: none
+    properties:
+      hibernate:
+        format_sql: true
+        dialect: org.hibernate.spatial.dialect.postgis.PostgisDialect
+      javax:
+        persistence:
+          create-database-schemas: true
+    show-sql: true
+logging:
+  level:
+    org:
+      hibernate: INFO
+  file:
+    max-size: 10MB
+    max-history: 10
+    path: ./public/logs/local/@project.artifactId@-@project.version@
+  pattern:
+    console: "%clr(%d{yy-MM-dd E HH:mm:ss.SSS}){blue} [%thread] %clr(%-5p) %clr([%40class{30}]){cyan} %clr(%m){faint}%n"
+nearest:
+  maximum-range: 10000
+tomtom:
+  key: "dWTiaVjYOb6ChDCtsBQNty9EpLQbhCe7"
